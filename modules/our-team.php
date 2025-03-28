@@ -185,25 +185,25 @@
                 <ul class="menu-inner py-1">
                   <!-- Page -->
                   <li class="menu-item">
-                    <a href="../index.html" class="menu-link">
+                    <a href="../index.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-smart-home"></i>
                       <div data-i18n="Home">Home</div>
                     </a>
                   </li>
                   <li class="menu-item">
-                    <a href="about-us.html" class="menu-link">
+                    <a href="about-us.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-app-window"></i>
                       <div data-i18n="About Us">About Us</div>
                     </a>
                   </li>
                   <li class="menu-item active">
-                    <a href="our-team.html" class="menu-link">
+                    <a href="our-team.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-app-window"></i>
                       <div data-i18n="Our Team">Our Team</div>
                     </a>
                   </li>
                   <li class="menu-item">
-                    <a href="our-projects.html" class="menu-link">
+                    <a href="our-projects.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-app-window"></i>
                       <div data-i18n="Our Projects">Our Projects</div>
                     </a>
@@ -215,7 +215,7 @@
 
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-4 mb-6">Page 2</h4>
+              <h4 class="py-4 mb-6">Page 3</h4>
 
               <p>
                 Sample page.<br />For more layout options use

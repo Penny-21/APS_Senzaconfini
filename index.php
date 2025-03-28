@@ -74,25 +74,25 @@
                 <ul class="menu-inner py-1">
                   <!-- Page -->
                   <li class="menu-item active">
-                    <a href="index.html" class="menu-link">
+                    <a href="index.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-smart-home"></i>
                       <div data-i18n="Home">Home</div>
                     </a>
                   </li>
                   <li class="menu-item">
-                    <a href="modules/about-us.html" class="menu-link">
+                    <a href="modules/about-us.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-info-octagon"></i>
                       <div data-i18n="About Us">About Us</div>
                     </a>
                   </li>
                   <li class="menu-item">
-                    <a href="modules/our-team.html" class="menu-link">
+                    <a href="modules/our-team.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-users-group"></i>
                       <div data-i18n="Our Team">Our Team</div>
                     </a>
                   </li>
                   <li class="menu-item">
-                    <a href="modules/our-projects.html" class="menu-link">
+                    <a href="modules/our-projects.php" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-briefcase"></i>
                       <div data-i18n="Our Projects">Our Projects</div>
                     </a>
