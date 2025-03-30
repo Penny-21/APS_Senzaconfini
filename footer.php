@@ -10,13 +10,13 @@
         , project made by APSsenzaconfini
       </div>
       <div class="d-flex gap-3">
-        <a href="https://facebook.com" target="_blank" class="footer-link">
+        <a href="https://www.facebook.com/senzaconfiniAPS" target="_blank" class="footer-link">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" class="footer-link">
+        <a href="https://www.instagram.com/senzaconfiniaps" target="_blank" class="footer-link">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" class="footer-link">
+        <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="footer-link">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>

@@ -35,6 +35,8 @@
 
     <link rel="stylesheet" href="assets/vendor/libs/pickr/pickr-themes.css" />
     <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/vendor/css/pages/ui-carousel.css">
 
     <link rel="stylesheet" href="assets/vendor/css/core.css" />
     <link rel="stylesheet" href="assets/css/demo.css" />
@@ -104,17 +106,32 @@
 
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-4 mb-6">Page 1</h4>
-              <p>
-                Sample page.<br />For more layout options use
-
-                <a
-                  href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation//layouts.html"
-                  target="_blank"
-                  class="fw-medium"
-                  >Layout docs</a
-                >.
-              </p>
+              <div class="swiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress" id="swiper-3d-coverflow-effect">
+                    <div class="swiper-wrapper" id="swiper-wrapper-7878fb010bf3aea5d" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transform: translate3d(546px, 0px, 0px); transition-delay: 0ms;">
+                      <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="background-image: url(&quot;assets/img/custom-img/post-1.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;" role="group" aria-label="1 / 5">
+                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next" style="background-image: url(&quot;assets/img/custom-img/post-2.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0;" role="group" aria-label="2 / 5">
+                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 1; transition-duration: 0ms;"></div>
+                      </div>
+                      <div class="swiper-slide swiper-slide-visible" style="background-image: url(&quot;assets/img/custom-img/post-3.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg) scale(1); z-index: -1;" role="group" aria-label="3 / 5">
+                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 2; transition-duration: 0ms;"></div>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url(&quot;assets/img/custom-img/post-4.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(-150deg) scale(1); z-index: -2;" role="group" aria-label="4 / 5">
+                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 3; transition-duration: 0ms;"></div>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url(&quot;assets/img/custom-img/post-5.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(-200deg) scale(1); z-index: -3;" role="group" aria-label="5 / 5">
+                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
+                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 4; transition-duration: 0ms;"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
             </div>
             <!--/ Content -->
 
@@ -153,6 +170,7 @@
     <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
 
     <script src="assets/vendor/libs/i18n/i18n.js"></script>
     <script src="assets/vendor/js/menu.js"></script>
@@ -164,6 +182,7 @@
     <!-- Main JS -->
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/ui-carousel.js"></script>
 
     <!-- Page JS -->
   </body>
