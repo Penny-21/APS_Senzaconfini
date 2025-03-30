@@ -4,7 +4,6 @@
       <a href="index.html" class="app-brand-link">
         <span class="app-brand-logo demo">
           <span class="text-primary">
-            <img src="assets/img/favicon/favicon-32x32.png" alt="apsLogo">
           </span>
         </span>
         <span class="app-brand-text demo menu-text fw-bold text-heading">APS SenzaConfini</span>

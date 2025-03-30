@@ -7,16 +7,22 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        , made with ❤️ by <a href="https://pixinvent.com" target="_blank" class="footer-link">Pixinvent</a>
+        , project made by APSsenzaconfini
       </div>
-      <div class="d-none d-lg-inline-block">
-        <a
-          href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/"
-          target="_blank"
-          class="footer-link me-4"
-          >Documentation</a
-        >
+      <div class="d-flex gap-3">
+        <a href="https://facebook.com" target="_blank" class="footer-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="footer-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Font Awesome (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>

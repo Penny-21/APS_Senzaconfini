@@ -61,117 +61,7 @@
       <div class="layout-container">
         <!-- Navbar -->
 
-        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
-          <div class="container-xxl">
-            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
-              <a href="../index.html" class="app-brand-link">
-                <span class="app-brand-logo demo">
-                  <span class="text-primary">
-                    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                        fill="currentColor" />
-                      <path
-                        opacity="0.06"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                        fill="#161616" />
-                      <path
-                        opacity="0.06"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                        fill="#161616" />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                        fill="currentColor" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="app-brand-text demo menu-text fw-bold text-heading">Vuexy</span>
-              </a>
-
-              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
-                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center"></i>
-              </a>
-            </div>
-
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
-                <i class="icon-base ti tabler-menu-2 icon-md"></i>
-              </a>
-            </div>
-
-            <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
-              <ul class="navbar-nav flex-row align-items-center ms-md-auto">
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a
-                    class="nav-link dropdown-toggle hide-arrow p-0"
-                    href="javascript:void(0);"
-                    data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-0">John Doe</h6>
-                            <small class="text-body-secondary">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider my-1 mx-n2"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="icon-base ti tabler-user icon-md me-3"></i><span>My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="icon-base ti tabler-settings icon-md me-3"></i><span>Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 icon-base ti tabler-credit-card icon-md me-3"></i
-                          ><span class="flex-grow-1 align-middle">Billing Plan</span>
-                          <span class="flex-shrink-0 badge rounded-pill bg-danger">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider my-1 mx-n2"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i class="icon-base ti tabler-power icon-md me-3"></i><span>Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <?php include '../header.php'; ?>
 
         <!-- / Navbar -->
 
@@ -192,19 +82,19 @@
                   </li>
                   <li class="menu-item active">
                     <a href="about-us.php" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-app-window"></i>
+                      <i class="menu-icon icon-base ti tabler-info-octagon"></i>
                       <div data-i18n="About Us">About Us</div>
                     </a>
                   </li>
                   <li class="menu-item">
                     <a href="our-team.php" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-app-window"></i>
+                      <i class="menu-icon icon-base ti tabler-users-group"></i>
                       <div data-i18n="Our Team">Our Team</div>
                     </a>
                   </li>
                   <li class="menu-item">
                     <a href="our-projects.php" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-app-window"></i>
+                      <i class="menu-icon icon-base ti tabler-briefcase"></i>
                       <div data-i18n="Our Projects">Our Projects</div>
                     </a>
                   </li>
@@ -231,28 +121,7 @@
             <!--/ Content -->
 
             <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl">
-                <div
-                  class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
-                  <div class="text-body">
-                    ©
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    , made with ❤️ by <a href="https://pixinvent.com" target="_blank" class="footer-link">Pixinvent</a>
-                  </div>
-                  <div class="d-none d-lg-inline-block">
-                    <a
-                      href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/"
-                      target="_blank"
-                      class="footer-link me-4"
-                      >Documentation</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </footer>
+            <?php include '../footer.php'; ?>
             <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>
@@ -286,6 +155,7 @@
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
 
     <script src="../assets/vendor/js/menu.js"></script>
 
