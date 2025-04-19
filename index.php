@@ -181,6 +181,54 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ui-carousel.js"></script>
+    <script>
+      const LANG_STORAGE_KEY = "currentLang";
+      const DEFAULT_LANG = "en";
+      const LANG_PATH = "assets/json/locales/";
+
+      function loadLanguage(lang) {
+        fetch(`${LANG_PATH}${lang}.json`)
+          .then(res => res.json())
+          .then(translations => {
+            applyTranslations(translations);
+            localStorage.setItem(LANG_STORAGE_KEY, lang);
+          })
+          .catch(err => console.error("Errore caricamento lingua:", err));
+      }
+
+      function applyTranslations(translations) {
+        // Per il testo (innerText)
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[key]) {
+            el.innerText = translations[key];
+          }
+        });
+
+        // Per placeholder input/textarea
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+          const key = el.getAttribute("data-i18n-placeholder");
+          if (translations[key]) {
+            el.setAttribute("placeholder", translations[key]);
+          }
+        });
+      }
+
+      // Al click sul selettore della lingua
+      document.querySelectorAll("[data-language]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const lang = btn.getAttribute("data-language");
+          loadLanguage(lang);
+        });
+      });
+
+      // Caricamento iniziale
+      document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem(LANG_STORAGE_KEY) || DEFAULT_LANG;
+        loadLanguage(savedLang);
+      });
+    </script>
+
 
     <!-- Page JS -->
   </body>
