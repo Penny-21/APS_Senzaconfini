@@ -221,7 +221,7 @@
 
 
               <!-- Our great team: Start -->
-              <section id="landingTeam" class="section-py landing-team">
+<!--              <section id="landingTeam" class="section-py landing-team">
                 <div class="container">
                   <div class="text-center mb-4">
                     <span class="badge bg-label-primary">Our Great Team</span>
@@ -299,7 +299,7 @@
                     </div>
                   </div>
                 </div>
-              </section>
+              </section>-->
               <!-- Our great team: End -->
 </div>
             <!--/ Content -->
