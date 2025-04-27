@@ -122,35 +122,12 @@
                       <h1 class="text-primary hero-title display-6 fw-extrabold">
                         APS SenzaConfini
                       </h1>
-                      <h2 class="hero-sub-title h6 mb-6">
-                        Production-ready & easy to use Admin Template<br class="d-none d-lg-block" />
-                        for Reliability and Customizability.
-                      </h2>
                       <div class="landing-hero-btn d-inline-block position-relative">
-                        <a href="#landingPricing" class="btn btn-primary btn-lg">Discover Our Projects</a>
+                        <a href="our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
                       </div>
-                    </div>
-                    <div id="heroDashboardAnimation" class="hero-animation-img">
-                      <a href="../vertical-menu-template/app-ecommerce-dashboard.html" target="_blank">
-                        <div id="heroAnimationImg" class="position-relative hero-dashboard-img">
-                          <img
-                            src="../assets/img/front-pages/landing-page/hero-dashboard-light.png"
-                            alt="hero dashboard"
-                            class="animation-img"
-                            data-app-light-img="front-pages/landing-page/hero-dashboard-light.png"
-                            data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png" />
-                          <img
-                            src="../assets/img/front-pages/landing-page/hero-elements-light.png"
-                            alt="hero elements"
-                            class="position-absolute hero-elements-img animation-img top-0 start-0"
-                            data-app-light-img="front-pages/landing-page/hero-elements-light.png"
-                            data-app-dark-img="front-pages/landing-page/hero-elements-dark.png" />
-                        </div>
-                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="landing-hero-blank"></div>
               </section>
               <!-- Hero: End -->
 
