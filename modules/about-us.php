@@ -162,14 +162,14 @@
                     <div class="col-md-6">
                       <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                          <h2 class="card-title mb-3">About Us</h2>
-                          <p class="card-text">
+                          <h2 class="card-title mb-3" data-i18n="About Us">About Us</h2>
+                          <p class="card-text" data-i18n="About Us Full Text 1">
                             Senza Confini is a Social Promotion Association established in 2020 in La Spezia, dedicated to inspiring and empowering young people to actively shape their communities and society as a whole.
                           </p>
-                          <p class="card-text">
+                          <p class="card-text" data-i18n="About Us Full Text 2">
                             Operating at both local and European levels, our organization is committed to fostering active citizenship among youth while addressing critical challenges such as climate change, gender equality, democracy, and social inclusion.
                           </p>
-                          <p class="card-text">
+                          <p class="card-text" data-i18n="About Us Full Text 3">
                             At Senza Confini, we believe that young people are the driving force behind positive change. Through innovative projects, educational programs, and active community engagement, we support youth in becoming proactive contributors to their social, cultural, and political environments. By building connections across borders, we aim to create a stronger, more inclusive Europe.
                           </p>
                         </div>
@@ -179,36 +179,36 @@
                     <div class="col-md-6">
                       <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                          <h2 class="card-title mb-3">Our Aims</h2>
+                          <h2 class="card-title mb-3" data-i18n="Our Aims">Our Aims</h2>
                           <ol class="card-text ps-3">
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Promote Active Citizenship">
                               <strong>Promote Active Citizenship</strong><br>
                               We encourage young people to engage in social, cultural, and political life, fostering a sense of responsibility and participation in democratic processes.
                             </li>
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Champion Social Inclusion">
                               <strong>Champion Social Inclusion</strong><br>
                               Breaking down barriers of exclusion, we create opportunities for marginalized youth and promote a society where diversity is celebrated, and every individual feels valued.
                             </li>
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Support Youth Initiatives">
                               <strong>Support Youth Initiatives</strong><br>
                               Our goal is to provide the tools and resources young people need to bring their ideas to life and lead initiatives addressing pressing issues such as climate action and gender equality.
                             </li>
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Empower Creativity and Self-Expression">
                               <strong>Empower Creativity and Self-Expression</strong><br>
                               We help young people unlock their creative potential and express their ideas through various cultural and artistic forms.
                             </li>
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Build International Connections">
                               <strong>Build International Connections</strong><br>
                               By strengthening cooperation with European youth organizations, we foster intercultural exchange and collaboration on shared challenges.
                             </li>
-                            <li class="mb-2">
+                            <li class="mb-2" data-i18n="Advocate for Democratic Values">
                               <strong>Advocate for Democratic Values</strong><br>
                               We promote the ideals of democracy, tolerance, and civil society, empowering youth as agents of meaningful change.
                             </li>
                           </ol>
                           <hr>
-                          <h2 class="card-title mb-3">Closing Message</h2>
-                          <p class="card-text">
+                          <h2 class="card-title mb-3" data-i18n="Closing Message">Closing Message</h2>
+                          <p class="card-text" data-i18n="Closing Message Text">
                             At Senza Confini, we are committed to creating a brighter, more inclusive future driven by the energy, passion, and creativity of young people. Join us in shaping a society where everyone has the opportunity to thrive.
                           </p>
                         </div>
