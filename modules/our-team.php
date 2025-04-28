@@ -120,93 +120,81 @@
                   data-speed="1" />
                 <div class="container">
                   <div class="hero-text-box text-center position-relative">
-                    <h1 class="text-primary hero-title display-6 fw-extrabold">
-                      Our Projects
+                    <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Team">
+                      Our Team
                     </h1>
+                    <p data-i18n="Team Excerpt">
+                      Have questions or need assistance? Contact us and we'll be happy to help!
+                    </p>
+                    <p>Email: <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a></p>
                   </div>
                 </div>
               </div>
             </section>
             <!-- Hero Section End -->
 
-            <!-- About Us Section -->
-            <section id="about-us-info" class="section-py">
+            <!-- Contact Us Section -->
+            <section id="contact-us" class="section-py">
               <div class="container">
-                <h2 class="mb-4" data-i18n="About Us">About Us</h2>
+                <h2 class="mb-4" data-i18n="Contact Us">Contact Us</h2>
                 <p>
-                  Senza Confini APS is a youth-driven association where young people take center stage in designing and implementing impactful initiatives.  
-                  Our work spans multiple levels, leveraging the diverse skills, knowledge, and passions of our members. Through collaboration with local stakeholders and youth networks, we create opportunities for young people to grow as active citizens and develop valuable expertise in project management and community engagement.
-                </p>
-                <p>
-                  Our commitment is to involve young people from our area in every activity, fostering a thriving network of youth workers who gain hands-on experience while working alongside us. Our efforts can be grouped into three main areas:
+                  SenzaconfiniAPS was founded by a group of passionate individuals dedicated to making a positive impact in the community.  
+                  With diverse backgrounds and shared goals, the founders are committed to creating opportunities, fostering collaboration, and inspiring growth.
                 </p>
               </div>
             </section>
-            <!-- About Us Section End -->
+            <!-- Contact Us Section End -->
 
-            <!-- Our Portfolio Section -->
-            <section id="our-portfolio" class="section-py">
+            <!-- Team Members Section -->
+            <section id="team-members" class="section-py">
               <div class="container">
-                <h2 class="mb-4" data-i18n="Our Portfolio">Our Portfolio</h2>
+                <h2 class="mb-4" data-i18n="Team Members">Team Members</h2>
 
-                <!-- Local Networking -->
-                <h3 class="mt-4">1. Local Networking and Information Initiatives</h3>
+                <!-- President -->
+                <h3 data-i18n="President">President</h3>
                 <p>
-                  At Senza Confini, we actively promote awareness and provide vital information to the citizens of La Spezia and the surrounding areas.
+                  <strong>Niccolò Ichestre</strong> holds a degree in Political and International Sciences from the University of Genoa. He chairs the association ‘Senza Confini APS’, founded in 2020 to promote social inclusion and local development. He gained experience as European Project Manager, managing Erasmus+, AMIF and CERV projects. He did internships in Bucharest and Brussels, honing his skills in multicultural contexts. He is known for his empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
                 </p>
                 <ul>
-                  <li><strong>Community Outreach:</strong>  
-                    We organize campaigns on pressing issues, such as combating violence against women, raising awareness about public health measures (e.g., anti-COVID hygiene protocols), and more. These campaigns are tailored to reach vulnerable groups, including the elderly, immigrants, and NEETs.
-                  </li>
-                  <li><strong>Collaborative Networking:</strong>  
-                    By involving other local organizations, we build a strong network for exchanging best practices, ensuring a meaningful and sustainable impact.
-                  </li>
-                  <li><strong>Digital Outreach:</strong>  
-                    Through our social media platforms, we extend our reach, sharing knowledge and resources with the community and beyond.
-                  </li>
+                  <li><strong>Title:</strong> Mr.</li>
+                  <li><strong>Gender:</strong> Male</li>
+                  <li><strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a></li>
+                  <li><strong>Telephone:</strong> +39 3317741692</li>
+                  <li><strong>Address:</strong> Via Bragarina, 34, La Spezia, Italy</li>
                 </ul>
 
-                <!-- Event Creation -->
-                <h3 class="mt-4">2. Event Creation and Sociocultural Projects</h3>
+                <!-- Artistic & Communication Manager -->
+                <h3 data-i18n="Artistic & Communication Manager">Artistic & Communication Manager</h3>
                 <p>
-                  We design and implement events and small-scale sociocultural initiatives to address diverse community needs.
+                  <strong>Edoardo Marcuzzi</strong> is a young filmmaker who supports the association ‘Senza Confini APS’ in the management of social media and the digital part of events. His experience in the audiovisual and communication fields makes him a valuable collaborator for the online promotion of the association's activities and projects. Moreover, Edoardo contributes to the creation of visual and video content to raise awareness and involve the public in the social and cultural initiatives promoted by ‘Senza Confini APS’. His creative approach and digital expertise amplify the impact of the association's actions.
                 </p>
                 <ul>
-                  <li><strong>Cultural and Educational Programs:</strong>  
-                    From promoting art, theater, and environmental awareness in schools to fostering an appreciation for local culture, we aim to enrich the lives of young people and the broader community.
-                  </li>
-                  <li><strong>Community Dialogues:</strong>  
-                    We facilitate meetings between local government representatives and civil society actors to address community issues and strengthen civic engagement.
-                  </li>
-                  <li><strong>Fundraising and Support Initiatives:</strong>  
-                    By pooling the skills and resources of our members, we organize fundraisers to support individuals or organizations in need. Often, we secure funding through creative methods such as dinners, bank foundation grants, or municipal contributions.
-                  </li>
+                  <li><strong>Title:</strong> Mr.</li>
+                  <li><strong>Gender:</strong> Male</li>
+                  <li><strong>Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
+                  <li><strong>Telephone:</strong> +39 3492879150</li>
                 </ul>
 
-                <!-- Collaboration -->
-                <h3 class="mt-4">3. Collaboration in Larger-Scale Projects</h3>
+                <!-- Head Project Manager -->
+                <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
                 <p>
-                  Our association also operates on a broader level, partnering with influential organizations in La Spezia to drive substantial change.
+                  <strong>Costantino Landi</strong> is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
                 </p>
-                <ul>
-                  <li><strong>Strategic Partnerships:</strong>  
-                    Collaborations with established entities, such as Coop. Mondo Aperto and Coop. Lindbergh, enable us to participate in and contribute to more complex, large-scale projects.
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <!-- Our Portfolio Section End -->
 
-            <!-- Closing Note -->
-            <section id="closing-note" class="section-py">
-              <div class="container">
-                <h2 class="mb-4" data-i18n="Closing Note">Closing Note</h2>
+                <!-- EU Project Manager -->
+                <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
                 <p>
-                  Senza Confini APS is dedicated to empowering youth and fostering community collaboration. Our projects and initiatives continue to inspire change, drive progress, and strengthen bonds across La Spezia and beyond.
+                  <strong>Marco Maricchiolo</strong> is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
+                </p>
+
+                <!-- EU Project Manager -->
+                <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
+                <p>
+                  <strong>Maria Michela Giallaurito</strong> is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
                 </p>
               </div>
             </section>
-            <!-- Closing Note End -->
+            <!-- Team Members Section End -->
           </div>
           <!--/ Content -->
 
