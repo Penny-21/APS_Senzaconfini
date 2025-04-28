@@ -42,6 +42,7 @@
 
     <link rel="stylesheet" href="assets/vendor/css/core.css" />
     <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/vendor/css/pages/front-page-landing.css">
 
     <!-- Vendors CSS -->
 
@@ -105,6 +106,26 @@
               </div>
             </aside>
             <!-- / Menu -->
+
+            <section id="hero-animation">
+              <div id="landingHero" class="section-py landing-hero position-relative">
+                <img
+                  src="../assets/img/front-pages/backgrounds/hero-bg.png"
+                  alt="hero background"
+                  class="position-absolute top-0 start-50 translate-middle-x object-fit-cover w-100 h-100"
+                  data-speed="1" />
+                <div class="container">
+                  <div class="hero-text-box text-center position-relative">
+                    <h1 class="text-primary hero-title display-6 fw-extrabold">
+                      APS SenzaConfini
+                    </h1>
+                    <div class="landing-hero-btn d-inline-block position-relative">
+                      <a href="our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
@@ -228,6 +249,7 @@
         loadLanguage(savedLang);
       });
     </script>
+    <script src="assets/js/front-page-landing.js"></script>
 
 
     <!-- Page JS -->
