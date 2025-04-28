@@ -110,7 +110,7 @@
 
           <!-- Content -->
           <div data-bs-spy="scroll" class="scrollspy-example">
-            <!-- Hero: Start -->
+            <!-- Hero Section -->
             <section id="hero-animation">
               <div id="landingHero" class="section-py landing-hero position-relative">
                 <img
@@ -120,165 +120,102 @@
                   data-speed="1" />
                 <div class="container">
                   <div class="hero-text-box text-center position-relative">
-                    <h1 class="text-primary hero-title display-6 fw-extrabold">
-                      APS SenzaConfini
+                    <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Projects">
+                      Our Projects
                     </h1>
-                    <div class="landing-hero-btn d-inline-block position-relative">
-                      <a href="our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
-                    </div>
                   </div>
                 </div>
               </div>
             </section>
-            <!-- Hero: End -->
+            <!-- Hero Section End -->
 
-            <!-- Sezione About Us & Aims -->
+            <!-- About Us Section -->
             <section id="about-us-info" class="section-py">
               <div class="container">
-                <div class="row g-4">
-                  <!-- Card: About Us -->
-                  <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                      <div class="card-body">
-                        <h2 class="card-title mb-3" data-i18n="About Us">About Us</h2>
-                        <p class="card-text" data-i18n="About Us Full Text 1">
-                          Senza Confini is a Social Promotion Association established in 2020 in La Spezia, dedicated to inspiring and empowering young people to actively shape their communities and society as a whole.
-                        </p>
-                        <p class="card-text" data-i18n="About Us Full Text 2">
-                          Operating at both local and European levels, our organization is committed to fostering active citizenship among youth while addressing critical challenges such as climate change, gender equality, democracy, and social inclusion.
-                        </p>
-                        <p class="card-text" data-i18n="About Us Full Text 3">
-                          At Senza Confini, we believe that young people are the driving force behind positive change. Through innovative projects, educational programs, and active community engagement, we support youth in becoming proactive contributors to their social, cultural, and political environments. By building connections across borders, we aim to create a stronger, more inclusive Europe.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card: Our Aims & Closing Message -->
-                  <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                      <div class="card-body">
-                        <h2 class="card-title mb-3" data-i18n="Our Aims">Our Aims</h2>
-                        <ol class="card-text ps-3">
-                          <li class="mb-2" data-i18n="Promote Active Citizenship">
-                            <strong>Promote Active Citizenship</strong><br>
-                            We encourage young people to engage in social, cultural, and political life, fostering a sense of responsibility and participation in democratic processes.
-                          </li>
-                          <li class="mb-2" data-i18n="Champion Social Inclusion">
-                            <strong>Champion Social Inclusion</strong><br>
-                            Breaking down barriers of exclusion, we create opportunities for marginalized youth and promote a society where diversity is celebrated, and every individual feels valued.
-                          </li>
-                          <li class="mb-2" data-i18n="Support Youth Initiatives">
-                            <strong>Support Youth Initiatives</strong><br>
-                            Our goal is to provide the tools and resources young people need to bring their ideas to life and lead initiatives addressing pressing issues such as climate action and gender equality.
-                          </li>
-                          <li class="mb-2" data-i18n="Empower Creativity and Self-Expression">
-                            <strong>Empower Creativity and Self-Expression</strong><br>
-                            We help young people unlock their creative potential and express their ideas through various cultural and artistic forms.
-                          </li>
-                          <li class="mb-2" data-i18n="Build International Connections">
-                            <strong>Build International Connections</strong><br>
-                            By strengthening cooperation with European youth organizations, we foster intercultural exchange and collaboration on shared challenges.
-                          </li>
-                          <li class="mb-2" data-i18n="Advocate for Democratic Values">
-                            <strong>Advocate for Democratic Values</strong><br>
-                            We promote the ideals of democracy, tolerance, and civil society, empowering youth as agents of meaningful change.
-                          </li>
-                        </ol>
-                        <hr>
-                        <h2 class="card-title mb-3" data-i18n="Closing Message">Closing Message</h2>
-                        <p class="card-text" data-i18n="Closing Message Text">
-                          At Senza Confini, we are committed to creating a brighter, more inclusive future driven by the energy, passion, and creativity of young people. Join us in shaping a society where everyone has the opportunity to thrive.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h2 class="mb-4" data-i18n="About Us">About Us</h2>
+                <p data-i18n="About Us Full Text 1">
+                  Senza Confini APS is a youth-driven association where young people take center stage in designing and implementing impactful initiatives.
+                </p>
+                <p data-i18n="About Us Full Text 2">
+                  Our work spans multiple levels, leveraging the diverse skills, knowledge, and passions of our members. Through collaboration with local stakeholders and youth networks, we create opportunities for young people to grow as active citizens and develop valuable expertise in project management and community engagement.
+                </p>
+                <p data-i18n="About Us Full Text 3">
+                  Our commitment is to involve young people from our area in every activity, fostering a thriving network of youth workers who gain hands-on experience while working alongside us. Our efforts can be grouped into three main areas:
+                </p>
               </div>
             </section>
-            <!-- -->
+            <!-- About Us Section End -->
 
+            <!-- Our Portfolio Section -->
+            <section id="our-portfolio" class="section-py">
+              <div class="container">
+                <h2 class="mb-4" data-i18n="Our Portfolio">Our Portfolio</h2>
 
-            <!-- Our great team: Start -->
-            <!--              <section id="landingTeam" class="section-py landing-team">
-                <div class="container">
-                  <div class="text-center mb-4">
-                    <span class="badge bg-label-primary">Our Great Team</span>
-                  </div>
-                  <h4 class="text-center mb-1">
-                    <span class="position-relative fw-extrabold z-1"
-                      >Supported
-                      <img
-                        src="../assets/img/front-pages/icons/section-title-icon.png"
-                        alt="laptop charging"
-                        class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
-                    </span>
-                    by Real People
-                  </h4>
-                  <p class="text-center mb-md-11 pb-0 pb-xl-12">Who is behind these great-looking interfaces?</p>
-                  <div class="row gy-12 mt-2">
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div
-                          class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box">
-                          <img
-                            src="../assets/img/front-pages/landing-page/team-member-1.png"
-                            class="position-absolute card-img-position bottom-0 start-50"
-                            alt="human image" />
-                        </div>
-                        <div class="card-body border border-top-0 border-label-primary text-center">
-                          <h5 class="card-title mb-0">Sophie Gilbert</h5>
-                          <p class="text-body-secondary mb-0">Project Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box">
-                          <img
-                            src="../assets/img/front-pages/landing-page/team-member-2.png"
-                            class="position-absolute card-img-position bottom-0 start-50"
-                            alt="human image" />
-                        </div>
-                        <div class="card-body border border-top-0 border-label-info text-center">
-                          <h5 class="card-title mb-0">Paul Miles</h5>
-                          <p class="text-body-secondary mb-0">UI Designer</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div
-                          class="bg-label-danger border border-bottom-0 border-label-danger position-relative team-image-box">
-                          <img
-                            src="../assets/img/front-pages/landing-page/team-member-3.png"
-                            class="position-absolute card-img-position bottom-0 start-50"
-                            alt="human image" />
-                        </div>
-                        <div class="card-body border border-top-0 border-label-danger text-center">
-                          <h5 class="card-title mb-0">Nannie Ford</h5>
-                          <p class="text-body-secondary mb-0">Development Lead</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div
-                          class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
-                          <img
-                            src="../assets/img/front-pages/landing-page/team-member-4.png"
-                            class="position-absolute card-img-position bottom-0 start-50"
-                            alt="human image" />
-                        </div>
-                        <div class="card-body border border-top-0 border-label-success text-center">
-                          <h5 class="card-title mb-0">Chris Watkins</h5>
-                          <p class="text-body-secondary mb-0">Marketing Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>-->
-            <!-- Our great team: End -->
+                <!-- Local Networking -->
+                <h3 class="mt-4" data-i18n="Local Networking and Information Initiatives">1. Local Networking and Information Initiatives</h3>
+                <p data-i18n="Local Networking and Information Initiatives Description">
+                  At Senza Confini, we actively promote awareness and provide vital information to the citizens of La Spezia and the surrounding areas.
+                </p>
+                <ul>
+                  <li data-i18n="Community Outreach">
+                    <strong>Community Outreach:</strong>  
+                    We organize campaigns on pressing issues, such as combating violence against women, raising awareness about public health measures (e.g., anti-COVID hygiene protocols), and more. These campaigns are tailored to reach vulnerable groups, including the elderly, immigrants, and NEETs.
+                  </li>
+                  <li data-i18n="Collaborative Networking">
+                    <strong>Collaborative Networking:</strong>  
+                    By involving other local organizations, we build a strong network for exchanging best practices, ensuring a meaningful and sustainable impact.
+                  </li>
+                  <li data-i18n="Digital Outreach">
+                    <strong>Digital Outreach:</strong>  
+                    Through our social media platforms, we extend our reach, sharing knowledge and resources with the community and beyond.
+                  </li>
+                </ul>
+
+                <!-- Event Creation -->
+                <h3 class="mt-4" data-i18n="Event Creation and Sociocultural Projects">2. Event Creation and Sociocultural Projects</h3>
+                <p data-i18n="Event Creation and Sociocultural Projects Description">
+                  We design and implement events and small-scale sociocultural initiatives to address diverse community needs.
+                </p>
+                <ul>
+                  <li data-i18n="Cultural and Educational Programs">
+                    <strong>Cultural and Educational Programs:</strong>  
+                    From promoting art, theater, and environmental awareness in schools to fostering an appreciation for local culture, we aim to enrich the lives of young people and the broader community.
+                  </li>
+                  <li data-i18n="Community Dialogues">
+                    <strong>Community Dialogues:</strong>  
+                    We facilitate meetings between local government representatives and civil society actors to address community issues and strengthen civic engagement.
+                  </li>
+                  <li data-i18n="Fundraising and Support Initiatives">
+                    <strong>Fundraising and Support Initiatives:</strong>  
+                    By pooling the skills and resources of our members, we organize fundraisers to support individuals or organizations in need. Often, we secure funding through creative methods such as dinners, bank foundation grants, or municipal contributions.
+                  </li>
+                </ul>
+
+                <!-- Collaboration -->
+                <h3 class="mt-4" data-i18n="Collaboration in Larger-Scale Projects">3. Collaboration in Larger-Scale Projects</h3>
+                <p data-i18n="Collaboration in Larger-Scale Projects Description">
+                  Our association also operates on a broader level, partnering with influential organizations in La Spezia to drive substantial change.
+                </p>
+                <ul>
+                  <li data-i18n="Strategic Partnerships">
+                    <strong>Strategic Partnerships:</strong>  
+                    Collaborations with established entities, such as Coop. Mondo Aperto and Coop. Lindbergh, enable us to participate in and contribute to more complex, large-scale projects.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- Our Portfolio Section End -->
+
+            <!-- Closing Note -->
+            <section id="closing-note" class="section-py">
+              <div class="container">
+                <h2 class="mb-4" data-i18n="Closing Note">Closing Note</h2>
+                <p data-i18n="Closing Note Text">
+                  Senza Confini APS is dedicated to empowering youth and fostering community collaboration. Our projects and initiatives continue to inspire change, drive progress, and strengthen bonds across La Spezia and beyond.
+                </p>
+              </div>
+            </section>
+            <!-- Closing Note End -->
           </div>
           <!--/ Content -->
 
