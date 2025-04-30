@@ -166,31 +166,43 @@
                 <!-- Artistic & Communication Manager -->
                 <h3 data-i18n="Artistic & Communication Manager">Artistic & Communication Manager</h3>
                 <p>
-                  <strong>Edoardo Marcuzzi</strong> is a young filmmaker who supports the association ‘Senza Confini APS’ in the management of social media and the digital part of events. His experience in the audiovisual and communication fields makes him a valuable collaborator for the online promotion of the association's activities and projects. Moreover, Edoardo contributes to the creation of visual and video content to raise awareness and involve the public in the social and cultural initiatives promoted by ‘Senza Confini APS’. His creative approach and digital expertise amplify the impact of the association's actions.
+                  <strong data-i18n="Edoardo Marcuzzi">Edoardo Marcuzzi</strong>
+                  <span data-i18n="Edoardo Marcuzzi Description">
+                    is a young filmmaker who supports the association ‘Senza Confini APS’ in the management of social media and the digital part of events. His experience in the audiovisual and communication fields makes him a valuable collaborator for the online promotion of the association's activities and projects. Moreover, Edoardo contributes to the creation of visual and video content to raise awareness and involve the public in the social and cultural initiatives promoted by ‘Senza Confini APS’. His creative approach and digital expertise amplify the impact of the association's actions.
+                  </span>
                 </p>
                 <ul>
-                  <li><strong>Title:</strong> Mr.</li>
-                  <li><strong>Gender:</strong> Male</li>
-                  <li><strong>Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
-                  <li><strong>Telephone:</strong> +39 3492879150</li>
+                  <li><strong data-i18n="Title">Title:</strong> <span data-i18n="Mr">Mr.</span></li>
+                  <li><strong data-i18n="Gender">Gender:</strong> <span data-i18n="Male">Male</span></li>
+                  <li><strong data-i18n="Email">Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
+                  <li><strong data-i18n="Telephone">Telephone:</strong> <span>+39 3492879150</span></li>
                 </ul>
 
                 <!-- Head Project Manager -->
                 <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
                 <p>
-                  <strong>Costantino Landi</strong> is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
+                  <strong data-i18n="Costantino Landi">Costantino Landi</strong>
+                  <span data-i18n="Costantino Landi Description">
+                    is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
+                  </span>
                 </p>
 
                 <!-- EU Project Manager -->
                 <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
                 <p>
-                  <strong>Marco Maricchiolo</strong> is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
+                  <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
+                  <span data-i18n="Marco Maricchiolo Description">
+                    is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
+                  </span>
                 </p>
 
                 <!-- EU Project Manager -->
                 <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
                 <p>
-                  <strong>Maria Michela Giallaurito</strong> is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
+                  <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
+                  <span data-i18n="Maria Michela Giallaurito Description">
+                    is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
+                  </span>
                 </p>
               </div>
             </section>
