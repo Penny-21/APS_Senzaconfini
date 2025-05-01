@@ -206,6 +206,103 @@
                 </p>
               </div>
             </section>
+
+            <section id="landingTeam" class="section-py landing-team">
+              <div class="container">
+                <div class="text-center mb-4">
+                  <span class="badge bg-label-primary">Our Great Team</span>
+                </div>
+                <h4 class="text-center mb-1">
+                  <span class="position-relative fw-extrabold z-1"
+                    >Supported
+                    <img
+                      src="../assets/img/front-pages/icons/section-title-icon.png"
+                      alt="laptop charging"
+                      class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
+                  </span>
+                  by Real People
+                </h4>
+                <p class="text-center mb-md-11 pb-0 pb-xl-12">Who is behind these great-looking interfaces?</p>
+                <div class="row gy-12 mt-2">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                      <div
+                        class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box">
+                        <img
+                          src="../assets/img/front-pages/landing-page/team-member-1.png"
+                          class="position-absolute card-img-position bottom-0 start-50"
+                          alt="human image" />
+                      </div>
+                      <div class="card-body border border-top-0 border-label-primary text-center">
+                        <h5 class="card-title mb-0">Niccolò Ichestre</h5>
+                        <p class="text-body-secondary mb-0">President</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                      <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box">
+                        <img
+                          src="../assets/img/front-pages/landing-page/team-member-2.png"
+                          class="position-absolute card-img-position bottom-0 start-50"
+                          alt="human image" />
+                      </div>
+                      <div class="card-body border border-top-0 border-label-info text-center">
+                        <h5 class="card-title mb-0">Edoardo Marcuzzi</h5>
+                        <p class="text-body-secondary mb-0">Artistic & Communication Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                      <div
+                        class="bg-label-danger border border-bottom-0 border-label-danger position-relative team-image-box">
+                        <img
+                          src="../assets/img/front-pages/landing-page/team-member-3.png"
+                          class="position-absolute card-img-position bottom-0 start-50"
+                          alt="human image" />
+                      </div>
+                      <div class="card-body border border-top-0 border-label-danger text-center">
+                        <h5 class="card-title mb-0">Costantino Landi</h5>
+                        <p class="text-body-secondary mb-0">Head Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                      <div
+                        class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
+                        <img
+                          src="../assets/img/front-pages/landing-page/team-member-4.png"
+                          class="position-absolute card-img-position bottom-0 start-50"
+                          alt="human image" />
+                      </div>
+                      <div class="card-body border border-top-0 border-label-success text-center">
+                        <h5 class="card-title mb-0">Marco Maricchiolo</h5>
+                        <p class="text-body-secondary mb-0">EU Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row gy-12 mt-2 justify-content-center">
+                  <div class="col-lg-3 col-sm-6">
+                      <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div
+                          class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
+                          <img
+                            src="../assets/img/front-pages/landing-page/team-member-4.png"
+                            class="position-absolute card-img-position bottom-0 start-50"
+                            alt="human image" />
+                        </div>
+                        <div class="card-body border border-top-0 border-label-success text-center">
+                          <h5 class="card-title mb-0">Maria Michela Giallaurito</h5>
+                          <p class="text-body-secondary mb-0">EU Project Manager</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
             <!-- Team Members Section End -->
           </div>
           <!--/ Content -->
