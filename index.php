@@ -120,7 +120,7 @@
                       APS SenzaConfini
                     </h1>
                     <div class="landing-hero-btn d-inline-block position-relative">
-                      <a href="our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
+                      <a href="modules/our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
                     </div>
                   </div>
                 </div>
