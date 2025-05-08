@@ -125,6 +125,15 @@
                   </div>
                 </div>
               </div>
+              <!-- Large Card -->
+              <div class="card mt-5 mx-auto" style="max-width: 640px; border-radius: 15px; overflow: hidden;">
+                <img
+                  src="assets/img/custom-img/post-4.jpg"
+                  alt="Featured Project"
+                  class="card-img-top object-fit-cover"
+                  style="height: 640px;" />
+              </div>
+              <!-- Large Card End -->
             </section>
 
             <!-- Content -->
