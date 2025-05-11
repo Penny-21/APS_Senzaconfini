@@ -229,7 +229,7 @@
                       <div
                         class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box">
                         <img
-                          src="../assets/img/front-pages/landing-page/team-member-1.png"
+                          src="../assets/img/front-pages/landing-page/team-member-2.png"
                           class="position-absolute card-img-position bottom-0 start-50"
                           alt="human image" />
                       </div>
@@ -290,7 +290,7 @@
                         <div
                           class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
                           <img
-                            src="../assets/img/front-pages/landing-page/team-member-4.png"
+                            src="../assets/img/front-pages/landing-page/team-member-1.png"
                             class="position-absolute card-img-position bottom-0 start-50"
                             alt="human image" />
                         </div>
