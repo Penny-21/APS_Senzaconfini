@@ -4,7 +4,7 @@
     <footer class="footer bg-light">
       <div class="container-fluid container-p-x pt-12 pb-6">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-6 mb-sm-0">
+          <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
             <h4 class="fw-bold mb-4">
               <a href="https://demos.pixinvent.com/vuexy-html-admin-template/html/vertical-menu-template/" target="_blank" class="footer-text">Social Media
               </a>
@@ -20,14 +20,15 @@
               </script> APSSenzaconfini
             </p>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-6 mb-md-0">
+          <div class="col-12 col-sm-6 col-md-4 mb-6 mb-md-0">
             <h5>Contact us at:</h5>
             <ul class="list-unstyled">
-              <li><a href="mailto:aps.senzaconfini@gmail.com" class="footer-link d-block pb-2">aps.senzaconfini@gmail.com</a></li>
-              <li><p class="footer-link d-block pb-2">Phone Number: +39 3317741692</p></li>
+              <li><a href="mailto:aps.senzaconfini@gmail.com" class="footer-link d-block pb-2"><strong>Email: </strong>aps.senzaconfini@gmail.com</a></li>
+              <li><p class="footer-link d-block pb-2"><strong>Phone Number:</strong> +39 3317741692</p></li>
+              <li><p class="footer-link d-block pb-2"><strong>Address:</strong> Via Bragarina, 34, La Spezia, Italy</p></li>
             </ul>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-6 mb-sm-0">
+          <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
             <h5>PEC:</h5>
             <ul class="list-unstyled">
               <li><a href="mailto:senzaconfini.aps@pec.it" class="footer-link d-block pb-2">senzaconfini.aps@pec.it</a></li>
