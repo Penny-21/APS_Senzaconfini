@@ -138,33 +138,96 @@
 
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="swiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress" id="swiper-3d-coverflow-effect">
-                    <div class="swiper-wrapper" id="swiper-wrapper-7878fb010bf3aea5d" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transform: translate3d(546px, 0px, 0px); transition-delay: 0ms;">
-                      <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="background-image: url(&quot;assets/img/custom-img/post-1.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;" role="group" aria-label="1 / 5">
-                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next" style="background-image: url(&quot;assets/img/custom-img/post-2.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0;" role="group" aria-label="2 / 5">
-                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 1; transition-duration: 0ms;"></div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-visible" style="background-image: url(&quot;assets/img/custom-img/post-3.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg) scale(1); z-index: -1;" role="group" aria-label="3 / 5">
-                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 2; transition-duration: 0ms;"></div>
-                      </div>
-                      <div class="swiper-slide" style="background-image: url(&quot;assets/img/custom-img/post-4.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(-150deg) scale(1); z-index: -2;" role="group" aria-label="4 / 5">
-                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 3; transition-duration: 0ms;"></div>
-                      </div>
-                      <div class="swiper-slide" style="background-image: url(&quot;assets/img/custom-img/post-5.jpg&quot;); transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(-200deg) scale(1); z-index: -3;" role="group" aria-label="5 / 5">
-                        <div class="swiper-slide-shadow-left swiper-slide-shadow-coverflow" style="opacity: 0; transition-duration: 0ms;"></div>
-                        <div class="swiper-slide-shadow-right swiper-slide-shadow-coverflow" style="opacity: 4; transition-duration: 0ms;"></div>
-                      </div>
-                    </div>
-                    <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              <div class="swiper swiper-coverflow swiper-3d" id="swiper-3d-coverflow-effect">
+                <div class="swiper-wrapper">
+                  <?php 
+                    $slides = [
+                      ["image" => "assets/img/custom-img/post-1.jpg", "descriptions" => ["Description 1A", "Description 1B", "Description 1C"]],
+                      ["image" => "assets/img/custom-img/post-2.jpg", "descriptions" => ["Description 2A", "Description 2B", "Description 2C"]],
+                      ["image" => "assets/img/custom-img/post-3.jpg", "descriptions" => ["Description 3A", "Description 3B", "Description 3C"]],
+                      ["image" => "assets/img/custom-img/post-4.jpg", "descriptions" => ["Description 4A", "Description 4B", "Description 4C"]],
+                      ["image" => "assets/img/custom-img/post-5.jpg", "descriptions" => ["Description 5A", "Description 5B", "Description 5C"]],
+                    ];
+
+                    foreach ($slides as $slide) {
+                      echo '<div class="swiper-slide" style="background-image: url(\'' . $slide["image"] . '\');">';
+                      echo '<div class="tooltip-container">';
+                      echo '<div class="tooltip-content">';
+                      foreach ($slide["descriptions"] as $description) {
+                        echo '<p>' . $description . '</p>';
+                      }
+                      echo '</div>';
+                      echo '</div>';
+                      echo '</div>';
+                    }
+                  ?>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
+
+            <style>
+              .swiper-slide {
+                position: relative;
+                cursor: pointer;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              }
+
+              .swiper-slide:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+              }
+
+              .tooltip-container {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                z-index: 10;
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+              }
+
+              .swiper-slide:hover .tooltip-container {
+                display: block;
+                opacity: 1;
+                transform: translateX(-50%) translateY(-10px);
+              }
+
+              .tooltip-content p {
+                margin: 0;
+                font-size: 14px;
+              }
+
+              .swiper-slide {
+                position: relative;
+                cursor: pointer;
+              }
+
+              .tooltip-container {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                z-index: 10;
+              }
+
+              .swiper-slide:hover .tooltip-container {
+                display: block;
+              }
+            </style>
             <!--/ Content -->
 
             <!-- Footer -->
