@@ -123,10 +123,6 @@
                     <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Team">
                       Our Team
                     </h1>
-                    <p data-i18n="Team Excerpt">
-                      Have questions or need assistance? Contact us and we'll be happy to help!
-                    </p>
-                    <p>Email: <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a></p>
                   </div>
                 </div>
               </div>
