@@ -145,19 +145,40 @@
             <section id="team-members" class="section-py">
               <div class="container">
                 <h2 class="mb-4" data-i18n="Team Members">Team Members</h2>
+                <div class="row">
+                  <div class="col-md-9">
+                    <!-- President -->
+                    <h3 data-i18n="President">President</h3>
+                    <p>
+                      <strong>Niccolò Ichestre</strong> holds a degree in Political and International Sciences from the University of Genoa. He chairs the association ‘Senza Confini APS’, founded in 2020 to promote social inclusion and local development. He gained experience as European Project Manager, managing Erasmus+, AMIF and CERV projects. He did internships in Bucharest and Brussels, honing his skills in multicultural contexts. He is known for his empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
+                    </p>
+                    <ul>
+                      <li><strong>Title:</strong> Mr.</li>
+                      <li><strong>Gender:</strong> Male</li>
+                      <li><strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a></li>
+                      <li><strong>Telephone:</strong> +39 3317741692</li>
+                      <li><strong>Address:</strong> Via Bragarina, 34, La Spezia, Italy</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card mt-3 mt-lg-0 shadow-none" style="padding-top: 40%;">
+                      <div
+                        class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box">
+                        <img
+                          src="../assets/img/front-pages/landing-page/team-member-2.png"
+                          class="position-absolute card-img-position bottom-0" style="inset-inline-start: 20%;"
+                          alt="human image" />
+                      </div>
+                      <div class="card-body border border-top-0 border-label-primary text-center">
+                        <h5 class="card-title mb-0">Niccolò Ichestre</h5>
+                        <p class="text-body-secondary mb-0">President</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                <!-- President -->
-                <h3 data-i18n="President">President</h3>
-                <p>
-                  <strong>Niccolò Ichestre</strong> holds a degree in Political and International Sciences from the University of Genoa. He chairs the association ‘Senza Confini APS’, founded in 2020 to promote social inclusion and local development. He gained experience as European Project Manager, managing Erasmus+, AMIF and CERV projects. He did internships in Bucharest and Brussels, honing his skills in multicultural contexts. He is known for his empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
-                </p>
-                <ul>
-                  <li><strong>Title:</strong> Mr.</li>
-                  <li><strong>Gender:</strong> Male</li>
-                  <li><strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a></li>
-                  <li><strong>Telephone:</strong> +39 3317741692</li>
-                  <li><strong>Address:</strong> Via Bragarina, 34, La Spezia, Italy</li>
-                </ul>
+
+
 
                 <!-- Artistic & Communication Manager -->
                 <h3 data-i18n="Artistic & Communication Manager">Artistic & Communication Manager</h3>
@@ -205,35 +226,9 @@
 
             <section id="landingTeam" class="section-py landing-team">
               <div class="container">
-                <div class="text-center mb-4">
-                  <span class="badge bg-label-primary">Our Great Team</span>
-                </div>
-                <h4 class="text-center mb-1">
-                  <span class="position-relative fw-extrabold z-1"
-                    >Supported
-                    <img
-                      src="../assets/img/front-pages/icons/section-title-icon.png"
-                      alt="laptop charging"
-                      class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
-                  </span>
-                  by Real People
-                </h4>
-                <p class="text-center mb-md-11 pb-0 pb-xl-12">Who is behind these great-looking interfaces?</p>
                 <div class="row gy-12 mt-2">
                   <div class="col-lg-3 col-sm-6">
-                    <div class="card mt-3 mt-lg-0 shadow-none">
-                      <div
-                        class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box">
-                        <img
-                          src="../assets/img/front-pages/landing-page/team-member-2.png"
-                          class="position-absolute card-img-position bottom-0 start-50"
-                          alt="human image" />
-                      </div>
-                      <div class="card-body border border-top-0 border-label-primary text-center">
-                        <h5 class="card-title mb-0">Niccolò Ichestre</h5>
-                        <p class="text-body-secondary mb-0">President</p>
-                      </div>
-                    </div>
+
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="card mt-3 mt-lg-0 shadow-none">
