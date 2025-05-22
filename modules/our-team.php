@@ -169,44 +169,21 @@
                     </div>
                   </div>
 
-                  <!-- Head Project Manager -->
-                  <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
-                  <p>
-                    <strong data-i18n="Costantino Landi">Costantino Landi</strong>
-                    <span data-i18n="Costantino Landi Description">
-                      is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
-                    </span>
-                  </p>
-
-                  <!-- EU Project Manager -->
-                  <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
-                  <p>
-                    <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
-                    <span data-i18n="Marco Maricchiolo Description">
-                      is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
-                    </span>
-                  </p>
-
-                  <!-- EU Project Manager -->
-                  <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
-                  <p>
-                    <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
-                    <span data-i18n="Maria Michela Giallaurito Description">
-                      is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
-                    </span>
-                  </p>
-                </div>
-              </section>
-
-              <section id="landingTeam" class="section-py landing-team">
-                <div class="container">
-                  <div class="row gy-12 mt-2">
-                    <div class="col-lg-3 col-sm-6"></div>
-                    <div class="col-lg-3 col-sm-6"></div>
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div class="bg-label-danger border border-bottom-0 border-label-danger position-relative team-image-box">
-                          <img src="../assets/img/front-pages/landing-page/team-member-3.png" class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
+                  <div class="row mb-4">
+                    <div class="col-md-9">
+                      <!-- Head Project Manager -->
+                      <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
+                      <p>
+                        <strong data-i18n="Costantino Landi">Costantino Landi</strong>
+                        <span data-i18n="Costantino Landi Description">
+                          is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-stretch">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/img/front-pages/landing-page/team-member-3.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-danger text-center">
                           <h5 class="card-title mb-0">Costantino Landi</h5>
@@ -214,10 +191,23 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
-                          <img src="../assets/img/front-pages/landing-page/team-member-4.png" class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col-md-9">
+                      <!-- EU Project Manager -->
+                      <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
+                      <p>
+                        <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
+                        <span data-i18n="Marco Maricchiolo Description">
+                          is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-stretch">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/img/front-pages/landing-page/team-member-4.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Marco Maricchiolo</h5>
@@ -226,11 +216,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row gy-12 mt-2 justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                      <div class="card mt-3 mt-lg-0 shadow-none">
-                        <div class="bg-label-success border border-bottom-0 border-label-success position-relative team-image-box">
-                          <img src="../assets/img/front-pages/landing-page/team-member-1.png" class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
+
+                  <div class="row mb-4">
+                    <div class="col-md-9">
+                      <!-- EU Project Manager -->
+                      <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
+                      <p>
+                        <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
+                        <span data-i18n="Maria Michela Giallaurito Description">
+                          is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-stretch">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/img/front-pages/landing-page/team-member-1.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Maria Michela Giallaurito</h5>
