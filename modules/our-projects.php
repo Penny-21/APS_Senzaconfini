@@ -133,73 +133,68 @@
             <!-- Our Portfolio Section -->
             <section id="our-portfolio" class="section-py">
               <div class="container">
-                <h2 class="mb-4" data-i18n="Our Projects">Our Projects</h2>
+                <h2 class="mb-4" data-i18n="our_portfolio_title">🌍 What We Do: European projects that build connections, impact, and change</h2>
 
-                <!-- Local Networking -->
-                <h3 class="mt-4" data-i18n="Local Networking and Information Initiatives">1. Local Networking and Information Initiatives</h3>
-                <p data-i18n="Local Networking and Information Initiatives Description">
-                  At Senza Confini, we actively promote awareness and provide vital information to the citizens of La Spezia and the surrounding areas.
+                <p data-i18n="our_portfolio_intro">
+                  Senza Confini APS is not just a youth association: we are a permanent laboratory for European project design, a reference point for those who want to turn ideas into real impact. In recent years, we have developed, implemented, and supported innovative projects in Erasmus+, CERV, ESC, Creative Europe, Horizon Europe, LIFE, Interreg NEXT MED, and Virtual Exchange programmes.
                 </p>
+
+                <p data-i18n="our_portfolio_strength">
+                  Our strength lies in two things: we deeply understand the local context and its needs, and at the same time, we speak the language of Europe. We handle both project design and management, offering professional, reliable, and customized consulting services to third-sector organizations, public administrations, schools, and informal groups.
+                </p>
+
+                <h3 class="mt-4" data-i18n="project_types_title">🎯 The projects we carry out</h3>
+                <p data-i18n="project_types_intro">
+                  We create tailor-made paths for young people, educators, local communities, and professionals, always with an inclusive, innovative, and sustainable approach.
+                </p>
+
+                <h4 class="mt-4" data-i18n="project_examples_title">📌 Here are some examples of projects we’ve carried out:</h4>
                 <ul>
-                  <li data-i18n="Community Outreach">
-                    <strong>Community Outreach:</strong>  
-                    We organize campaigns on pressing issues, such as combating violence against women, raising awareness about public health measures (e.g., anti-COVID hygiene protocols), and more. These campaigns are tailored to reach vulnerable groups, including the elderly, immigrants, and NEETs.
+                  <li data-i18n="project_1">
+                    <strong>KA210-YOU “Tech QUEENS - AI” (Erasmus+ KA2):</strong> Young people from Italy and Luxembourg engaged in an AI literacy training journey through local environmental education activities and an international youth policy conference.
                   </li>
-                  <li data-i18n="Collaborative Networking">
-                    <strong>Collaborative Networking:</strong>  
-                    By involving other local organizations, we build a strong network for exchanging best practices, ensuring a meaningful and sustainable impact.
+                  <li data-i18n="project_2">
+                    <strong>KA152-YOU-BA820889 & KA152-YOU-219A1096 (Erasmus+ Youth Exchanges):</strong> Youth exchanges in La Spezia and across Europe to promote active citizenship, intercultural dialogue, and sustainability, involving 60+ young participants in creative, sporting, and participatory activities.
                   </li>
-                  <li data-i18n="Digital Outreach">
-                    <strong>Digital Outreach:</strong>  
-                    Through our social media platforms, we extend our reach, sharing knowledge and resources with the community and beyond.
+                  <li data-i18n="project_3">
+                    <strong>“Comunità Educanti Umberto I” (Con i Bambini – Social Enterprise):</strong> A €1.3 million project that revolutionized education in a city’s peripheral area, thanks to a network between schools, families, associations, and institutions.
+                    <br />
+                    <a href="#" data-i18n="see_project_link">👉 See the project</a>
+                  </li>
+                  <li data-i18n="project_4">
+                    <strong>KA1 Mobility Projects (2024–2025):</strong> We take part in international training projects for youth workers, promoting non-formal education on mental well-being, inclusion, and digital skills.
+                  </li>
+                  <li data-i18n="project_5">
+                    <strong>KA210-YOU-CD3C7FA9 (Erasmus+ KA2 – 2025):</strong> Currently being launched, this project aims to build a Euro-Mediterranean network of young environmental activists and digital trainers.
                   </li>
                 </ul>
 
-                <!-- Event Creation -->
-                <h3 class="mt-4" data-i18n="Event Creation and Sociocultural Projects">2. Event Creation and Sociocultural Projects</h3>
-                <p data-i18n="Event Creation and Sociocultural Projects Description">
-                  We design and implement events and small-scale sociocultural initiatives to address diverse community needs.
+                <h3 class="mt-4" data-i18n="services_title">🔧 Our consulting services</h3>
+                <p data-i18n="services_intro">
+                  In addition to managing projects directly, we offer professional consulting and support services for public and private organizations:
                 </p>
                 <ul>
-                  <li data-i18n="Cultural and Educational Programs">
-                    <strong>Cultural and Educational Programs:</strong>  
-                    From promoting art, theater, and environmental awareness in schools to fostering an appreciation for local culture, we aim to enrich the lives of young people and the broader community.
-                  </li>
-                  <li data-i18n="Community Dialogues">
-                    <strong>Community Dialogues:</strong>  
-                    We facilitate meetings between local government representatives and civil society actors to address community issues and strengthen civic engagement.
-                  </li>
-                  <li data-i18n="Fundraising and Support Initiatives">
-                    <strong>Fundraising and Support Initiatives:</strong>  
-                    By pooling the skills and resources of our members, we organize fundraisers to support individuals or organizations in need. Often, we secure funding through creative methods such as dinners, bank foundation grants, or municipal contributions.
-                  </li>
+                  <li data-i18n="service_1">Call analysis and opportunity identification</li>
+                  <li data-i18n="service_2">Tailored project writing and revision</li>
+                  <li data-i18n="service_3">Budgeting and financial planning</li>
+                  <li data-i18n="service_4">International partnership building and management</li>
+                  <li data-i18n="service_5">Implementation, dissemination, and reporting</li>
                 </ul>
 
-                <!-- Collaboration -->
-                <h3 class="mt-4" data-i18n="Collaboration in Larger-Scale Projects">3. Collaboration in Larger-Scale Projects</h3>
-                <p data-i18n="Collaboration in Larger-Scale Projects Description">
-                  Our association also operates on a broader level, partnering with influential organizations in La Spezia to drive substantial change.
+                <h3 class="mt-4" data-i18n="cta_title">✉️ Want to design a project with us?</h3>
+                <p data-i18n="cta_text">
+                  Whether you are a municipality, a school, an NGO, or a social enterprise, we can help you build solid, visionary, and fundable projects.
+                  <br />
+                  Get in touch — let’s have a good chat about it!
                 </p>
-                <ul>
-                  <li data-i18n="Strategic Partnerships">
-                    <strong>Strategic Partnerships:</strong>  
-                    Collaborations with established entities, such as Coop. Mondo Aperto and Coop. Lindbergh, enable us to participate in and contribute to more complex, large-scale projects.
-                  </li>
-                </ul>
+
+                <p class="fw-bold" data-i18n="closing_note">
+                  Senza Confini APS – European projects to transform communities. <br />
+                  From local to Europe. And back again.
+                </p>
               </div>
             </section>
             <!-- Our Portfolio Section End -->
-
-            <!-- Closing Note -->
-            <section id="closing-note" class="section-py">
-              <div class="container">
-                <h2 class="mb-4" data-i18n="Closing Note">Closing Note</h2>
-                <p data-i18n="Closing Note Text">
-                  Senza Confini APS is dedicated to empowering youth and fostering community collaboration. Our projects and initiatives continue to inspire change, drive progress, and strengthen bonds across La Spezia and beyond.
-                </p>
-              </div>
-            </section>
-            <!-- Closing Note End -->
           </div>
           <!--/ Content -->
 
