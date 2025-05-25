@@ -167,7 +167,7 @@
                       <p>
                         <strong data-i18n="Costantino Landi">Costantino Landi</strong>
                         <span data-i18n="Costantino Landi Description">
-                          is a project manager at SenzaConfini NGO, a passionate architect of change who believes in the transformative power of education, culture and human connection. Over the past seven years, he has actively shaped the Youth in Action and Erasmus+ landscapes, contributing to over 20 international projects that empower young minds and foster cross-cultural dialogue.
+                          is a project manager at SenzaConfini NGO and a dedicated changemaker who believes in the transformative power of education, culture, and human connection. With over seven years of experience in Youth in Action and Erasmus+, he has contributed to 20+ international projects promoting youth empowerment and intercultural dialogue. As a trainer and facilitator, he integrates non-formal education, social planning, and psychosynthesis to foster skills and self-awareness. His journey includes a year at Rondine Cittadella della Pace, immersed in dialogue, peacebuilding, and youth engagement. Costantino has designed and led projects on social entrepreneurship, psychosynthesis, sustainability, creative arts, and gender equality, collaborating with NGOs, institutions, and grassroots actors. Active in CERV, Erasmus+, ESC, and Creative Europe, he sees projects as ecosystems where individuals become co-creators of meaningful, purpose-driven learning and shared growth.
                         </span>
                       </p>
                       <ul>
