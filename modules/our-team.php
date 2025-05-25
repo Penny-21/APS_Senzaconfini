@@ -194,7 +194,7 @@
                       <p>
                         <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
                         <span data-i18n="Marco Maricchiolo Description">
-                          is a EU Project Manager with a strong passion for the development and management of EU-funded projects. With a solid background in international cooperation, he has acquired skills in activity planning, performance monitoring and risk management. Marco holds a Master's degree in Europlanning, which has enabled him to deepen his knowledge of European project management.
+                          is an EU Project Manager with a strong passion for the development and management of EU-funded projects. With a strong background in international cooperation, he has acquired skills in activity planning, performance monitoring, and risk management. Marco holds a Master's degree in Europlanning, which gave him an in-depth understanding of European project management. Currently, he works for Senza Confini APS, where he is involved in the management and implementation of EU-funded projects, such as Erasmus+ and other European programs. He is motivated to contribute to the success of innovative projects that have a positive impact on European communities, working with multidisciplinary teams to develop initiatives that promote education, solidarity and innovation.
                         </span>
                       </p>
                       <ul>
