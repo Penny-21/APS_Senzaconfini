@@ -221,7 +221,7 @@
                       <p>
                         <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
                         <span data-i18n="Maria Michela Giallaurito Description">
-                          is a professional with solid experience in international affairs and project management. She has worked as EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives.
+                          is a professional with solid experience in international affairs and project management. She has worked as an EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives. Michela also served as Faculty Advisor during UN conferences in New York, guiding young delegates in diplomatic simulations. Her experience also includes a specialization in leadership, with a Master's degree in Leadership for International Relations.
                         </span>
                       </p>
                       <ul>
