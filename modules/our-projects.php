@@ -123,6 +123,7 @@
                     <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Projects">
                       Our Projects
                     </h1>
+                    <p data-i18n="motto">“Building bridges across Europe, one project at a time.”</p>
                   </div>
                 </div>
               </div>
