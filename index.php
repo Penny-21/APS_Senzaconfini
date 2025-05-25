@@ -127,11 +127,16 @@
               </div>
               <!-- Large Card -->
               <div class="card mt-5 mx-auto" style="max-width: 640px; border-radius: 15px; overflow: hidden;">
-                <img
-                  src="assets/img/custom-img/post-4.jpg"
+                <div class="card-header">
+                  <h3 data-i18n="erasmus_description">Erasmus+ for Young Refugees</h3>
+                </div>
+                <div class="card-body">
+                  <img
+                  src="assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg"
                   alt="Featured Project"
                   class="card-img-top object-fit-cover"
                   style="height: 640px;" />
+                </div>
               </div>
               <!-- Large Card End -->
             </section>
