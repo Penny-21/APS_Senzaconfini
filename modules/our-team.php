@@ -102,18 +102,6 @@
               </section>
               <!-- Hero Section End -->
 
-              <!-- Contact Us Section -->
-              <section id="contact-us" class="section-py">
-                <div class="container">
-                  <h2 class="mb-4" data-i18n="Contact Us">Contact Us</h2>
-                  <p>
-                    SenzaconfiniAPS was founded by a group of passionate individuals dedicated to making a positive impact in the community.  
-                    With diverse backgrounds and shared goals, the founders are committed to creating opportunities, fostering collaboration, and inspiring growth.
-                  </p>
-                </div>
-              </section>
-              <!-- Contact Us Section End -->
-
               <!-- Team Members Section -->
               <section id="team-members" class="section-py">
                 <div class="container">
@@ -132,7 +120,7 @@
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
                         <div class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-2.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
+                          <img src="../assets/linkedin/Niccolò_Ichestre-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-primary text-center">
                           <h5 class="card-title mb-0">Niccolò Ichestre</h5>
@@ -159,7 +147,7 @@
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
                         <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-2.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
+                          <img src="../assets/img/front-pages/landing-page/team-member-2.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-info text-center">
                           <h5 class="card-title mb-0">Edoardo Marcuzzi</h5>
@@ -182,8 +170,8 @@
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
-                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-3.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
+                        <div class="bg-label-warning border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/linkedin/Costantino_Landi-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-danger text-center">
                           <h5 class="card-title mb-0">Costantino Landi</h5>
@@ -206,8 +194,8 @@
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
-                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-4.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
+                        <div class="bg-label-success border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/linkedin/Marco_Maricchiolo-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Marco Maricchiolo</h5>
@@ -230,8 +218,8 @@
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
-                        <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-1.png" class="card-img-bottom" style="max-height: 180px; width: auto; position: static;" alt="human image" />
+                        <div class="bg-label-danger border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
+                          <img src="../assets/linkedin/Michela_Giallaurito-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Maria Michela Giallaurito</h5>
