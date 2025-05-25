@@ -128,6 +128,9 @@
                         <div class="card-body border border-top-0 border-label-primary text-center">
                           <h5 class="card-title mb-0">Niccolò Ichestre</h5>
                           <p class="text-body-secondary mb-0">President</p>
+                          <a href="https://www.linkedin.com/in/niccol%C3%B2-ichestre/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -155,6 +158,9 @@
                         <div class="card-body border border-top-0 border-label-info text-center">
                           <h5 class="card-title mb-0">Edoardo Marcuzzi</h5>
                           <p class="text-body-secondary mb-0">Artistic & Communication Manager</p>
+                          <a href="https://www.linkedin.com/in/edoardo-marcuzzi-46a347200/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -182,6 +188,9 @@
                         <div class="card-body border border-top-0 border-label-danger text-center">
                           <h5 class="card-title mb-0">Costantino Landi</h5>
                           <p class="text-body-secondary mb-0">Head Project Manager</p>
+                          <a href="https://www.linkedin.com/in/costantino-landi-3bb88b248/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -209,6 +218,9 @@
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Marco Maricchiolo</h5>
                           <p class="text-body-secondary mb-0">EU Project Manager</p>
+                          <a href="https://www.linkedin.com/in/marco-maricchiolo-7ba67b1bb/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -236,6 +248,9 @@
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Maria Michela Giallaurito</h5>
                           <p class="text-body-secondary mb-0">EU Project Manager</p>
+                          <a href="https://www.linkedin.com/in/maria-michela-giallaurito-a2b0192ab/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          </a>
                         </div>
                       </div>
                     </div>
