@@ -147,11 +147,11 @@
                 <div class="swiper-wrapper">
                   <?php 
                     $slides = [
-                      ["image" => "assets/img/custom-img/post-1.jpg", "descriptions" => ["Description 1A", "Description 1B", "Description 1C"]],
+                      ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Description 1A", "Description 1B", "Description 1C"]],
                       ["image" => "assets/img/custom-img/post-2.jpg", "descriptions" => ["Description 2A", "Description 2B", "Description 2C"]],
                       ["image" => "assets/img/custom-img/post-3.jpg", "descriptions" => ["Description 3A", "Description 3B", "Description 3C"]],
                       ["image" => "assets/img/custom-img/post-4.jpg", "descriptions" => ["Description 4A", "Description 4B", "Description 4C"]],
-                      ["image" => "assets/img/custom-img/post-5.jpg", "descriptions" => ["Description 5A", "Description 5B", "Description 5C"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Description 5A", "Description 5B", "Description 5C"]],
                     ];
 
                     foreach ($slides as $slide) {
