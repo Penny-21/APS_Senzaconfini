@@ -140,7 +140,7 @@
                       <p>
                         <strong data-i18n="Edoardo Marcuzzi">Edoardo Marcuzzi</strong>
                         <span data-i18n="Edoardo Marcuzzi Description">
-                          is a young filmmaker who supports the association ‘Senza Confini APS’ in the management of social media and the digital part of events. His experience in the audiovisual and communication fields makes him a valuable collaborator for the online promotion of the association's activities and projects. Moreover, Edoardo contributes to the creation of visual and video content to raise awareness and involve the public in the social and cultural initiatives promoted by ‘Senza Confini APS’. His creative approach and digital expertise amplify the impact of the association's actions.
+                          is a young filmmaker who supports the association “Senza Confini APS” in social media management and the digital part of events. His experience in the audiovisual and communication field makes him a valuable collaborator in the online promotion of the association's activities and projects. In addition, Edoardo contributes to the creation of visual and video content to raise awareness and engage the public in the social and cultural initiatives promoted by “Senza Confini APS.” His creative approach and digital expertise amplify the impact of the association's actions.
                         </span>
                       </p>
                       <ul>
