@@ -129,27 +129,10 @@
             </section>
             <!-- Hero Section End -->
 
-            <!-- About Us Section -->
-            <section id="about-us-info" class="section-py">
-              <div class="container">
-                <h2 class="mb-4" data-i18n="About Us">About Us</h2>
-                <p data-i18n="About Us Full Text 1">
-                  Senza Confini APS is a youth-driven association where young people take center stage in designing and implementing impactful initiatives.
-                </p>
-                <p data-i18n="About Us Full Text 2">
-                  Our work spans multiple levels, leveraging the diverse skills, knowledge, and passions of our members. Through collaboration with local stakeholders and youth networks, we create opportunities for young people to grow as active citizens and develop valuable expertise in project management and community engagement.
-                </p>
-                <p data-i18n="About Us Full Text 3">
-                  Our commitment is to involve young people from our area in every activity, fostering a thriving network of youth workers who gain hands-on experience while working alongside us. Our efforts can be grouped into three main areas:
-                </p>
-              </div>
-            </section>
-            <!-- About Us Section End -->
-
             <!-- Our Portfolio Section -->
             <section id="our-portfolio" class="section-py">
               <div class="container">
-                <h2 class="mb-4" data-i18n="Our Portfolio">Our Portfolio</h2>
+                <h2 class="mb-4" data-i18n="Our Projects">Our Projects</h2>
 
                 <!-- Local Networking -->
                 <h3 class="mt-4" data-i18n="Local Networking and Information Initiatives">1. Local Networking and Information Initiatives</h3>
