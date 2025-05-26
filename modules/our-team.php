@@ -177,7 +177,7 @@
                         </span>
                       </p>
                       <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
+                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a></li>
                       </ul>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
@@ -207,7 +207,7 @@
                         </span>
                       </p>
                       <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
+                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:marco.senzaconfiniprojects@gmail.com">marco.senzaconfiniprojects@gmail.com</a></li>
                       </ul>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
@@ -237,7 +237,7 @@
                         </span>
                       </p>
                       <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
+                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:michela.senzaconfiniprojects@gmail.com">michela.senzaconfiniprojects@gmail.com</a></li>
                       </ul>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">

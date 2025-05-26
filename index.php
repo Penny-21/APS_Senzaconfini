@@ -155,7 +155,11 @@
                     ];
 
                     foreach ($slides as $slide) {
-                      echo '<div class="swiper-slide" style="background-image: url(\'' . $slide["image"] . '\');">';
+                      $descriptionText = implode("<br>", $slide["descriptions"]);
+                      echo '<div class="swiper-slide" 
+                              style="background-image: url(\'' . $slide["image"] . '\');"
+                              data-image="' . $slide["image"] . '"
+                              data-description="' . htmlspecialchars($descriptionText) . '">';
                       echo '<div class="tooltip-container">';
                       echo '<div class="tooltip-content">';
                       foreach ($slide["descriptions"] as $description) {
@@ -255,6 +259,22 @@
     <div class="drag-target"></div>
 
     <!--/ Layout wrapper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".swiper-slide").forEach(slide => {
+          slide.addEventListener("click", () => {
+            const image = slide.getAttribute("data-image");
+            const description = slide.getAttribute("data-description");
+
+            document.getElementById("modalImage").src = image;
+            document.getElementById("modalDescription").innerHTML = description;
+
+            const modal = new bootstrap.Modal(document.getElementById("slideModal"));
+            modal.show();
+          });
+        });
+      });
+  </script>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/theme.js -->
@@ -329,6 +349,21 @@
     <script src="assets/js/front-page-landing.js"></script>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="slideModal" tabindex="-1" aria-labelledby="slideModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="slideModalLabel">Project Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="Immagine" class="img-fluid mb-3" />
+            <div id="modalDescription"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Page JS -->
   </body>
 </html>
