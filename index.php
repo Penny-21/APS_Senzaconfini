@@ -152,6 +152,9 @@
                       ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Ioannina", "Date: 11/16/2024"]],
                       ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Project: Training Course 4Learning Predeal", "Location: Romania", "Date: March 2025"]],
                       ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Lisbon", "Date: May 2024"]],
+                      ["image" => "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Ioannina", "Date: 11/16/2024"]],
+                      ["image" => "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg", "descriptions" => ["Project: Training Course 4Learning Predeal", "Location: Romania", "Date: March 2025"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Lisbon", "Date: May 2024"]],
                     ];
 
                     foreach ($slides as $slide) {
