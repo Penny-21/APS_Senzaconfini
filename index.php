@@ -149,8 +149,8 @@
                     $slides = [
                       ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Description 1A", "Description 1B", "Description 1C"]],
                       ["image" => "assets/img/custom-img/post-2.jpg", "descriptions" => ["Description 2A", "Description 2B", "Description 2C"]],
-                      ["image" => "assets/img/custom-img/post-3.jpg", "descriptions" => ["Description 3A", "Description 3B", "Description 3C"]],
-                      ["image" => "assets/img/custom-img/post-4.jpg", "descriptions" => ["Description 4A", "Description 4B", "Description 4C"]],
+                      ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Ioannina", "Date: 11/16/2024"]],
+                      ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Description 4A", "Description 4B", "Description 4C"]],
                       ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Description 5A", "Description 5B", "Description 5C"]],
                     ];
 
