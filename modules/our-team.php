@@ -39,6 +39,24 @@
 
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    <style>
+      .email-banner {
+        background-color: #f1f3f4;
+        padding: 10px 15px;
+        border-left: 4px solid #007bff;
+        border-radius: 6px;
+        font-size: 1rem;
+        display: inline-block;
+      }
+      .email-banner a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .email-banner a:hover {
+        text-decoration: underline;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -116,9 +134,9 @@
                             holds a degree in Political Science and International Studies from the University of Genoa. He chairs the association “Senza Confini APS,” founded in 2020 to promote social inclusion and local development. He has gained experience as a European Project Manager, managing Erasmus+, AMIF and CERV projects. He has held internships in Bucharest and Brussels, honing his skills in multicultural settings. He is known for empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
                          </span>
                       </p>
-                      <ul>
-                        <li><strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a></li>
-                      </ul>
+                    <div class="email-banner mb-3">
+                      <strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a>
+                    </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
@@ -146,9 +164,9 @@
                           is a young filmmaker who supports the association “Senza Confini APS” in social media management and the digital part of events. His experience in the audiovisual and communication field makes him a valuable collaborator in the online promotion of the association's activities and projects. In addition, Edoardo contributes to the creation of visual and video content to raise awareness and engage the public in the social and cultural initiatives promoted by “Senza Confini APS.” His creative approach and digital expertise amplify the impact of the association's actions.
                         </span>
                       </p>
-                      <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a></li>
-                      </ul>
+                      <div class="email-banner mb-3">
+                        <strong>Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a>
+                      </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
@@ -176,9 +194,9 @@
                           is a project manager at SenzaConfini NGO and a dedicated changemaker who believes in the transformative power of education, culture, and human connection. With over seven years of experience in Youth in Action and Erasmus+, he has contributed to 20+ international projects promoting youth empowerment and intercultural dialogue. As a trainer and facilitator, he integrates non-formal education, social planning, and psychosynthesis to foster skills and self-awareness. His journey includes a year at Rondine Cittadella della Pace, immersed in dialogue, peacebuilding, and youth engagement. Costantino has designed and led projects on social entrepreneurship, psychosynthesis, sustainability, creative arts, and gender equality, collaborating with NGOs, institutions, and grassroots actors. Active in CERV, Erasmus+, ESC, and Creative Europe, he sees projects as ecosystems where individuals become co-creators of meaningful, purpose-driven learning and shared growth.
                         </span>
                       </p>
-                      <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a></li>
-                      </ul>
+                      <div class="email-banner mb-3">
+                        <strong>Email:</strong> <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a>
+                      </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
@@ -206,9 +224,9 @@
                           is an EU Project Manager with a strong passion for the development and management of EU-funded projects. With a strong background in international cooperation, he has acquired skills in activity planning, performance monitoring, and risk management. Marco holds a Master's degree in Europlanning, which gave him an in-depth understanding of European project management. Currently, he works for Senza Confini APS, where he is involved in the management and implementation of EU-funded projects, such as Erasmus+ and other European programs. He is motivated to contribute to the success of innovative projects that have a positive impact on European communities, working with multidisciplinary teams to develop initiatives that promote education, solidarity and innovation.
                         </span>
                       </p>
-                      <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:marco.senzaconfiniprojects@gmail.com">marco.senzaconfiniprojects@gmail.com</a></li>
-                      </ul>
+                      <div class="email-banner mb-3">
+                        <strong>Email:</strong> <a href="mailto:marco.senzaconfiniprojects@gmail.com">marco.senzaconfiniprojects@gmail.com</a>
+                      </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
@@ -236,9 +254,9 @@
                           is a professional with solid experience in international affairs and project management. She has worked as an EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives. Michela also served as Faculty Advisor during UN conferences in New York, guiding young delegates in diplomatic simulations. Her experience also includes a specialization in leadership, with a Master's degree in Leadership for International Relations.
                         </span>
                       </p>
-                      <ul>
-                        <li><strong data-i18n="Email">Email:</strong> <a href="mailto:michela.senzaconfiniprojects@gmail.com">michela.senzaconfiniprojects@gmail.com</a></li>
-                      </ul>
+                      <div class="email-banner mb-3">
+                        <strong>Email:</strong> <a href="mailto:michela.senzaconfiniprojects@gmail.com">michela.senzaconfiniprojects@gmail.com</a>
+                      </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
