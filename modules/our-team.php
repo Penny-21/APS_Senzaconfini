@@ -171,7 +171,7 @@
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
                         <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/img/front-pages/landing-page/team-member-2.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
+                          <img src="../assets/linkedin/Edoardo_img-removebg-preview.png" class="card-img-bottom" style="max-height: 260px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-info text-center">
                           <h5 class="card-title mb-0">Edoardo Marcuzzi</h5>
@@ -261,7 +261,7 @@
                     <div class="col-md-3 d-flex align-items-stretch">
                       <div class="card mt-3 mt-lg-0 shadow-none w-100">
                         <div class="bg-label-danger border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
-                          <img src="../assets/linkedin/Michela_Giallaurito-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
+                          <img src="../assets/linkedin/Michela_Giallaurito-removebg-preview.png" class="card-img-bottom" style="max-height: 260px; width: auto; position: static;" alt="human image" />
                         </div>
                         <div class="card-body border border-top-0 border-label-success text-center">
                           <h5 class="card-title mb-0">Maria Michela Giallaurito</h5>
