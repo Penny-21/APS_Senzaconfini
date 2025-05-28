@@ -142,16 +142,16 @@
                 <div class="swiper-wrapper">
                   <?php 
                     $slides = [
-                      ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Project: Non formal education Erasmus+", "Location: ", "Date:"]],
-                      ["image" => "assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg", "descriptions" => ["Project: Intercultural Night - Training Course 4Learning Predeal", "Location: ", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Ioannina", "Date: 11/16/2024"]],
-                      ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Project: Training Course 4Learning Predeal", "Location: Romania", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Lisbon", "Date: May 2024"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg", "descriptions" => ["Project: Training Course 4Learning Predeal", "Location: Romania", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg", "descriptions" => ["Project: Intercultural Night - Training Course 4Learning Predeal", "Location: ", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Ioannina", "Date: 11/16/2024"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg", "descriptions" => ["Project: Training Course 4Learning Predeal", "Location: Romania", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Lisbon", "Date: May 2024"]],
+                      ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Project: Non formal education Erasmus+", "Location: Serbia, Avala", "Date: August 2024"]],
+                      ["image" => "assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg", "descriptions" => ["Project: Intercultural Night - Training Course 4Learning", "Location: Romania, Predeal ", "Date: March 2025"]],
+                      ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Greece, Ioannina", "Date: November 2024"]],
+                      ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Project: Training Course 4Learning", "Location: Romania, Predeal", "Date: March 2025"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
+                      ["image" => "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg", "descriptions" => ["Project: Recul Final Conference", "Location: Romania, Bucharest", "Date: March 2023"]],
+                      ["image" => "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg", "descriptions" => ["Project: Erasmus+ Ka2", "Location: Luxembourg, Esch-sur-Alzette", "Date: April 2025"]],
+                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
                     ];
 
                     foreach ($slides as $slide) {

@@ -145,6 +145,9 @@
 
                 <h4 class="mt-4" data-i18n="project_examples_title">📌 Here are some examples of projects we’ve carried out:</h4>
                 <ul>
+                  <li data-i18n="project_0">
+                    <strong>2020-EDU-02341 With the Children _ Educating Communities:</strong> Project “UMBERTIAMO: EDUCATIONAL COMMUNITY UMBERTO I” — social inclusion, active citizenship, community cooperation, creation of an educational community in the Umbertino district of La Spezia
+                  </li>
                   <li data-i18n="project_1">
                     <strong>KA210-YOU “Tech QUEENS - AI” (Erasmus+ KA2):</strong> Young people from Italy and Luxembourg engaged in an AI literacy training journey through local environmental education activities and an international youth policy conference.
                   </li>

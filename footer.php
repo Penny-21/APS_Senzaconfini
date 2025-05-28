@@ -25,7 +25,7 @@
             <ul class="list-unstyled">
               <li><a href="mailto:aps.senzaconfini@gmail.com" class="footer-link d-block pb-2"><strong>Email: </strong>aps.senzaconfini@gmail.com</a></li>
               <li><p class="footer-link d-block pb-2"><strong>Phone Number:</strong> +39 3317741692</p></li>
-              <li><p class="footer-link d-block pb-2"><strong>Address:</strong> Via Bragarina, 34, La Spezia, Italy</p></li>
+              <li><p class="footer-link d-block pb-2"><strong>Address:</strong>Via Oldoini 50, 19122, La Spezia (SP), Italy</p></li>
             </ul>
           </div>
           <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
