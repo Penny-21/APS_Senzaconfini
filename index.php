@@ -236,6 +236,12 @@
               .swiper-slide:hover .tooltip-container {
                 display: block;
               }
+
+              .modal-img {
+                width: 100%;
+                max-height: 70vh;
+                object-fit: contain;
+              }
             </style>
             <!--/ Content -->
 
@@ -358,7 +364,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
           </div>
           <div class="modal-body text-center">
-            <img id="modalImage" src="" alt="Immagine" class="img-fluid mb-3" />
+            <img id="modalImage" src="" alt="Immagine" class="img-fluid modal-img mb-3" />
             <div id="modalDescription"></div>
           </div>
         </div>
