@@ -114,6 +114,16 @@
                     <h1 class="text-primary hero-title display-6 fw-extrabold">
                       APS SenzaConfini
                     </h1>
+
+                    <!-- Nuova Card con Immagine -->
+                    <div class="card mx-auto my-4" style="max-width: 300px;">
+                      <img src="assets/img/custom-img/post-4.jpg" class="card-img-top" alt="APS Image" style="width: 100%; max-width: 300px; margin: 0 auto;">
+                      <!-- Se vuoi anche un testo sotto l’immagine:
+                      <div class="card-body">
+                        <p class="card-text">Testo descrittivo opzionale.</p>
+                      </div>
+                      -->
+                    </div>
                     <div class="landing-hero-btn d-inline-block position-relative">
                       <a href="modules/our-projects.php" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
                     </div>
