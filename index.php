@@ -232,36 +232,136 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="swiper swiper-coverflow swiper-3d" id="swiper-3d-coverflow-effect">
                 <div class="swiper-wrapper">
-                  <?php 
-                    $slides = [
-                      ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Project: Non formal education Erasmus+", "Location: Serbia, Avala", "Date: August 2024"]],
-                      ["image" => "assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg", "descriptions" => ["Project: Intercultural Night - Training Course 4Learning", "Location: Romania, Predeal ", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Greece, Ioannina", "Date: November 2024"]],
-                      ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Project: Training Course 4Learning", "Location: Romania, Predeal", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg", "descriptions" => ["Project: Recul Final Conference", "Location: Romania, Bucharest", "Date: March 2023"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg", "descriptions" => ["Project: Erasmus+ Ka2", "Location: Luxembourg, Esch-sur-Alzette", "Date: April 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
-                    ];
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/Non formal education Erasmus +.jpg');"
+                      data-image="assets/img/custom-img/Non formal education Erasmus +.jpg"
+                      data-description="Project: Non formal education Erasmus+<br>Location: Serbia, Avala<br>Date: August 2024">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Non formal education Erasmus+</p>
+                        <p>Location: Serbia, Avala</p>
+                        <p>Date: August 2024</p>
+                      </div>
+                    </div>
+                  </div>
 
-                    foreach ($slides as $slide) {
-                      $descriptionText = implode("<br>", $slide["descriptions"]);
-                      echo '<div class="swiper-slide" 
-                              style="background-image: url(\'' . $slide["image"] . '\');"
-                              data-image="' . $slide["image"] . '"
-                              data-description="' . htmlspecialchars($descriptionText) . '">';
-                      echo '<div class="tooltip-container">';
-                      echo '<div class="tooltip-content">';
-                      foreach ($slide["descriptions"] as $description) {
-                        echo '<p>' . $description . '</p>';
-                      }
-                      echo '</div>';
-                      echo '</div>';
-                      echo '</div>';
-                    }
-                  ?>
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg');"
+                      data-image="assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg"
+                      data-description="Project: Intercultural Night - Training Course 4Learning<br>Location: Romania, Predeal <br>Date: March 2025">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Intercultural Night - Training Course 4Learning</p>
+                        <p>Location: Romania, Predeal </p>
+                        <p>Date: March 2025</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg');"
+                      data-image="assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg"
+                      data-description="Project: Erasmus+ for Young Refugees<br>Location: Greece, Ioannina<br>Date: November 2024">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Erasmus+ for Young Refugees</p>
+                        <p>Location: Greece, Ioannina</p>
+                        <p>Date: November 2024</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg');"
+                      data-image="assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg"
+                      data-description="Project: Training Course 4Learning<br>Location: Romania, Predeal<br>Date: March 2025">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Training Course 4Learning</p>
+                        <p>Location: Romania, Predeal</p>
+                        <p>Date: March 2025</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg');"
+                      data-image="assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg"
+                      data-description="Project: Conference ESF+<br>Location: Portugal, Lisbon<br>Date: May 2024">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Conference ESF+</p>
+                        <p>Location: Portugal, Lisbon</p>
+                        <p>Date: May 2024</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg');"
+                      data-image="assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg"
+                      data-description="Project: Conference ESF+<br>Location: Portugal, Lisbon<br>Date: March 2025">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Conference ESF+</p>
+                        <p>Location: Portugal, Lisbon</p>
+                        <p>Date: March 2025</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg');"
+                      data-image="assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg"
+                      data-description="Project: Conference ESF+<br>Location: Portugal, Lisbon<br>Date: March 2025">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Conference ESF+</p>
+                        <p>Location: Portugal, Lisbon</p>
+                        <p>Date: March 2025</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg');"
+                      data-image="assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg"
+                      data-description="Project: Recul Final Conference<br>Location: Romania, Bucharest<br>Date: March 2023">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Recul Final Conference</p>
+                        <p>Location: Romania, Bucharest</p>
+                        <p>Date: March 2023</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg');"
+                      data-image="assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg"
+                      data-description="Project: Erasmus+ Ka2<br>Location: Luxembourg, Esch-sur-Alzette<br>Date: April 2025">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Erasmus+ Ka2</p>
+                        <p>Location: Luxembourg, Esch-sur-Alzette</p>
+                        <p>Date: April 2025</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" 
+                      style="background-image: url('assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg');"
+                      data-image="assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg"
+                      data-description="Project: Conference ESF+<br>Location: Portugal, Lisbon<br>Date: May 2024">
+                    <div class="tooltip-container">
+                      <div class="tooltip-content">
+                        <p>Project: Conference ESF+</p>
+                        <p>Location: Portugal, Lisbon</p>
+                        <p>Date: May 2024</p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
