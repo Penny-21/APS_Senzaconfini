@@ -232,36 +232,6 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="swiper swiper-coverflow swiper-3d" id="swiper-3d-coverflow-effect">
                 <div class="swiper-wrapper">
-                  <?php 
-                    $slides = [
-                      ["image" => "assets/img/custom-img/Non formal education Erasmus +.jpg", "descriptions" => ["Project: Non formal education Erasmus+", "Location: Serbia, Avala", "Date: August 2024"]],
-                      ["image" => "assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg", "descriptions" => ["Project: Intercultural Night - Training Course 4Learning", "Location: Romania, Predeal ", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg", "descriptions" => ["Project: Erasmus+ for Young Refugees", "Location: Greece, Ioannina", "Date: November 2024"]],
-                      ["image" => "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg", "descriptions" => ["Project: Training Course 4Learning", "Location: Romania, Predeal", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: March 2025"]],
-                      ["image" => "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg", "descriptions" => ["Project: Recul Final Conference", "Location: Romania, Bucharest", "Date: March 2023"]],
-                      ["image" => "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg", "descriptions" => ["Project: Erasmus+ Ka2", "Location: Luxembourg, Esch-sur-Alzette", "Date: April 2025"]],
-                      ["image" => "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg", "descriptions" => ["Project: Conference ESF+", "Location: Portugal, Lisbon", "Date: May 2024"]],
-                    ];
-
-                    foreach ($slides as $slide) {
-                      $descriptionText = implode("<br>", $slide["descriptions"]);
-                      echo '<div class="swiper-slide" 
-                              style="background-image: url(\'' . $slide["image"] . '\');"
-                              data-image="' . $slide["image"] . '"
-                              data-description="' . htmlspecialchars($descriptionText) . '">';
-                      echo '<div class="tooltip-container">';
-                      echo '<div class="tooltip-content">';
-                      foreach ($slide["descriptions"] as $description) {
-                        echo '<p>' . $description . '</p>';
-                      }
-                      echo '</div>';
-                      echo '</div>';
-                      echo '</div>';
-                    }
-                  ?>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -378,6 +348,137 @@
                   </div>
                 </footer>
             </section>
+            <script>
+              const slides = [
+                {
+                  image: "assets/img/custom-img/Non formal education Erasmus +.jpg",
+                  descriptions: [
+                    "Project: Non formal education Erasmus+",
+                    "Location: Serbia, Avala",
+                    "Date: August 2024"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/Intercultural Night - Training Course 4Learning Predeal March 2025.jpg",
+                  descriptions: [
+                    "Project: Intercultural Night - Training Course 4Learning",
+                    "Location: Romania, Predeal",
+                    "Date: March 2025"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-161-1-2024.jpg",
+                  descriptions: [
+                    "Project: Erasmus+ for Young Refugees",
+                    "Location: Greece, Ioannina",
+                    "Date: November 2024"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/Training Course 4Learning - Predeal (March 2025).jpg",
+                  descriptions: [
+                    "Project: Training Course 4Learning",
+                    "Location: Romania, Predeal",
+                    "Date: March 2025"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg",
+                  descriptions: [
+                    "Project: Conference ESF+",
+                    "Location: Portugal, Lisbon",
+                    "Date: May 2024"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(1).jpg",
+                  descriptions: [
+                    "Project: Conference ESF+",
+                    "Location: Portugal, Lisbon",
+                    "Date: March 2025"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_(2).jpg",
+                  descriptions: [
+                    "Project: Conference ESF+",
+                    "Location: Portugal, Lisbon",
+                    "Date: March 2025"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/March 2023 Bucarest - Recul Final Conference.jpg",
+                  descriptions: [
+                    "Project: Recul Final Conference",
+                    "Location: Romania, Bucharest",
+                    "Date: March 2023"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/Erasmus+ Ka2 Luxembourg April 2025 _Tech Queens Project_.jpg",
+                  descriptions: [
+                    "Project: Erasmus+ Ka2",
+                    "Location: Luxembourg, Esch-sur-Alzette",
+                    "Date: April 2025"
+                  ]
+                },
+                {
+                  image: "assets/img/custom-img/May 2024 Conference ESF+ Lisbon_.jpg",
+                  descriptions: [
+                    "Project: Conference ESF+",
+                    "Location: Portugal, Lisbon",
+                    "Date: May 2024"
+                  ]
+                }
+              ];
+
+              const wrapper = document.getElementById("swiperWrapper");
+
+              slides.forEach(slide => {
+                const descriptionText = slide.descriptions.join("<br>");
+                const slideDiv = document.createElement("div");
+                slideDiv.className = "swiper-slide";
+                slideDiv.style.backgroundImage = `url('${slide.image}')`;
+                slideDiv.setAttribute("data-image", slide.image);
+                slideDiv.setAttribute("data-description", descriptionText);
+
+                const tooltipContainer = document.createElement("div");
+                tooltipContainer.className = "tooltip-container";
+
+                const tooltipContent = document.createElement("div");
+                tooltipContent.className = "tooltip-content";
+
+                slide.descriptions.forEach(text => {
+                  const p = document.createElement("p");
+                  p.textContent = text;
+                  tooltipContent.appendChild(p);
+                });
+
+                tooltipContainer.appendChild(tooltipContent);
+                slideDiv.appendChild(tooltipContainer);
+                wrapper.appendChild(slideDiv);
+              });
+
+              // Initialize Swiper after slides are added
+              document.addEventListener('DOMContentLoaded', () => {
+                new Swiper('#swiper-3d-coverflow-effect', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                });
+              });
+            </script>
             <!-- Font Awesome (CDN) -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
