@@ -69,7 +69,7 @@
         <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
           <div class="container-xxl">
             <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
-              <a href="../index.php" class="app-brand-link">
+              <a href="../index.html" class="app-brand-link">
                 <span class="app-brand-logo demo">
                   <span class="text-primary">
                     <img src="/aps_senza_confini_website/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
@@ -159,25 +159,25 @@
               <ul class="menu-inner py-1">
                 <!-- Page -->
                 <li class="menu-item">
-                  <a href="../index.php" class="menu-link">
+                  <a href="../index.html" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-smart-home"></i>
                     <div data-i18n="Home">Home</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="about-us.php" class="menu-link">
+                  <a href="about-us.html" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-info-octagon"></i>
                     <div data-i18n="About Us">About Us</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="our-team.php" class="menu-link">
+                  <a href="our-team.html" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-users-group"></i>
                     <div data-i18n="Our Team">Our Team</div>
                   </a>
                 </li>
                 <li class="menu-item active">
-                  <a href="our-projects.php" class="menu-link">
+                  <a href="our-projects.html" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-briefcase"></i>
                     <div data-i18n="Our Projects">Our Projects</div>
                   </a>
