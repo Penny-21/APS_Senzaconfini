@@ -69,7 +69,7 @@
         <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
           <div class="container-xxl">
             <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
-              <a href="index.php" class="app-brand-link">
+              <a href="./index.php" class="app-brand-link">
                 <span class="app-brand-logo demo">
                   <span class="text-primary">
                     <img src="/aps_senza_confini_website/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
