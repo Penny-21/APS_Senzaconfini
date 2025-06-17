@@ -3,7 +3,7 @@
 
 <!doctype html>
 <html
-  lang="en"
+  lang="it"
   class="layout-navbar-fixed layout-menu-fixed layout-compact"
   dir="ltr"
   data-skin="default"
@@ -19,25 +19,35 @@
     <title>APS Senza Confini – Erasmus+, Giovani e Inclusione Sociale</title>
     <meta name="google-site-verification" content="awbv8EW4Tt6bIs8EdMas-_5hdm6IN3j5uNmliN4kJF0" />
 
-    
-    <!-- 1. Canonical URL -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://senzaconfiniaps.eu/" />
 
-    <!-- 2. Meta Robots (di default è index,follow ma è buona pratica esplicitarlo) -->
-    <meta name="robots" content="index, follow" />
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <!-- 3. (Opzionale) Link alla sitemap – non obbligatorio, ma leggibile dai browser e da alcuni crawler -->
+    <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-    <meta name="description" content="APS Senza Confini promuove progetti Erasmus+, scambi giovanili, mobilità europea e inclusione sociale per i giovani." />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="APS Senza Confini promuove progetti Erasmus+, scambi giovanili, mobilità europea e inclusione sociale per i giovani. Scopri le nostre attività, il team e i progetti europei." />
     <meta name="author" content="APS Senza Confini" />
-    <meta name="keywords" content="aps senza confini, APS Senza Confini, APS SenzaConfini, aps senza confini, Erasmus Plus, APS, scambi giovanili, associazione giovanile, mobilità europea, inclusione sociale, APS Senza Confini" />
+    <meta name="keywords" content="aps senza confini, APS Senza Confini, Erasmus Plus, scambi giovanili, associazione giovanile, mobilità europea, inclusione sociale, progetti europei, giovani, associazione, Erasmus+, youth exchange, youth work, volontariato, formazione, Europa, La Spezia" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="it_IT" />
     <meta property="og:title" content="APS Senza Confini – Erasmus+, Giovani e Inclusione Sociale" />
-    <meta property="og:description" content="APS Senza Confini promuove progetti Erasmus+, scambi giovanili e inclusione per i giovani europei." />
+    <meta property="og:description" content="APS Senza Confini promuove progetti Erasmus+, scambi giovanili e inclusione per i giovani europei. Unisciti a noi per nuove opportunità!" />
     <meta property="og:image" content="https://senzaconfiniaps.eu/favicon-32x32.png" />
     <meta property="og:url" content="https://senzaconfiniaps.eu/" />
     <meta property="og:type" content="website" />
-    <!-- (Opzionale) Apple touch icon -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="APS Senza Confini – Erasmus+, Giovani e Inclusione Sociale" />
+    <meta name="twitter:description" content="APS Senza Confini promuove progetti Erasmus+, scambi giovanili e inclusione per i giovani europei." />
+    <meta name="twitter:image" content="https://senzaconfiniaps.eu/favicon-32x32.png" />
+
+    <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png" />
 
     <!-- Favicon -->
@@ -66,7 +76,6 @@
     <link rel="stylesheet" href="assets/vendor/css/pages/front-page-landing.css">
 
     <!-- Vendors CSS -->
-
     <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <!-- endbuild -->
@@ -81,13 +90,26 @@
 
     <script src="assets/js/config.js"></script>
 
+    <!-- Organization Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "APS Senza Confini",
       "url": "https://senzaconfiniaps.eu/",
-      "logo": "https://senzaconfiniaps.eu/favicon-32x32.png"
+      "logo": "https://senzaconfiniaps.eu/favicon-32x32.png",
+      "sameAs": [
+        "https://www.facebook.com/senzaconfiniAPS",
+        "https://www.instagram.com/senzaconfiniaps",
+        "https://www.linkedin.com/company/aps-senza-confini"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "email": "aps.senzaconfini@gmail.com",
+        "contactType": "customer support",
+        "telephone": "+39 3317741692",
+        "areaServed": "IT"
+      }]
     }
     </script>
   </head>
