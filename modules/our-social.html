@@ -166,23 +166,7 @@
         padding: 15px;
       }
 
-      .feed-actions {
-        display: flex;
-        gap: 15px;
-        margin-bottom: 10px;
-      }
 
-      .action-btn {
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        transition: color 0.3s ease;
-      }
-
-      .action-btn:hover {
-        color: #007bff;
-      }
 
       .feed-caption {
         font-size: 14px;
@@ -407,17 +391,6 @@
                           <img src="../assets/img/custom-img/Non formal education Erasmus +.jpg" alt="Non formal education Erasmus+">
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Un momento speciale del nostro progetto di educazione non formale Erasmus+ in Serbia! 🇷🇸
                           </p>
@@ -443,17 +416,6 @@
                           </video>
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Guarda questo video dal nostro ultimo workshop! Tanti giovani insieme per crescere e imparare 🎥
                           </p>
@@ -476,17 +438,6 @@
                           <img src="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg" alt="Erasmus+ for Young Refugees">
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Progetto Erasmus+ for Young Refugees a Ioannina, Grecia 🇬🇷 Un'esperienza che ci ha arricchito tutti!
                           </p>
@@ -509,17 +460,6 @@
                           <img src="../assets/img/elements/1.jpg" alt="Team Building">
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Il nostro team al lavoro! Ogni progetto è frutto di impegno, passione e collaborazione 💪
                           </p>
@@ -542,17 +482,6 @@
                           <img src="../assets/img/elements/2.jpg" alt="Workshop">
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Workshop sulla cittadinanza europea attiva. Insieme per costruire un futuro migliore! 🇪🇺
                           </p>
@@ -575,17 +504,6 @@
                           <img src="../assets/img/elements/4.jpg" alt="Networking">
                         </div>
                         <div class="feed-content">
-                          <div class="feed-actions">
-                            <button class="action-btn" title="Mi piace">
-                              <i class="ti tabler-heart"></i>
-                            </button>
-                            <button class="action-btn" title="Commenta">
-                              <i class="ti tabler-message-circle"></i>
-                            </button>
-                            <button class="action-btn" title="Condividi">
-                              <i class="ti tabler-send"></i>
-                            </button>
-                          </div>
                           <p class="feed-caption">
                             Networking europeo: creiamo connessioni che durano nel tempo e costruiscono il futuro! 🤝
                           </p>
@@ -694,15 +612,6 @@
     <script src="../assets/js/front-page-landing.js"></script>
 
     <script>
-      // Aggiungi interattività ai bottoni del feed
-      document.querySelectorAll('.action-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-          if (this.querySelector('.tabler-heart')) {
-            this.style.color = this.style.color === 'red' ? '' : 'red';
-          }
-        });
-      });
-
       // Smooth scroll per i link interni
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
