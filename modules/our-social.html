@@ -131,35 +131,8 @@
         transition: transform 0.3s ease;
       }
 
-      .feed-media video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
       .feed-item:hover .feed-media img {
         transform: scale(1.05);
-      }
-
-      .play-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 24px;
-        transition: background 0.3s ease;
-      }
-
-      .play-overlay:hover {
-        background: rgba(0, 0, 0, 0.8);
       }
 
       .feed-content {
@@ -410,17 +383,14 @@
                           </div>
                         </div>
                         <div class="feed-media">
-                          <video controls poster="../assets/img/custom-img/post-4.jpg">
-                            <source src="../assets/audio/Water_Lily.mp3" type="audio/mp3">
-                            Il tuo browser non supporta l'elemento video.
-                          </video>
+                          <img src="../assets/img/custom-img/post-4.jpg" alt="Workshop APS">
                         </div>
                         <div class="feed-content">
                           <p class="feed-caption">
-                            Guarda questo video dal nostro ultimo workshop! Tanti giovani insieme per crescere e imparare 🎥
+                            Il nostro ultimo workshop! Tanti giovani insieme per crescere e imparare 📚
                           </p>
                           <div class="feed-hashtags">
-                            #Workshop #Giovani #Formazione #APSSenzaConfini #Video
+                            #Workshop #Giovani #Formazione #APSSenzaConfini #Education
                           </div>
                         </div>
                       </div>
@@ -443,72 +413,6 @@
                           </p>
                           <div class="feed-hashtags">
                             #ErasmusPlus #YoungRefugees #Greece #Inclusion #APSSenzaConfini
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Feed Item 4 - Foto -->
-                      <div class="feed-item">
-                        <div class="feed-header">
-                          <img src="../assets/img/avatars/1.png" alt="APS Avatar" class="feed-avatar">
-                          <div>
-                            <p class="feed-username">APS Senza Confini</p>
-                            <p class="feed-date">3 settimane fa</p>
-                          </div>
-                        </div>
-                        <div class="feed-media">
-                          <img src="../assets/img/elements/1.jpg" alt="Team Building">
-                        </div>
-                        <div class="feed-content">
-                          <p class="feed-caption">
-                            Il nostro team al lavoro! Ogni progetto è frutto di impegno, passione e collaborazione 💪
-                          </p>
-                          <div class="feed-hashtags">
-                            #TeamWork #APSSenzaConfini #Passion #Together
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Feed Item 5 - Foto -->
-                      <div class="feed-item">
-                        <div class="feed-header">
-                          <img src="../assets/img/avatars/1.png" alt="APS Avatar" class="feed-avatar">
-                          <div>
-                            <p class="feed-username">APS Senza Confini</p>
-                            <p class="feed-date">1 mese fa</p>
-                          </div>
-                        </div>
-                        <div class="feed-media">
-                          <img src="../assets/img/elements/2.jpg" alt="Workshop">
-                        </div>
-                        <div class="feed-content">
-                          <p class="feed-caption">
-                            Workshop sulla cittadinanza europea attiva. Insieme per costruire un futuro migliore! 🇪🇺
-                          </p>
-                          <div class="feed-hashtags">
-                            #CitadinanzaEuropea #Workshop #Europa #ActiveCitizenship #APSSenzaConfini
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Feed Item 6 - Foto -->
-                      <div class="feed-item">
-                        <div class="feed-header">
-                          <img src="../assets/img/avatars/1.png" alt="APS Avatar" class="feed-avatar">
-                          <div>
-                            <p class="feed-username">APS Senza Confini</p>
-                            <p class="feed-date">1 mese fa</p>
-                          </div>
-                        </div>
-                        <div class="feed-media">
-                          <img src="../assets/img/elements/4.jpg" alt="Networking">
-                        </div>
-                        <div class="feed-content">
-                          <p class="feed-caption">
-                            Networking europeo: creiamo connessioni che durano nel tempo e costruiscono il futuro! 🤝
-                          </p>
-                          <div class="feed-hashtags">
-                            #Networking #Europe #Connections #Future #APSSenzaConfini
                           </div>
                         </div>
                       </div>
@@ -535,50 +439,6 @@
               <!-- Social Feed Section End -->
             </div>
             <!--/ Content -->
-
-            <!-- Footer -->
-            <section id="adv-footer">
-              <footer class="bg-dark">
-                <div class="footer-top py-12">
-                  <div class="container">
-                    <div class="row gy-6">
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="../index" class="app-brand-link">
-                          <span class="app-brand-logo demo">
-                            <img src="../favicon-32x32.png" alt="aps senza confini" style="width: 40px; height: 40px;">
-                          </span>
-                          <span class="app-brand-text demo footer-text fw-bold text-heading">APS Senza Confini</span>
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <h6 class="footer-title mb-6">Link Utili</h6>
-                        <ul class="list-unstyled">
-                          <li class="mb-4">
-                            <a href="../index" class="footer-link">Home</a>
-                          </li>
-                          <li class="mb-4">
-                            <a href="about-us" class="footer-link">About Us</a>
-                          </li>
-                          <li class="mb-4">
-                            <a href="our-team" class="footer-link">Our Team</a>
-                          </li>
-                          <li>
-                            <a href="our-projects" class="footer-link">Our Projects</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-bottom py-3">
-                  <div class="container d-flex flex-wrap justify-content-between align-items-center flex-column flex-sm-row">
-                    <p class="mb-2 mb-sm-0">© 2024 APS Senza Confini. All rights reserved.</p>
-                  </div>
-                </div>
-              </footer>
-            </section>
-            <!-- Font Awesome (CDN) -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
           </div>
           <!--/ Content wrapper -->
         </div>
@@ -610,20 +470,5 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
-
-    <script>
-      // Smooth scroll per i link interni
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    </script>
   </body>
 </html>
