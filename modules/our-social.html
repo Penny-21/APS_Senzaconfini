@@ -207,58 +207,125 @@
         border-bottom-color: #404040;
       }
 
-      /* Video Player Styles */
-      .video-player-section {
-        max-width: 1200px;
+      /* Video Carousel Styles */
+      .video-carousel-section {
+        max-width: 1400px;
         margin: 0 auto;
         padding: 0 20px;
       }
 
-      .video-player-container {
+      .video-carousel-container {
+        position: relative;
         background: #fff;
-        border-radius: 16px;
+        border-radius: 20px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        transition: transform 0.3s ease;
+        padding: 30px;
       }
 
-      .video-player-container:hover {
-        transform: translateY(-4px);
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 100%;
+        pointer-events: none;
+      }
+
+      .carousel-nav-btn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        color: #007bff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .carousel-nav-btn:hover {
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .carousel-prev {
+        left: -25px;
+      }
+
+      .carousel-next {
+        right: -25px;
+      }
+
+      .video-carousel-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        gap: 20px;
+      }
+
+      .video-slide {
+        min-width: 100%;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all 0.5s ease;
+      }
+
+      .video-slide.active {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .video-card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .video-card:hover {
+        transform: translateY(-8px);
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
       }
 
-      .video-player-wrapper {
+      .video-wrapper {
         position: relative;
+        height: 400px;
         background: #000;
+        overflow: hidden;
       }
 
-      .video-player {
+      .carousel-video {
         width: 100%;
-        height: auto;
-        min-height: 400px;
-        display: block;
+        height: 100%;
+        object-fit: cover;
       }
 
-      .play-button-overlay {
+      .video-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.3);
-        transition: opacity 0.3s ease;
-        opacity: 0;
+        transition: all 0.3s ease;
       }
 
-      .video-player:not([controls]) + .play-button-overlay,
-      .play-button-overlay.show {
-        opacity: 1;
+      .video-overlay:hover {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
       }
 
-      .custom-play-btn {
+      .video-play-btn {
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -273,174 +340,186 @@
         justify-content: center;
       }
 
-      .custom-play-btn:hover {
+      .video-play-btn:hover {
         background: #fff;
-        transform: scale(1.1);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        transform: scale(1.15);
+        box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
       }
 
-      .video-info {
-        padding: 20px;
-        background: #fff;
+      .video-duration {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
       }
 
-      .video-title {
+      .video-card-content {
+        padding: 25px;
+      }
+
+      .video-card-title {
         color: #333;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         font-weight: 600;
+        font-size: 1.3rem;
       }
 
-      .video-description {
+      .video-card-description {
         color: #666;
-        margin: 0;
-        line-height: 1.5;
-      }
-
-      .video-playlist {
-        padding: 0 20px;
-      }
-
-      .playlist-title {
-        color: #333;
-        font-weight: 600;
         margin-bottom: 15px;
+        line-height: 1.6;
       }
 
-      .playlist-items {
+      .video-tags {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-wrap: wrap;
+        gap: 8px;
       }
 
-      .playlist-item {
-        display: flex;
-        align-items: center;
-        padding: 12px;
+      .video-tag {
         background: #f8f9fa;
-        border-radius: 8px;
+        color: #007bff;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .video-tag:hover {
+        background: #007bff;
+        color: white;
+      }
+
+      .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 25px;
+      }
+
+      .indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        background: #ddd;
         cursor: pointer;
         transition: all 0.3s ease;
-        border: 2px solid transparent;
       }
 
-      .playlist-item:hover {
-        background: #e9ecef;
-        transform: translateX(4px);
+      .indicator.active {
+        background: #007bff;
+        transform: scale(1.2);
       }
 
-      .playlist-item.active {
-        border-color: #007bff;
-        background: rgba(0, 123, 255, 0.1);
+      .indicator:hover {
+        background: #007bff;
+        opacity: 0.7;
       }
 
-      .playlist-thumbnail {
-        position: relative;
-        width: 80px;
-        height: 45px;
-        border-radius: 6px;
+      .carousel-progress {
+        margin-top: 15px;
+        height: 3px;
+        background: #f0f0f0;
+        border-radius: 2px;
         overflow: hidden;
-        margin-right: 15px;
       }
 
-      .playlist-thumbnail img {
-        width: 100%;
+      .progress-bar {
         height: 100%;
-        object-fit: cover;
+        background: linear-gradient(90deg, #007bff, #0056b3);
+        border-radius: 2px;
+        transition: width 0.5s ease;
+        width: 25%;
       }
 
-      .playlist-play-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-      }
-
-      .playlist-content {
-        flex: 1;
-      }
-
-      .playlist-video-title {
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0 0 4px 0;
-        color: #333;
-      }
-
-      .playlist-video-duration {
-        font-size: 12px;
-        color: #666;
-        margin: 0;
-      }
-
-      /* Dark theme for video player */
-      [data-bs-theme="dark"] .video-player-container {
+      /* Dark theme for video carousel */
+      [data-bs-theme="dark"] .video-carousel-container {
         background: #2b2c40;
       }
 
-      [data-bs-theme="dark"] .video-info {
-        background: #2b2c40;
-      }
-
-      [data-bs-theme="dark"] .video-title {
-        color: #d4d6d8;
-      }
-
-      [data-bs-theme="dark"] .video-description {
-        color: #a8aab0;
-      }
-
-      [data-bs-theme="dark"] .playlist-title {
-        color: #d4d6d8;
-      }
-
-      [data-bs-theme="dark"] .playlist-item {
+      [data-bs-theme="dark"] .video-card {
         background: #404040;
       }
 
-      [data-bs-theme="dark"] .playlist-item:hover {
-        background: #4a4a4a;
-      }
-
-      [data-bs-theme="dark"] .playlist-item.active {
-        background: rgba(0, 123, 255, 0.2);
-      }
-
-      [data-bs-theme="dark"] .playlist-video-title {
+      [data-bs-theme="dark"] .video-card-title {
         color: #d4d6d8;
       }
 
-      [data-bs-theme="dark"] .playlist-video-duration {
+      [data-bs-theme="dark"] .video-card-description {
         color: #a8aab0;
+      }
+
+      [data-bs-theme="dark"] .video-tag {
+        background: #555;
+        color: #d4d6d8;
+      }
+
+      [data-bs-theme="dark"] .video-tag:hover {
+        background: #007bff;
+        color: white;
+      }
+
+      [data-bs-theme="dark"] .indicator {
+        background: #666;
+      }
+
+      [data-bs-theme="dark"] .indicator.active {
+        background: #007bff;
+      }
+
+      [data-bs-theme="dark"] .carousel-progress {
+        background: #555;
       }
 
       /* Responsive */
       @media (max-width: 768px) {
-        .video-player {
-          min-height: 250px;
+        .video-wrapper {
+          height: 250px;
         }
         
-        .custom-play-btn {
+        .video-play-btn {
           width: 60px;
           height: 60px;
           font-size: 24px;
         }
         
-        .playlist-items {
-          gap: 8px;
+        .carousel-nav-btn {
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
         }
         
-        .playlist-thumbnail {
-          width: 60px;
-          height: 34px;
+        .carousel-prev {
+          left: -20px;
+        }
+
+        .carousel-next {
+          right: -20px;
+        }
+        
+        .video-card-content {
+          padding: 20px;
+        }
+        
+        .video-card-title {
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .carousel-nav-btn {
+          display: none;
+        }
+        
+        .video-carousel-container {
+          padding: 20px;
         }
       }
     </style>
@@ -655,87 +734,172 @@
                       </div>
                     </div>
 
-                    <!-- Video Player Section -->
-                    <div class="video-player-section mt-5 mb-5">
+                    <!-- Video Carousel Section -->
+                    <div class="video-carousel-section mt-5 mb-5">
                       <div class="text-center mb-4">
                         <h3 class="display-6 fw-bold text-primary mb-2">I Nostri Video</h3>
-                        <p class="lead text-muted">Guarda i momenti più significativi dei nostri progetti</p>
+                        <p class="lead text-muted">Scorri i momenti più significativi dei nostri progetti</p>
                       </div>
                       
-                      <div class="video-player-container">
-                        <div class="video-player-wrapper">
-                          <video 
-                            id="mainVideoPlayer" 
-                            class="video-player" 
-                            controls 
-                            poster="../assets/img/custom-img/post-4.jpg"
-                            preload="metadata">
-                            <source src="../assets/video/1000110435.mp4" type="video/mp4">
-                            <source src="../assets/video/sample-video.webm" type="video/webm">
-                            Il tuo browser non supporta la riproduzione video.
-                          </video>
-                          
-                          <!-- Custom Play Button Overlay -->
-                          <div class="play-button-overlay" id="playButtonOverlay">
-                            <button class="custom-play-btn" id="customPlayBtn">
-                              <i class="ti tabler-player-play"></i>
-                            </button>
-                          </div>
-                          
-                          <!-- Video Info -->
-                          <div class="video-info">
-                            <h5 class="video-title">Workshop Erasmus+ - Serbia 2024</h5>
-                            <p class="video-description">Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.</p>
-                          </div>
+                      <div class="video-carousel-container">
+                        <!-- Carousel Navigation -->
+                        <div class="carousel-nav">
+                          <button class="carousel-nav-btn carousel-prev" id="carouselPrev">
+                            <i class="ti tabler-chevron-left"></i>
+                          </button>
+                          <button class="carousel-nav-btn carousel-next" id="carouselNext">
+                            <i class="ti tabler-chevron-right"></i>
+                          </button>
                         </div>
-                        
-                        <!-- Video Playlist -->
-                        <div class="video-playlist mt-4">
-                          <h6 class="playlist-title mb-3">Altri Video</h6>
-                          <div class="playlist-items">
-                            <div class="playlist-item active" data-video="../assets/video/sample-video.mp4" data-poster="../assets/img/custom-img/post-4.jpg" data-title="Workshop Erasmus+ - Serbia 2024" data-desc="Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.">
-                              <div class="playlist-thumbnail">
-                                <img src="../assets/img/custom-img/Non formal education Erasmus +.jpg" alt="Video 1">
-                                <div class="playlist-play-icon">
-                                  <i class="ti tabler-player-play"></i>
+
+                        <!-- Video Carousel Track -->
+                        <div class="video-carousel-track" id="videoCarouselTrack">
+                          
+                          <!-- Video Slide 1 -->
+                          <div class="video-slide active" data-slide="0">
+                            <div class="video-card">
+                              <div class="video-wrapper">
+                                <video 
+                                  class="carousel-video" 
+                                  poster="../assets/img/custom-img/post-4.jpg"
+                                  preload="metadata">
+                                  <source src="../assets/video/1000110435.mp4" type="video/mp4">
+                                  Il tuo browser non supporta la riproduzione video.
+                                </video>
+                                
+                                <div class="video-overlay">
+                                  <button class="video-play-btn">
+                                    <i class="ti tabler-player-play"></i>
+                                  </button>
+                                  <div class="video-duration">1:32</div>
                                 </div>
                               </div>
-                              <div class="playlist-content">
-                                <h6 class="playlist-video-title">Workshop Erasmus+ - Serbia</h6>
-                                <p class="playlist-video-duration">1:32</p>
-                              </div>
-                            </div>
-                            
-                            <div class="playlist-item" data-video="../assets/audio/Water_Lily.mp3" data-poster="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg" data-title="Progetto Rifugiati - Grecia 2024" data-desc="Le testimonianze e i momenti più toccanti del progetto Erasmus+ for Young Refugees in Grecia.">
-                              <div class="playlist-thumbnail">
-                                <img src="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg" alt="Video 2">
-                                <div class="playlist-play-icon">
-                                  <i class="ti tabler-player-play"></i>
+                              
+                              <div class="video-card-content">
+                                <h5 class="video-card-title">Workshop Erasmus+ - Serbia 2024</h5>
+                                <p class="video-card-description">Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.</p>
+                                <div class="video-tags">
+                                  <span class="video-tag">#ErasmusPlus</span>
+                                  <span class="video-tag">#Serbia</span>
+                                  <span class="video-tag">#Workshop</span>
                                 </div>
-                              </div>
-                              <div class="playlist-content">
-                                <h6 class="playlist-video-title">Progetto Rifugiati - Grecia</h6>
-                                <p class="playlist-video-duration">5:20</p>
-                              </div>
-                            </div>
-                            
-                            <div class="playlist-item" data-video="../assets/video/sample-video2.mp4" data-poster="../assets/img/elements/1.jpg" data-title="Team Building APS 2024" data-desc="I momenti di crescita e collaborazione del nostro team durante le attività formative.">
-                              <div class="playlist-thumbnail">
-                                <img src="../assets/img/elements/1.jpg" alt="Video 3">
-                                <div class="playlist-play-icon">
-                                  <i class="ti tabler-player-play"></i>
-                                </div>
-                              </div>
-                              <div class="playlist-content">
-                                <h6 class="playlist-video-title">Team Building APS</h6>
-                                <p class="playlist-video-duration">4:12</p>
                               </div>
                             </div>
                           </div>
+
+                          <!-- Video Slide 2 -->
+                          <div class="video-slide" data-slide="1">
+                            <div class="video-card">
+                              <div class="video-wrapper">
+                                <video 
+                                  class="carousel-video" 
+                                  poster="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg"
+                                  preload="metadata">
+                                  <source src="../assets/audio/Water_Lily.mp3" type="audio/mp3">
+                                  Il tuo browser non supporta la riproduzione video.
+                                </video>
+                                
+                                <div class="video-overlay">
+                                  <button class="video-play-btn">
+                                    <i class="ti tabler-player-play"></i>
+                                  </button>
+                                  <div class="video-duration">5:20</div>
+                                </div>
+                              </div>
+                              
+                              <div class="video-card-content">
+                                <h5 class="video-card-title">Progetto Rifugiati - Grecia 2024</h5>
+                                <p class="video-card-description">Le testimonianze e i momenti più toccanti del progetto Erasmus+ for Young Refugees in Grecia.</p>
+                                <div class="video-tags">
+                                  <span class="video-tag">#Refugees</span>
+                                  <span class="video-tag">#Greece</span>
+                                  <span class="video-tag">#Inclusion</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Video Slide 3 -->
+                          <div class="video-slide" data-slide="2">
+                            <div class="video-card">
+                              <div class="video-wrapper">
+                                <video 
+                                  class="carousel-video" 
+                                  poster="../assets/img/elements/1.jpg"
+                                  preload="metadata">
+                                  <source src="../assets/video/sample-video2.mp4" type="video/mp4">
+                                  Il tuo browser non supporta la riproduzione video.
+                                </video>
+                                
+                                <div class="video-overlay">
+                                  <button class="video-play-btn">
+                                    <i class="ti tabler-player-play"></i>
+                                  </button>
+                                  <div class="video-duration">4:12</div>
+                                </div>
+                              </div>
+                              
+                              <div class="video-card-content">
+                                <h5 class="video-card-title">Team Building APS 2024</h5>
+                                <p class="video-card-description">I momenti di crescita e collaborazione del nostro team durante le attività formative.</p>
+                                <div class="video-tags">
+                                  <span class="video-tag">#TeamBuilding</span>
+                                  <span class="video-tag">#APS</span>
+                                  <span class="video-tag">#Growth</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Video Slide 4 -->
+                          <div class="video-slide" data-slide="3">
+                            <div class="video-card">
+                              <div class="video-wrapper">
+                                <video 
+                                  class="carousel-video" 
+                                  poster="../assets/img/custom-img/Non formal education Erasmus +.jpg"
+                                  preload="metadata">
+                                  <source src="../assets/video/sample-video3.mp4" type="video/mp4">
+                                  Il tuo browser non supporta la riproduzione video.
+                                </video>
+                                
+                                <div class="video-overlay">
+                                  <button class="video-play-btn">
+                                    <i class="ti tabler-player-play"></i>
+                                  </button>
+                                  <div class="video-duration">3:45</div>
+                                </div>
+                              </div>
+                              
+                              <div class="video-card-content">
+                                <h5 class="video-card-title">Educazione Non Formale</h5>
+                                <p class="video-card-description">L'importanza dell'educazione non formale nei progetti di scambio giovanile europeo.</p>
+                                <div class="video-tags">
+                                  <span class="video-tag">#Education</span>
+                                  <span class="video-tag">#Europe</span>
+                                  <span class="video-tag">#Youth</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                          <button class="indicator active" data-slide="0"></button>
+                          <button class="indicator" data-slide="1"></button>
+                          <button class="indicator" data-slide="2"></button>
+                          <button class="indicator" data-slide="3"></button>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="carousel-progress">
+                          <div class="progress-bar" id="carouselProgress"></div>
                         </div>
                       </div>
                     </div>
-                    <!-- End Video Player Section -->
+                    <!-- End Video Carousel Section -->
 
                     <!-- Call to Action -->
                     <div class="text-center mt-5">
@@ -826,125 +990,226 @@
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
 
-    <!-- Video Player JavaScript -->
+    <!-- Video Carousel JavaScript -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const videoPlayer = document.getElementById('mainVideoPlayer');
-        const playButtonOverlay = document.getElementById('playButtonOverlay');
-        const customPlayBtn = document.getElementById('customPlayBtn');
-        const videoTitle = document.querySelector('.video-title');
-        const videoDescription = document.querySelector('.video-description');
-        const playlistItems = document.querySelectorAll('.playlist-item');
+        const carouselTrack = document.getElementById('videoCarouselTrack');
+        const prevBtn = document.getElementById('carouselPrev');
+        const nextBtn = document.getElementById('carouselNext');
+        const indicators = document.querySelectorAll('.indicator');
+        const progressBar = document.getElementById('carouselProgress');
+        const videoSlides = document.querySelectorAll('.video-slide');
+        const playButtons = document.querySelectorAll('.video-play-btn');
+        
+        let currentSlide = 0;
+        const totalSlides = videoSlides.length;
+        let isAutoPlaying = true;
+        let autoPlayInterval;
 
-        // Custom play button functionality
-        if (customPlayBtn) {
-          customPlayBtn.addEventListener('click', function() {
-            if (videoPlayer.paused) {
-              videoPlayer.play();
-              playButtonOverlay.classList.remove('show');
-            } else {
-              videoPlayer.pause();
-              playButtonOverlay.classList.add('show');
-            }
+        // Initialize carousel
+        function initCarousel() {
+          showSlide(0);
+          startAutoPlay();
+          
+          // Add event listeners to play buttons
+          playButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+              const video = btn.closest('.video-slide').querySelector('.carousel-video');
+              playVideo(video);
+            });
           });
         }
 
-        // Show/hide custom controls
-        videoPlayer.addEventListener('play', function() {
-          playButtonOverlay.classList.remove('show');
-        });
-
-        videoPlayer.addEventListener('pause', function() {
-          playButtonOverlay.classList.add('show');
-        });
-
-        videoPlayer.addEventListener('ended', function() {
-          playButtonOverlay.classList.add('show');
-        });
-
-        // Playlist functionality
-        playlistItems.forEach(function(item, index) {
-          item.addEventListener('click', function() {
-            // Remove active class from all items
-            playlistItems.forEach(function(playlistItem) {
-              playlistItem.classList.remove('active');
-            });
-
-            // Add active class to clicked item
-            item.classList.add('active');
-
-            // Get video data
-            const videoSrc = item.getAttribute('data-video');
-            const posterSrc = item.getAttribute('data-poster');
-            const title = item.getAttribute('data-title');
-            const description = item.getAttribute('data-desc');
-
-            // Update video player
-            if (videoSrc) {
-              videoPlayer.src = videoSrc;
-              videoPlayer.poster = posterSrc;
-              videoPlayer.load(); // Reload the video element
+        // Show specific slide
+        function showSlide(index) {
+          // Update slides
+          videoSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+              slide.classList.add('active');
             }
+          });
 
-            // Update video info
-            if (title) videoTitle.textContent = title;
-            if (description) videoDescription.textContent = description;
+          // Update indicators
+          indicators.forEach((indicator, i) => {
+            indicator.classList.remove('active');
+            if (i === index) {
+              indicator.classList.add('active');
+            }
+          });
 
-            // Show play overlay
-            playButtonOverlay.classList.add('show');
+          // Update progress bar
+          const progressWidth = ((index + 1) / totalSlides) * 100;
+          progressBar.style.width = progressWidth + '%';
+
+          // Update track position (for smooth animation effect)
+          const translateX = -index * 100;
+          carouselTrack.style.transform = `translateX(${translateX / totalSlides}%)`;
+
+          currentSlide = index;
+        }
+
+        // Next slide
+        function nextSlide() {
+          const next = (currentSlide + 1) % totalSlides;
+          showSlide(next);
+        }
+
+        // Previous slide
+        function prevSlide() {
+          const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide(prev);
+        }
+
+        // Auto play functionality
+        function startAutoPlay() {
+          if (autoPlayInterval) clearInterval(autoPlayInterval);
+          
+          autoPlayInterval = setInterval(() => {
+            if (isAutoPlaying) {
+              nextSlide();
+            }
+          }, 5000); // Change slide every 5 seconds
+        }
+
+        function stopAutoPlay() {
+          if (autoPlayInterval) {
+            clearInterval(autoPlayInterval);
+          }
+        }
+
+        // Play video
+        function playVideo(video) {
+          // Pause all other videos
+          document.querySelectorAll('.carousel-video').forEach(v => {
+            if (v !== video) {
+              v.pause();
+            }
+          });
+
+          // Toggle current video
+          if (video.paused) {
+            video.play();
+            isAutoPlaying = false;
+            stopAutoPlay();
+          } else {
+            video.pause();
+            isAutoPlaying = true;
+            startAutoPlay();
+          }
+        }
+
+        // Event listeners
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            prevSlide();
+            isAutoPlaying = false;
+            stopAutoPlay();
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            nextSlide();
+            isAutoPlaying = false;
+            stopAutoPlay();
+          });
+        }
+
+        // Indicator clicks
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => {
+            showSlide(index);
+            isAutoPlaying = false;
+            stopAutoPlay();
           });
         });
 
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
-          if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            e.preventDefault();
-            if (videoPlayer.paused) {
-              videoPlayer.play();
-            } else {
-              videoPlayer.pause();
+          if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            switch(e.key) {
+              case 'ArrowLeft':
+                e.preventDefault();
+                prevSlide();
+                isAutoPlaying = false;
+                stopAutoPlay();
+                break;
+              case 'ArrowRight':
+                e.preventDefault();
+                nextSlide();
+                isAutoPlaying = false;
+                stopAutoPlay();
+                break;
+              case ' ':
+                e.preventDefault();
+                const currentVideo = videoSlides[currentSlide].querySelector('.carousel-video');
+                playVideo(currentVideo);
+                break;
             }
           }
         });
 
-        // Volume control with mouse wheel (when hovering over video)
-        videoPlayer.addEventListener('wheel', function(e) {
-          e.preventDefault();
-          const volumeChange = e.deltaY < 0 ? 0.1 : -0.1;
-          const newVolume = Math.max(0, Math.min(1, videoPlayer.volume + volumeChange));
-          videoPlayer.volume = newVolume;
+        // Touch/Swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carouselTrack.addEventListener('touchstart', function(e) {
+          touchStartX = e.touches[0].clientX;
         });
 
-        // Double click to toggle fullscreen
-        videoPlayer.addEventListener('dblclick', function() {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          } else {
-            videoPlayer.requestFullscreen();
+        carouselTrack.addEventListener('touchend', function(e) {
+          touchEndX = e.changedTouches[0].clientX;
+          handleSwipe();
+        });
+
+        function handleSwipe() {
+          const swipeThreshold = 50;
+          const diff = touchStartX - touchEndX;
+
+          if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+              // Swipe left - next slide
+              nextSlide();
+            } else {
+              // Swipe right - previous slide
+              prevSlide();
+            }
+            isAutoPlaying = false;
+            stopAutoPlay();
           }
-        });
-
-        // Progress bar click to seek
-        videoPlayer.addEventListener('click', function(e) {
-          if (e.target === videoPlayer) {
-            const rect = videoPlayer.getBoundingClientRect();
-            const pos = (e.clientX - rect.left) / rect.width;
-            videoPlayer.currentTime = pos * videoPlayer.duration;
-          }
-        });
-
-        // Initialize first video as active
-        if (playlistItems.length > 0) {
-          playlistItems[0].classList.add('active');
-          playButtonOverlay.classList.add('show');
         }
 
-        // Smooth scroll for video player section
-        const videoSection = document.querySelector('.video-player-section');
-        if (videoSection) {
-          // Auto scroll to video when page loads (optional)
-          // videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Pause autoplay when hovering over carousel
+        const carouselContainer = document.querySelector('.video-carousel-container');
+        if (carouselContainer) {
+          carouselContainer.addEventListener('mouseenter', () => {
+            isAutoPlaying = false;
+            stopAutoPlay();
+          });
+
+          carouselContainer.addEventListener('mouseleave', () => {
+            isAutoPlaying = true;
+            startAutoPlay();
+          });
         }
+
+        // Video event listeners
+        document.querySelectorAll('.carousel-video').forEach(video => {
+          video.addEventListener('ended', () => {
+            isAutoPlaying = true;
+            startAutoPlay();
+          });
+
+          video.addEventListener('pause', () => {
+            if (isAutoPlaying) {
+              startAutoPlay();
+            }
+          });
+        });
+
+        // Initialize carousel
+        initCarousel();
       });
     </script>
   </body>
