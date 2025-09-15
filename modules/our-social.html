@@ -207,319 +207,131 @@
         border-bottom-color: #404040;
       }
 
-      /* Video Carousel Styles */
-      .video-carousel-section {
-        max-width: 1400px;
+      /* Video Section Styles */
+      .video-section {
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
       }
 
-      .video-carousel-container {
-        position: relative;
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .video-block {
         background: #fff;
-        border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        padding: 30px;
-      }
-
-      .carousel-nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        width: 100%;
-        pointer-events: none;
-      }
-
-      .carousel-nav-btn {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        color: #007bff;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        pointer-events: auto;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      }
-
-      .carousel-nav-btn:hover {
-        background: #fff;
-        transform: scale(1.1);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      .carousel-prev {
-        left: -25px;
-      }
-
-      .carousel-next {
-        right: -25px;
-      }
-
-      .video-carousel-track {
-        display: flex;
-        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        gap: 20px;
-      }
-
-      .video-slide {
-        min-width: 100%;
-        opacity: 0;
-        transform: scale(0.95);
-        transition: all 0.5s ease;
-      }
-
-      .video-slide.active {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      .video-card {
-        background: #fff;
-        border-radius: 16px;
+        border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
       }
 
-      .video-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      .video-block:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
       }
 
-      .video-wrapper {
+      .video-container {
         position: relative;
-        height: 400px;
+        width: 100%;
         background: #000;
-        overflow: hidden;
       }
 
-      .carousel-video {
+      .video-container video {
         width: 100%;
-        height: 100%;
+        height: 250px;
         object-fit: cover;
+        display: block;
       }
 
-      .video-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
+      .video-info {
+        padding: 20px;
       }
 
-      .video-overlay:hover {
-        background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-      }
-
-      .video-play-btn {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        color: #007bff;
-        font-size: 32px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .video-play-btn:hover {
-        background: #fff;
-        transform: scale(1.15);
-        box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
-      }
-
-      .video-duration {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 6px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: 500;
-      }
-
-      .video-card-content {
-        padding: 25px;
-      }
-
-      .video-card-title {
+      .video-title {
         color: #333;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
 
-      .video-card-description {
+      .video-description {
         color: #666;
         margin-bottom: 15px;
-        line-height: 1.6;
+        line-height: 1.5;
+        font-size: 14px;
       }
 
       .video-tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 6px;
       }
 
-      .video-tag {
+      .tag {
         background: #f8f9fa;
         color: #007bff;
-        padding: 4px 12px;
-        border-radius: 15px;
-        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 11px;
         font-weight: 500;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
       }
 
-      .video-tag:hover {
+      .tag:hover {
         background: #007bff;
         color: white;
       }
 
-      .carousel-indicators {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        margin-top: 25px;
-      }
-
-      .indicator {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        border: none;
-        background: #ddd;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .indicator.active {
-        background: #007bff;
-        transform: scale(1.2);
-      }
-
-      .indicator:hover {
-        background: #007bff;
-        opacity: 0.7;
-      }
-
-      .carousel-progress {
-        margin-top: 15px;
-        height: 3px;
-        background: #f0f0f0;
-        border-radius: 2px;
-        overflow: hidden;
-      }
-
-      .progress-bar {
-        height: 100%;
-        background: linear-gradient(90deg, #007bff, #0056b3);
-        border-radius: 2px;
-        transition: width 0.5s ease;
-        width: 25%;
-      }
-
-      /* Dark theme for video carousel */
-      [data-bs-theme="dark"] .video-carousel-container {
+      /* Dark theme support */
+      [data-bs-theme="dark"] .video-block {
         background: #2b2c40;
       }
 
-      [data-bs-theme="dark"] .video-card {
-        background: #404040;
-      }
-
-      [data-bs-theme="dark"] .video-card-title {
+      [data-bs-theme="dark"] .video-title {
         color: #d4d6d8;
       }
 
-      [data-bs-theme="dark"] .video-card-description {
+      [data-bs-theme="dark"] .video-description {
         color: #a8aab0;
       }
 
-      [data-bs-theme="dark"] .video-tag {
-        background: #555;
+      [data-bs-theme="dark"] .tag {
+        background: #404040;
         color: #d4d6d8;
       }
 
-      [data-bs-theme="dark"] .video-tag:hover {
+      [data-bs-theme="dark"] .tag:hover {
         background: #007bff;
         color: white;
-      }
-
-      [data-bs-theme="dark"] .indicator {
-        background: #666;
-      }
-
-      [data-bs-theme="dark"] .indicator.active {
-        background: #007bff;
-      }
-
-      [data-bs-theme="dark"] .carousel-progress {
-        background: #555;
       }
 
       /* Responsive */
       @media (max-width: 768px) {
-        .video-wrapper {
-          height: 250px;
+        .video-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
         }
         
-        .video-play-btn {
-          width: 60px;
-          height: 60px;
-          font-size: 24px;
+        .video-container video {
+          height: 200px;
         }
         
-        .carousel-nav-btn {
-          width: 40px;
-          height: 40px;
-          font-size: 16px;
-        }
-        
-        .carousel-prev {
-          left: -20px;
-        }
-
-        .carousel-next {
-          right: -20px;
-        }
-        
-        .video-card-content {
-          padding: 20px;
-        }
-        
-        .video-card-title {
-          font-size: 1.1rem;
+        .video-info {
+          padding: 15px;
         }
       }
 
       @media (max-width: 480px) {
-        .carousel-nav-btn {
-          display: none;
+        .video-section {
+          padding: 0 15px;
         }
         
-        .video-carousel-container {
-          padding: 20px;
+        .video-container video {
+          height: 180px;
         }
       }
     </style>
@@ -734,172 +546,73 @@
                       </div>
                     </div>
 
-                    <!-- Video Carousel Section -->
-                    <div class="video-carousel-section mt-5 mb-5">
+                    <!-- Video Section -->
+                    <div class="video-section mt-5 mb-5">
                       <div class="text-center mb-4">
                         <h3 class="display-6 fw-bold text-primary mb-2">I Nostri Video</h3>
-                        <p class="lead text-muted">Scorri i momenti più significativi dei nostri progetti</p>
+                        <p class="lead text-muted">Guarda i momenti più significativi dei nostri progetti</p>
                       </div>
                       
-                      <div class="video-carousel-container">
-                        <!-- Carousel Navigation -->
-                        <div class="carousel-nav">
-                          <button class="carousel-nav-btn carousel-prev" id="carouselPrev">
-                            <i class="ti tabler-chevron-left"></i>
-                          </button>
-                          <button class="carousel-nav-btn carousel-next" id="carouselNext">
-                            <i class="ti tabler-chevron-right"></i>
-                          </button>
+                      <div class="video-grid">
+                        <!-- Video 1 -->
+                        <div class="video-block">
+                          <div class="video-container">
+                            <video controls preload="metadata" poster="../assets/img/custom-img/post-4.jpg">
+                              <source src="../assets/video/1000110435.mp4" type="video/mp4">
+                              Il tuo browser non supporta la riproduzione video.
+                            </video>
+                          </div>
+                          <div class="video-info">
+                            <h5 class="video-title">Workshop Erasmus+ - Serbia 2024</h5>
+                            <p class="video-description">Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.</p>
+                            <div class="video-tags">
+                              <span class="tag">#ErasmusPlus</span>
+                              <span class="tag">#Serbia</span>
+                              <span class="tag">#Workshop</span>
+                            </div>
+                          </div>
                         </div>
 
-                        <!-- Video Carousel Track -->
-                        <div class="video-carousel-track" id="videoCarouselTrack">
-                          
-                          <!-- Video Slide 1 -->
-                          <div class="video-slide active" data-slide="0">
-                            <div class="video-card">
-                              <div class="video-wrapper">
-                                <video 
-                                  class="carousel-video" 
-                                  poster="../assets/img/custom-img/post-4.jpg"
-                                  preload="metadata">
-                                  <source src="../assets/video/1000110435.mp4" type="video/mp4">
-                                  Il tuo browser non supporta la riproduzione video.
-                                </video>
-                                
-                                <div class="video-overlay">
-                                  <button class="video-play-btn">
-                                    <i class="ti tabler-player-play"></i>
-                                  </button>
-                                  <div class="video-duration">1:32</div>
-                                </div>
-                              </div>
-                              
-                              <div class="video-card-content">
-                                <h5 class="video-card-title">Workshop Erasmus+ - Serbia 2024</h5>
-                                <p class="video-card-description">Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.</p>
-                                <div class="video-tags">
-                                  <span class="video-tag">#ErasmusPlus</span>
-                                  <span class="video-tag">#Serbia</span>
-                                  <span class="video-tag">#Workshop</span>
-                                </div>
-                              </div>
+                        <!-- Video 2 -->
+                        <div class="video-block">
+                          <div class="video-container">
+                            <video controls preload="metadata" poster="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg">
+                              <source src="../assets/audio/Water_Lily.mp3" type="audio/mp3">
+                              Il tuo browser non supporta la riproduzione video.
+                            </video>
+                          </div>
+                          <div class="video-info">
+                            <h5 class="video-title">Progetto Rifugiati - Grecia 2024</h5>
+                            <p class="video-description">Le testimonianze e i momenti più toccanti del progetto Erasmus+ for Young Refugees in Grecia.</p>
+                            <div class="video-tags">
+                              <span class="tag">#Refugees</span>
+                              <span class="tag">#Greece</span>
+                              <span class="tag">#Inclusion</span>
                             </div>
                           </div>
-
-                          <!-- Video Slide 2 -->
-                          <div class="video-slide" data-slide="1">
-                            <div class="video-card">
-                              <div class="video-wrapper">
-                                <video 
-                                  class="carousel-video" 
-                                  poster="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg"
-                                  preload="metadata">
-                                  <source src="../assets/audio/Water_Lily.mp3" type="audio/mp3">
-                                  Il tuo browser non supporta la riproduzione video.
-                                </video>
-                                
-                                <div class="video-overlay">
-                                  <button class="video-play-btn">
-                                    <i class="ti tabler-player-play"></i>
-                                  </button>
-                                  <div class="video-duration">5:20</div>
-                                </div>
-                              </div>
-                              
-                              <div class="video-card-content">
-                                <h5 class="video-card-title">Progetto Rifugiati - Grecia 2024</h5>
-                                <p class="video-card-description">Le testimonianze e i momenti più toccanti del progetto Erasmus+ for Young Refugees in Grecia.</p>
-                                <div class="video-tags">
-                                  <span class="video-tag">#Refugees</span>
-                                  <span class="video-tag">#Greece</span>
-                                  <span class="video-tag">#Inclusion</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Video Slide 3 -->
-                          <div class="video-slide" data-slide="2">
-                            <div class="video-card">
-                              <div class="video-wrapper">
-                                <video 
-                                  class="carousel-video" 
-                                  poster="../assets/img/elements/1.jpg"
-                                  preload="metadata">
-                                  <source src="../assets/video/sample-video2.mp4" type="video/mp4">
-                                  Il tuo browser non supporta la riproduzione video.
-                                </video>
-                                
-                                <div class="video-overlay">
-                                  <button class="video-play-btn">
-                                    <i class="ti tabler-player-play"></i>
-                                  </button>
-                                  <div class="video-duration">4:12</div>
-                                </div>
-                              </div>
-                              
-                              <div class="video-card-content">
-                                <h5 class="video-card-title">Team Building APS 2024</h5>
-                                <p class="video-card-description">I momenti di crescita e collaborazione del nostro team durante le attività formative.</p>
-                                <div class="video-tags">
-                                  <span class="video-tag">#TeamBuilding</span>
-                                  <span class="video-tag">#APS</span>
-                                  <span class="video-tag">#Growth</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Video Slide 4 -->
-                          <div class="video-slide" data-slide="3">
-                            <div class="video-card">
-                              <div class="video-wrapper">
-                                <video 
-                                  class="carousel-video" 
-                                  poster="../assets/img/custom-img/Non formal education Erasmus +.jpg"
-                                  preload="metadata">
-                                  <source src="../assets/video/sample-video3.mp4" type="video/mp4">
-                                  Il tuo browser non supporta la riproduzione video.
-                                </video>
-                                
-                                <div class="video-overlay">
-                                  <button class="video-play-btn">
-                                    <i class="ti tabler-player-play"></i>
-                                  </button>
-                                  <div class="video-duration">3:45</div>
-                                </div>
-                              </div>
-                              
-                              <div class="video-card-content">
-                                <h5 class="video-card-title">Educazione Non Formale</h5>
-                                <p class="video-card-description">L'importanza dell'educazione non formale nei progetti di scambio giovanile europeo.</p>
-                                <div class="video-tags">
-                                  <span class="video-tag">#Education</span>
-                                  <span class="video-tag">#Europe</span>
-                                  <span class="video-tag">#Youth</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div>
 
-                        <!-- Carousel Indicators -->
-                        <div class="carousel-indicators">
-                          <button class="indicator active" data-slide="0"></button>
-                          <button class="indicator" data-slide="1"></button>
-                          <button class="indicator" data-slide="2"></button>
-                          <button class="indicator" data-slide="3"></button>
-                        </div>
-
-                        <!-- Progress Bar -->
-                        <div class="carousel-progress">
-                          <div class="progress-bar" id="carouselProgress"></div>
+                        <!-- Video 3 -->
+                        <div class="video-block">
+                          <div class="video-container">
+                            <video controls preload="metadata" poster="../assets/img/elements/1.jpg">
+                              <source src="../assets/video/sample-video.mp4" type="video/mp4">
+                              Il tuo browser non supporta la riproduzione video.
+                            </video>
+                          </div>
+                          <div class="video-info">
+                            <h5 class="video-title">Team Building APS 2024</h5>
+                            <p class="video-description">I momenti di crescita e collaborazione del nostro team durante le attività formative.</p>
+                            <div class="video-tags">
+                              <span class="tag">#TeamBuilding</span>
+                              <span class="tag">#APS</span>
+                              <span class="tag">#Growth</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <!-- End Video Carousel Section -->
+                    <!-- End Video Section -->
 
                     <!-- Call to Action -->
                     <div class="text-center mt-5">
@@ -990,226 +703,26 @@
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
 
-    <!-- Video Carousel JavaScript -->
+    <!-- Simple Video JavaScript -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const carouselTrack = document.getElementById('videoCarouselTrack');
-        const prevBtn = document.getElementById('carouselPrev');
-        const nextBtn = document.getElementById('carouselNext');
-        const indicators = document.querySelectorAll('.indicator');
-        const progressBar = document.getElementById('carouselProgress');
-        const videoSlides = document.querySelectorAll('.video-slide');
-        const playButtons = document.querySelectorAll('.video-play-btn');
+        // Initialize video events
+        const videos = document.querySelectorAll('video');
         
-        let currentSlide = 0;
-        const totalSlides = videoSlides.length;
-        let isAutoPlaying = true;
-        let autoPlayInterval;
-
-        // Initialize carousel
-        function initCarousel() {
-          showSlide(0);
-          startAutoPlay();
-          
-          // Add event listeners to play buttons
-          playButtons.forEach((btn, index) => {
-            btn.addEventListener('click', function() {
-              const video = btn.closest('.video-slide').querySelector('.carousel-video');
-              playVideo(video);
+        videos.forEach(video => {
+          // Pause other videos when one starts playing
+          video.addEventListener('play', function() {
+            videos.forEach(otherVideo => {
+              if (otherVideo !== video) {
+                otherVideo.pause();
+              }
             });
           });
-        }
 
-        // Show specific slide
-        function showSlide(index) {
-          // Update slides
-          videoSlides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (i === index) {
-              slide.classList.add('active');
-            }
-          });
-
-          // Update indicators
-          indicators.forEach((indicator, i) => {
-            indicator.classList.remove('active');
-            if (i === index) {
-              indicator.classList.add('active');
-            }
-          });
-
-          // Update progress bar
-          const progressWidth = ((index + 1) / totalSlides) * 100;
-          progressBar.style.width = progressWidth + '%';
-
-          // Update track position (for smooth animation effect)
-          const translateX = -index * 100;
-          carouselTrack.style.transform = `translateX(${translateX / totalSlides}%)`;
-
-          currentSlide = index;
-        }
-
-        // Next slide
-        function nextSlide() {
-          const next = (currentSlide + 1) % totalSlides;
-          showSlide(next);
-        }
-
-        // Previous slide
-        function prevSlide() {
-          const prev = (currentSlide - 1 + totalSlides) % totalSlides;
-          showSlide(prev);
-        }
-
-        // Auto play functionality
-        function startAutoPlay() {
-          if (autoPlayInterval) clearInterval(autoPlayInterval);
-          
-          autoPlayInterval = setInterval(() => {
-            if (isAutoPlaying) {
-              nextSlide();
-            }
-          }, 5000); // Change slide every 5 seconds
-        }
-
-        function stopAutoPlay() {
-          if (autoPlayInterval) {
-            clearInterval(autoPlayInterval);
-          }
-        }
-
-        // Play video
-        function playVideo(video) {
-          // Pause all other videos
-          document.querySelectorAll('.carousel-video').forEach(v => {
-            if (v !== video) {
-              v.pause();
-            }
-          });
-
-          // Toggle current video
-          if (video.paused) {
-            video.play();
-            isAutoPlaying = false;
-            stopAutoPlay();
-          } else {
-            video.pause();
-            isAutoPlaying = true;
-            startAutoPlay();
-          }
-        }
-
-        // Event listeners
-        if (prevBtn) {
-          prevBtn.addEventListener('click', () => {
-            prevSlide();
-            isAutoPlaying = false;
-            stopAutoPlay();
-          });
-        }
-
-        if (nextBtn) {
-          nextBtn.addEventListener('click', () => {
-            nextSlide();
-            isAutoPlaying = false;
-            stopAutoPlay();
-          });
-        }
-
-        // Indicator clicks
-        indicators.forEach((indicator, index) => {
-          indicator.addEventListener('click', () => {
-            showSlide(index);
-            isAutoPlaying = false;
-            stopAutoPlay();
-          });
+          // Optional: Log video interactions for analytics
+          video.addEventListener('play', () => console.log('Video started playing'));
+          video.addEventListener('pause', () => console.log('Video paused'));
         });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-          if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            switch(e.key) {
-              case 'ArrowLeft':
-                e.preventDefault();
-                prevSlide();
-                isAutoPlaying = false;
-                stopAutoPlay();
-                break;
-              case 'ArrowRight':
-                e.preventDefault();
-                nextSlide();
-                isAutoPlaying = false;
-                stopAutoPlay();
-                break;
-              case ' ':
-                e.preventDefault();
-                const currentVideo = videoSlides[currentSlide].querySelector('.carousel-video');
-                playVideo(currentVideo);
-                break;
-            }
-          }
-        });
-
-        // Touch/Swipe support for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        carouselTrack.addEventListener('touchstart', function(e) {
-          touchStartX = e.touches[0].clientX;
-        });
-
-        carouselTrack.addEventListener('touchend', function(e) {
-          touchEndX = e.changedTouches[0].clientX;
-          handleSwipe();
-        });
-
-        function handleSwipe() {
-          const swipeThreshold = 50;
-          const diff = touchStartX - touchEndX;
-
-          if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-              // Swipe left - next slide
-              nextSlide();
-            } else {
-              // Swipe right - previous slide
-              prevSlide();
-            }
-            isAutoPlaying = false;
-            stopAutoPlay();
-          }
-        }
-
-        // Pause autoplay when hovering over carousel
-        const carouselContainer = document.querySelector('.video-carousel-container');
-        if (carouselContainer) {
-          carouselContainer.addEventListener('mouseenter', () => {
-            isAutoPlaying = false;
-            stopAutoPlay();
-          });
-
-          carouselContainer.addEventListener('mouseleave', () => {
-            isAutoPlaying = true;
-            startAutoPlay();
-          });
-        }
-
-        // Video event listeners
-        document.querySelectorAll('.carousel-video').forEach(video => {
-          video.addEventListener('ended', () => {
-            isAutoPlaying = true;
-            startAutoPlay();
-          });
-
-          video.addEventListener('pause', () => {
-            if (isAutoPlaying) {
-              startAutoPlay();
-            }
-          });
-        });
-
-        // Initialize carousel
-        initCarousel();
       });
     </script>
   </body>
