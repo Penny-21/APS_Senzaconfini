@@ -206,6 +206,243 @@
       [data-bs-theme="dark"] .feed-header {
         border-bottom-color: #404040;
       }
+
+      /* Video Player Styles */
+      .video-player-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .video-player-container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .video-player-container:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .video-player-wrapper {
+        position: relative;
+        background: #000;
+      }
+
+      .video-player {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        display: block;
+      }
+
+      .play-button-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      .video-player:not([controls]) + .play-button-overlay,
+      .play-button-overlay.show {
+        opacity: 1;
+      }
+
+      .custom-play-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        color: #007bff;
+        font-size: 32px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .custom-play-btn:hover {
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .video-info {
+        padding: 20px;
+        background: #fff;
+      }
+
+      .video-title {
+        color: #333;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .video-description {
+        color: #666;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .video-playlist {
+        padding: 0 20px;
+      }
+
+      .playlist-title {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .playlist-items {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .playlist-item {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .playlist-item:hover {
+        background: #e9ecef;
+        transform: translateX(4px);
+      }
+
+      .playlist-item.active {
+        border-color: #007bff;
+        background: rgba(0, 123, 255, 0.1);
+      }
+
+      .playlist-thumbnail {
+        position: relative;
+        width: 80px;
+        height: 45px;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-right: 15px;
+      }
+
+      .playlist-thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .playlist-play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+
+      .playlist-content {
+        flex: 1;
+      }
+
+      .playlist-video-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 0 4px 0;
+        color: #333;
+      }
+
+      .playlist-video-duration {
+        font-size: 12px;
+        color: #666;
+        margin: 0;
+      }
+
+      /* Dark theme for video player */
+      [data-bs-theme="dark"] .video-player-container {
+        background: #2b2c40;
+      }
+
+      [data-bs-theme="dark"] .video-info {
+        background: #2b2c40;
+      }
+
+      [data-bs-theme="dark"] .video-title {
+        color: #d4d6d8;
+      }
+
+      [data-bs-theme="dark"] .video-description {
+        color: #a8aab0;
+      }
+
+      [data-bs-theme="dark"] .playlist-title {
+        color: #d4d6d8;
+      }
+
+      [data-bs-theme="dark"] .playlist-item {
+        background: #404040;
+      }
+
+      [data-bs-theme="dark"] .playlist-item:hover {
+        background: #4a4a4a;
+      }
+
+      [data-bs-theme="dark"] .playlist-item.active {
+        background: rgba(0, 123, 255, 0.2);
+      }
+
+      [data-bs-theme="dark"] .playlist-video-title {
+        color: #d4d6d8;
+      }
+
+      [data-bs-theme="dark"] .playlist-video-duration {
+        color: #a8aab0;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .video-player {
+          min-height: 250px;
+        }
+        
+        .custom-play-btn {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+        }
+        
+        .playlist-items {
+          gap: 8px;
+        }
+        
+        .playlist-thumbnail {
+          width: 60px;
+          height: 34px;
+        }
+      }
     </style>
   </head>
 
@@ -418,6 +655,88 @@
                       </div>
                     </div>
 
+                    <!-- Video Player Section -->
+                    <div class="video-player-section mt-5 mb-5">
+                      <div class="text-center mb-4">
+                        <h3 class="display-6 fw-bold text-primary mb-2">I Nostri Video</h3>
+                        <p class="lead text-muted">Guarda i momenti più significativi dei nostri progetti</p>
+                      </div>
+                      
+                      <div class="video-player-container">
+                        <div class="video-player-wrapper">
+                          <video 
+                            id="mainVideoPlayer" 
+                            class="video-player" 
+                            controls 
+                            poster="../assets/img/custom-img/post-4.jpg"
+                            preload="metadata">
+                            <source src="../assets/video/sample-video.mp4" type="video/mp4">
+                            <source src="../assets/video/sample-video.webm" type="video/webm">
+                            Il tuo browser non supporta la riproduzione video.
+                          </video>
+                          
+                          <!-- Custom Play Button Overlay -->
+                          <div class="play-button-overlay" id="playButtonOverlay">
+                            <button class="custom-play-btn" id="customPlayBtn">
+                              <i class="ti tabler-player-play"></i>
+                            </button>
+                          </div>
+                          
+                          <!-- Video Info -->
+                          <div class="video-info">
+                            <h5 class="video-title">Workshop Erasmus+ - Serbia 2024</h5>
+                            <p class="video-description">Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.</p>
+                          </div>
+                        </div>
+                        
+                        <!-- Video Playlist -->
+                        <div class="video-playlist mt-4">
+                          <h6 class="playlist-title mb-3">Altri Video</h6>
+                          <div class="playlist-items">
+                            <div class="playlist-item active" data-video="../assets/video/sample-video.mp4" data-poster="../assets/img/custom-img/post-4.jpg" data-title="Workshop Erasmus+ - Serbia 2024" data-desc="Un viaggio attraverso i momenti più emozionanti del nostro progetto di educazione non formale in Serbia.">
+                              <div class="playlist-thumbnail">
+                                <img src="../assets/img/custom-img/Non formal education Erasmus +.jpg" alt="Video 1">
+                                <div class="playlist-play-icon">
+                                  <i class="ti tabler-player-play"></i>
+                                </div>
+                              </div>
+                              <div class="playlist-content">
+                                <h6 class="playlist-video-title">Workshop Erasmus+ - Serbia</h6>
+                                <p class="playlist-video-duration">3:45</p>
+                              </div>
+                            </div>
+                            
+                            <div class="playlist-item" data-video="../assets/audio/Water_Lily.mp3" data-poster="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg" data-title="Progetto Rifugiati - Grecia 2024" data-desc="Le testimonianze e i momenti più toccanti del progetto Erasmus+ for Young Refugees in Grecia.">
+                              <div class="playlist-thumbnail">
+                                <img src="../assets/img/custom-img/Erasmus+ for Young Refugees - Ioannina -  11-16-112024.jpg" alt="Video 2">
+                                <div class="playlist-play-icon">
+                                  <i class="ti tabler-player-play"></i>
+                                </div>
+                              </div>
+                              <div class="playlist-content">
+                                <h6 class="playlist-video-title">Progetto Rifugiati - Grecia</h6>
+                                <p class="playlist-video-duration">5:20</p>
+                              </div>
+                            </div>
+                            
+                            <div class="playlist-item" data-video="../assets/video/sample-video2.mp4" data-poster="../assets/img/elements/1.jpg" data-title="Team Building APS 2024" data-desc="I momenti di crescita e collaborazione del nostro team durante le attività formative.">
+                              <div class="playlist-thumbnail">
+                                <img src="../assets/img/elements/1.jpg" alt="Video 3">
+                                <div class="playlist-play-icon">
+                                  <i class="ti tabler-player-play"></i>
+                                </div>
+                              </div>
+                              <div class="playlist-content">
+                                <h6 class="playlist-video-title">Team Building APS</h6>
+                                <p class="playlist-video-duration">4:12</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Video Player Section -->
+
                     <!-- Call to Action -->
                     <div class="text-center mt-5">
                       <h3 class="mb-3">Seguici sui nostri canali social!</h3>
@@ -506,5 +825,127 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
+
+    <!-- Video Player JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const videoPlayer = document.getElementById('mainVideoPlayer');
+        const playButtonOverlay = document.getElementById('playButtonOverlay');
+        const customPlayBtn = document.getElementById('customPlayBtn');
+        const videoTitle = document.querySelector('.video-title');
+        const videoDescription = document.querySelector('.video-description');
+        const playlistItems = document.querySelectorAll('.playlist-item');
+
+        // Custom play button functionality
+        if (customPlayBtn) {
+          customPlayBtn.addEventListener('click', function() {
+            if (videoPlayer.paused) {
+              videoPlayer.play();
+              playButtonOverlay.classList.remove('show');
+            } else {
+              videoPlayer.pause();
+              playButtonOverlay.classList.add('show');
+            }
+          });
+        }
+
+        // Show/hide custom controls
+        videoPlayer.addEventListener('play', function() {
+          playButtonOverlay.classList.remove('show');
+        });
+
+        videoPlayer.addEventListener('pause', function() {
+          playButtonOverlay.classList.add('show');
+        });
+
+        videoPlayer.addEventListener('ended', function() {
+          playButtonOverlay.classList.add('show');
+        });
+
+        // Playlist functionality
+        playlistItems.forEach(function(item, index) {
+          item.addEventListener('click', function() {
+            // Remove active class from all items
+            playlistItems.forEach(function(playlistItem) {
+              playlistItem.classList.remove('active');
+            });
+
+            // Add active class to clicked item
+            item.classList.add('active');
+
+            // Get video data
+            const videoSrc = item.getAttribute('data-video');
+            const posterSrc = item.getAttribute('data-poster');
+            const title = item.getAttribute('data-title');
+            const description = item.getAttribute('data-desc');
+
+            // Update video player
+            if (videoSrc) {
+              videoPlayer.src = videoSrc;
+              videoPlayer.poster = posterSrc;
+              videoPlayer.load(); // Reload the video element
+            }
+
+            // Update video info
+            if (title) videoTitle.textContent = title;
+            if (description) videoDescription.textContent = description;
+
+            // Show play overlay
+            playButtonOverlay.classList.add('show');
+          });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+          if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            e.preventDefault();
+            if (videoPlayer.paused) {
+              videoPlayer.play();
+            } else {
+              videoPlayer.pause();
+            }
+          }
+        });
+
+        // Volume control with mouse wheel (when hovering over video)
+        videoPlayer.addEventListener('wheel', function(e) {
+          e.preventDefault();
+          const volumeChange = e.deltaY < 0 ? 0.1 : -0.1;
+          const newVolume = Math.max(0, Math.min(1, videoPlayer.volume + volumeChange));
+          videoPlayer.volume = newVolume;
+        });
+
+        // Double click to toggle fullscreen
+        videoPlayer.addEventListener('dblclick', function() {
+          if (document.fullscreenElement) {
+            document.exitFullscreen();
+          } else {
+            videoPlayer.requestFullscreen();
+          }
+        });
+
+        // Progress bar click to seek
+        videoPlayer.addEventListener('click', function(e) {
+          if (e.target === videoPlayer) {
+            const rect = videoPlayer.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            videoPlayer.currentTime = pos * videoPlayer.duration;
+          }
+        });
+
+        // Initialize first video as active
+        if (playlistItems.length > 0) {
+          playlistItems[0].classList.add('active');
+          playButtonOverlay.classList.add('show');
+        }
+
+        // Smooth scroll for video player section
+        const videoSection = document.querySelector('.video-player-section');
+        if (videoSection) {
+          // Auto scroll to video when page loads (optional)
+          // videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    </script>
   </body>
 </html>
