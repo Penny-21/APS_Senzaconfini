@@ -78,6 +78,107 @@
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 
   <script src="../assets/js/config.js"></script>
+
+  <style>
+    /* === our-projects page scoped enhancements === */
+    /* Hero */
+    #landingHero {
+      position: relative;
+      background:
+        radial-gradient(1100px 520px at 85% -10%, rgba(var(--bs-primary-rgb), 0.12), transparent 60%),
+        linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.06), rgba(var(--bs-info-rgb), 0.05));
+    }
+    .hero-title {
+      background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: .5px;
+    }
+    .hero-text-box p {
+      font-size: 1.1rem;
+      opacity: .9;
+    }
+
+    /* Section card feel */
+    #our-portfolio .our-portfolio-card {
+      background: var(--bs-body-bg);
+      border-radius: 1rem;
+      border: 1px solid var(--bs-border-color);
+      box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    }
+
+    /* Project timeline list */
+    .project-timeline {
+      position: relative;
+      margin-top: .75rem;
+      padding-left: 1.5rem;
+      border-left: 2px dashed var(--bs-border-color);
+    }
+    .project-timeline li {
+      position: relative;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .project-timeline li::before {
+      content: "";
+      position: absolute;
+      left: -1.1rem;
+      top: .45rem;
+      width: .65rem;
+      height: .65rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
+      box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), .15);
+    }
+
+    /* Services list with custom checks */
+    .check-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: .5rem;
+    }
+    .check-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: .5rem;
+    }
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bs-success);
+      font-weight: 700;
+    }
+
+    /* Style the "See the project" link as pill button without touching its text/i18n */
+    a[data-i18n="see_project_link"] {
+      display: inline-block;
+      margin-top: .5rem;
+      padding: .35rem .75rem;
+      border-radius: 50rem;
+      border: 1px solid var(--bs-primary);
+      color: var(--bs-primary);
+      text-decoration: none;
+      transition: all .2s ease;
+    }
+    a[data-i18n="see_project_link"]:hover {
+      background-color: var(--bs-primary);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* Reveal on scroll */
+    .reveal-on-scroll { opacity: 0; transform: translateY(12px); transition: all .5s ease; }
+    .reveal-on-scroll.in-view { opacity: 1; transform: none; }
+  </style>
 </head>
 
 <body>
@@ -220,10 +321,10 @@
               <div id="landingHero" class="section-py landing-hero position-relative">
                 <div class="container">
                   <div class="hero-text-box text-center position-relative">
-                    <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Projects">
+                    <h1 class="text-primary hero-title display-6 fw-extrabold reveal-on-scroll" data-i18n="Our Projects">
                       Our Projects
                     </h1>
-                    <p data-i18n="motto">“Building bridges across Europe, one project at a time.”</p>
+                    <p class="reveal-on-scroll" data-i18n="motto">“Building bridges across Europe, one project at a time.”</p>
                   </div>
                 </div>
               </div>
@@ -232,24 +333,24 @@
 
             <!-- Our Portfolio Section -->
             <section id="our-portfolio" class="section-py">
-              <div class="container">
-                <h2 class="mb-4" data-i18n="our_portfolio_title">🌍 What We Do: European projects that build connections, impact, and change</h2>
+              <div class="container our-portfolio-card card shadow-sm border-0 p-4 p-md-5">
+                <h2 class="mb-4 reveal-on-scroll" data-i18n="our_portfolio_title">🌍 What We Do: European projects that build connections, impact, and change</h2>
 
-                <p data-i18n="our_portfolio_intro">
+                <p class="reveal-on-scroll" data-i18n="our_portfolio_intro">
                   Senza Confini APS is not just a youth association: we are a permanent laboratory for European project design, a reference point for those who want to turn ideas into real impact. In recent years, we have developed, implemented, and supported innovative projects in Erasmus+, CERV, ESC, Creative Europe, Horizon Europe, LIFE, Interreg NEXT MED, and Virtual Exchange programmes.
                 </p>
 
-                <p data-i18n="our_portfolio_strength">
+                <p class="reveal-on-scroll" data-i18n="our_portfolio_strength">
                   Our strength lies in two things: we deeply understand the local context and its needs, and at the same time, we speak the language of Europe. We handle both project design and management, offering professional, reliable, and customized consulting services to third-sector organizations, public administrations, schools, and informal groups.
                 </p>
 
-                <h3 class="mt-4" data-i18n="project_types_title">🎯 The projects we carry out</h3>
-                <p data-i18n="project_types_intro">
+                <h3 class="mt-4 reveal-on-scroll" data-i18n="project_types_title">🎯 The projects we carry out</h3>
+                <p class="reveal-on-scroll" data-i18n="project_types_intro">
                   We create tailor-made paths for young people, educators, local communities, and professionals, always with an inclusive, innovative, and sustainable approach.
                 </p>
 
-                <h4 class="mt-4" data-i18n="project_examples_title">📌 Here are some examples of projects we’ve carried out:</h4>
-                <ul>
+                <h4 class="mt-4 reveal-on-scroll" data-i18n="project_examples_title">📌 Here are some examples of projects we’ve carried out:</h4>
+                <ul class="project-timeline reveal-on-scroll">
                   <li data-i18n="project_0">
                     <strong>2020-EDU-02341 With the Children _ Educating Communities:</strong> Project “UMBERTIAMO: EDUCATIONAL COMMUNITY UMBERTO I” — social inclusion, active citizenship, community cooperation, creation of an educational community in the Umbertino district of La Spezia
                   </li>
@@ -272,11 +373,11 @@
                   </li>
                 </ul>
 
-                <h3 class="mt-4" data-i18n="services_title">🔧 Our consulting services</h3>
-                <p data-i18n="services_intro">
+                <h3 class="mt-4 reveal-on-scroll" data-i18n="services_title">🔧 Our consulting services</h3>
+                <p class="reveal-on-scroll" data-i18n="services_intro">
                   In addition to managing projects directly, we offer professional consulting and support services for public and private organizations:
                 </p>
-                <ul>
+                <ul class="check-list reveal-on-scroll">
                   <li data-i18n="service_1">Call analysis and opportunity identification</li>
                   <li data-i18n="service_2">Tailored project writing and revision</li>
                   <li data-i18n="service_3">Budgeting and financial planning</li>
@@ -284,14 +385,14 @@
                   <li data-i18n="service_5">Implementation, dissemination, and reporting</li>
                 </ul>
 
-                <h3 class="mt-4" data-i18n="cta_title">✉️ Want to design a project with us?</h3>
-                <p data-i18n="cta_text">
+                <h3 class="mt-4 reveal-on-scroll" data-i18n="cta_title">✉️ Want to design a project with us?</h3>
+                <p class="reveal-on-scroll" data-i18n="cta_text">
                   Whether you are a municipality, a school, an NGO, or a social enterprise, we can help you build solid, visionary, and fundable projects.
                   <br />
                   Get in touch — let’s have a good chat about it!
                 </p>
 
-                <p class="fw-bold" data-i18n="closing_note">
+                <p class="fw-bold reveal-on-scroll" data-i18n="closing_note">
                   Senza Confini APS – European projects to transform communities. <br />
                   From local to Europe. And back again.
                 </p>
@@ -384,6 +485,32 @@
   <script src="../assets/js/front-page-landing.js"></script>
 
   <!-- Page JS -->
+  <script>
+    (function() {
+      var elements = Array.prototype.slice.call(document.querySelectorAll('.reveal-on-scroll'));
+      if (!elements.length) return;
+
+      function revealAll() {
+        elements.forEach(function(el){ el.classList.add('in-view'); });
+      }
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+        elements.forEach(function(el){ io.observe(el); });
+      } else {
+        // Fallback for older browsers
+        revealAll();
+      }
+    })();
+  </script>
 </body>
 
 </html>
