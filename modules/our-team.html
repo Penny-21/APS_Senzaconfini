@@ -59,22 +59,357 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
     <style>
-      .email-banner {
-        background-color: #f1f3f4;
-        padding: 10px 15px;
-        border-left: 4px solid #007bff;
-        border-radius: 6px;
-        font-size: 1rem;
-        display: inline-block;
+      /* Team Cards Enhancements */
+      .team-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       }
+      
+      .team-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      
+      .team-image-box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px 16px 0 0;
+      }
+      
+      .team-image-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0%, transparent 50%);
+        z-index: 1;
+      }
+      
+      .team-card img {
+        transition: transform 0.3s ease;
+      }
+      
+      .team-card:hover img {
+        transform: scale(1.05);
+      }
+      
+      .team-card .card-body {
+        padding: 1.5rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 16px 16px;
+      }
+      
+      .team-card .card-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #1e293b;
+      }
+      
+      .team-card .text-body-secondary {
+        font-size: 0.9rem;
+        color: #64748b !important;
+        margin-bottom: 1rem;
+      }
+      
+      /* Enhanced Email Banner */
+      .email-banner {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 16px 20px;
+        border-radius: 12px;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+        margin-bottom: 1.5rem;
+      }
+      
+      .email-banner:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+      
+      .email-banner i {
+        font-size: 1.2rem;
+      }
+      
       .email-banner a {
-        color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      
+      .email-banner a:hover {
+        color: #f1f5f9;
         text-decoration: none;
       }
-      .email-banner a:hover {
-        text-decoration: underline;
+      
+      /* Team Member Description Styling */
+      .team-description {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #3b82f6;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        position: relative;
       }
-
+      
+      .team-description::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+        border-radius: 12px;
+        pointer-events: none;
+      }
+      
+      .team-description h3 {
+        color: #1e293b;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .team-description p {
+        line-height: 1.7;
+        color: #475569;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .team-description strong {
+        color: #1e293b;
+        font-weight: 600;
+      }
+      
+      /* Section Styling */
+      #team-members {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        position: relative;
+      }
+      
+      #team-members::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                          radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+      }
+      
+      #team-members .container {
+        position: relative;
+        z-index: 1;
+      }
+      
+      /* LinkedIn Button Enhancement */
+      .btn-outline-primary {
+        border: 2px solid #3b82f6;
+        color: #3b82f6;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 8px 16px;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-outline-primary:hover {
+        background: #3b82f6;
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+      
+      /* Hero Section Enhancement */
+      #landingHero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      #landingHero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+      }
+      
+      #landingHero .hero-title {
+        color: white !important;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      
+      /* Responsive Improvements */
+      @media (max-width: 1024px) {
+        .team-description {
+          padding: 1.8rem;
+        }
+        
+        .hero-title {
+          font-size: 2.5rem !important;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .team-description {
+          padding: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        
+        .email-banner {
+          padding: 12px 16px;
+          font-size: 0.9rem;
+          flex-direction: column;
+          text-align: center;
+          gap: 4px;
+        }
+        
+        .team-card {
+          margin-bottom: 2rem;
+        }
+        
+        .team-image-box {
+          height: 200px !important;
+        }
+        
+        .hero-title {
+          font-size: 2.2rem !important;
+        }
+        
+        #team-members {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        
+        .row.mb-4 {
+          margin-bottom: 3rem !important;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .team-description {
+          padding: 1.2rem;
+          margin-bottom: 1rem;
+        }
+        
+        .email-banner {
+          padding: 10px 14px;
+          font-size: 0.85rem;
+        }
+        
+        .team-card .card-body {
+          padding: 1.2rem;
+        }
+        
+        .hero-title {
+          font-size: 1.8rem !important;
+        }
+        
+        .team-description h3 {
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+        }
+        
+        .team-description p {
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+      }
+      
+      /* Additional Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      
+      .team-card {
+        animation: fadeInUp 0.6s ease-out;
+      }
+      
+      .team-card:nth-child(odd) {
+        animation-delay: 0.1s;
+      }
+      
+      .team-card:nth-child(even) {
+        animation-delay: 0.2s;
+      }
+      
+      .email-banner:hover i {
+        animation: pulse 1s infinite;
+      }
+      
+      /* Scroll Reveal Animation */
+      .team-description {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      
+      .team-description:nth-of-type(1) { animation-delay: 0.1s; }
+      .team-description:nth-of-type(2) { animation-delay: 0.2s; }
+      .team-description:nth-of-type(3) { animation-delay: 0.3s; }
+      .team-description:nth-of-type(4) { animation-delay: 0.4s; }
+      .team-description:nth-of-type(5) { animation-delay: 0.5s; }
+      
+      /* Enhanced Focus States */
+      .team-card:focus-within {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        outline: 2px solid #3b82f6;
+        outline-offset: 2px;
+      }
+      
+      /* Loading State for Images */
+      .team-image-box img {
+        opacity: 0;
+        animation: fadeInUp 0.6s ease-out 0.3s forwards;
+      }
+      
+      /* Smooth Background Transitions */
+      #team-members::before {
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+      }
+      
+      #team-members:hover::before {
+        opacity: 1;
+      }
     </style>
   </head>
 
@@ -227,23 +562,36 @@
               <!-- Team Members Section -->
               <section id="team-members" class="section-py">
                 <div class="container">
-                  <h2 class="mb-4" data-i18n="Team Members">Team Members</h2>
+                  <div class="text-center mb-5">
+                    <h2 class="mb-3 fw-bold text-dark" data-i18n="Team Members" style="font-size: 2.5rem; position: relative;">
+                      Team Members
+                      <span style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 2px;"></span>
+                    </h2>
+                    <p class="text-muted mb-0" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                      Meet our passionate team of professionals dedicated to creating positive change through European projects and youth empowerment.
+                    </p>
+                  </div>
                   <div class="row mb-4">
                     <div class="col-md-9">
-                      <!-- President -->
-                      <h3 data-i18n="President">President</h3>
-                      <p>
-                         <strong>Niccolò Ichestre</strong>
-                         <span data-i18n="Nicollo Ichestre Description">
-                            holds a degree in Political Science and International Studies from the University of Genoa. He chairs the association “Senza Confini APS,” founded in 2020 to promote social inclusion and local development. He has gained experience as a European Project Manager, managing Erasmus+, AMIF and CERV projects. He has held internships in Bucharest and Brussels, honing his skills in multicultural settings. He is known for empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
-                         </span>
-                      </p>
-                    <div class="email-banner mb-3">
-                      <strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a>
+                      <div class="team-description">
+                        <!-- President -->
+                        <h3 data-i18n="President">President</h3>
+                        <p>
+                           <strong>Niccolò Ichestre</strong>
+                           <span data-i18n="Nicollo Ichestre Description">
+                              holds a degree in Political Science and International Studies from the University of Genoa. He chairs the association "Senza Confini APS," founded in 2020 to promote social inclusion and local development. He has gained experience as a European Project Manager, managing Erasmus+, AMIF and CERV projects. He has held internships in Bucharest and Brussels, honing his skills in multicultural settings. He is known for empathy, confidence and problem-solving orientation. His curiosity and desire for continuous improvement make him an effective leader and promoter of community development.
+                           </span>
+                        </p>
+                      </div>
+                    <div class="email-banner">
+                      <i class="fas fa-envelope"></i>
+                      <div>
+                        <strong>Email:</strong> <a href="mailto:niccolo.ichestre1@gmail.com">niccolo.ichestre1@gmail.com</a>
+                      </div>
                     </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
-                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100 team-card">
                         <div class="bg-label-primary border border-bottom-0 border-label-primary position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
                           <img src="../assets/linkedin/Niccolò_Ichestre-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
@@ -256,24 +604,27 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="row mb-4">
+                  </div>                  <div class="row mb-4">
                     <div class="col-md-9">
-                      <!-- Artistic & Communication Manager -->
-                      <h3 data-i18n="Artistic & Communication Manager">Artistic & Communication Manager</h3>
-                      <p>
-                        <strong data-i18n="Edoardo Marcuzzi">Edoardo Marcuzzi</strong>
-                        <span data-i18n="Edoardo Marcuzzi Description">
-                          is a young filmmaker who supports the association “Senza Confini APS” in social media management and the digital part of events. His experience in the audiovisual and communication field makes him a valuable collaborator in the online promotion of the association's activities and projects. In addition, Edoardo contributes to the creation of visual and video content to raise awareness and engage the public in the social and cultural initiatives promoted by “Senza Confini APS.” His creative approach and digital expertise amplify the impact of the association's actions.
-                        </span>
-                      </p>
-                      <div class="email-banner mb-3">
-                        <strong>Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a>
+                      <div class="team-description">
+                        <!-- Artistic & Communication Manager -->
+                        <h3 data-i18n="Artistic & Communication Manager">Artistic & Communication Manager</h3>
+                        <p>
+                          <strong data-i18n="Edoardo Marcuzzi">Edoardo Marcuzzi</strong>
+                          <span data-i18n="Edoardo Marcuzzi Description">
+                            is a young filmmaker who supports the association "Senza Confini APS" in social media management and the digital part of events. His experience in the audiovisual and communication field makes him a valuable collaborator in the online promotion of the association's activities and projects. In addition, Edoardo contributes to the creation of visual and video content to raise awareness and engage the public in the social and cultural initiatives promoted by "Senza Confini APS." His creative approach and digital expertise amplify the impact of the association's actions.
+                          </span>
+                        </p>
+                      </div>
+                      <div class="email-banner">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                          <strong>Email:</strong> <a href="mailto:edoardomarcuzzi@hotmail.it">edoardomarcuzzi@hotmail.it</a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
-                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100 team-card">
                         <div class="bg-label-info border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
                           <img src="../assets/linkedin/Edoardo_img-removebg-preview.png" class="card-img-bottom" style="max-height: 260px; width: auto; position: static;" alt="human image" />
                         </div>
@@ -290,20 +641,25 @@
 
                   <div class="row mb-4">
                     <div class="col-md-9">
-                      <!-- Head Project Manager -->
-                      <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
-                      <p>
-                        <strong data-i18n="Costantino Landi">Costantino Landi</strong>
-                        <span data-i18n="Costantino Landi Description">
-                          is a project manager at SenzaConfini NGO and a dedicated changemaker who believes in the transformative power of education, culture, and human connection. With over seven years of experience in Youth in Action and Erasmus+, he has contributed to 20+ international projects promoting youth empowerment and intercultural dialogue. As a trainer and facilitator, he integrates non-formal education, social planning, and psychosynthesis to foster skills and self-awareness. His journey includes a year at Rondine Cittadella della Pace, immersed in dialogue, peacebuilding, and youth engagement. Costantino has designed and led projects on social entrepreneurship, psychosynthesis, sustainability, creative arts, and gender equality, collaborating with NGOs, institutions, and grassroots actors. Active in CERV, Erasmus+, ESC, and Creative Europe, he sees projects as ecosystems where individuals become co-creators of meaningful, purpose-driven learning and shared growth.
-                        </span>
-                      </p>
-                      <div class="email-banner mb-3">
-                        <strong>Email:</strong> <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a>
+                      <div class="team-description">
+                        <!-- Head Project Manager -->
+                        <h3 data-i18n="Head Project Manager">Head Project Manager</h3>
+                        <p>
+                          <strong data-i18n="Costantino Landi">Costantino Landi</strong>
+                          <span data-i18n="Costantino Landi Description">
+                            is a project manager at SenzaConfini NGO and a dedicated changemaker who believes in the transformative power of education, culture, and human connection. With over seven years of experience in Youth in Action and Erasmus+, he has contributed to 20+ international projects promoting youth empowerment and intercultural dialogue. As a trainer and facilitator, he integrates non-formal education, social planning, and psychosynthesis to foster skills and self-awareness. His journey includes a year at Rondine Cittadella della Pace, immersed in dialogue, peacebuilding, and youth engagement. Costantino has designed and led projects on social entrepreneurship, psychosynthesis, sustainability, creative arts, and gender equality, collaborating with NGOs, institutions, and grassroots actors. Active in CERV, Erasmus+, ESC, and Creative Europe, he sees projects as ecosystems where individuals become co-creators of meaningful, purpose-driven learning and shared growth.
+                          </span>
+                        </p>
+                      </div>
+                      <div class="email-banner">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                          <strong>Email:</strong> <a href="mailto:aps.senzaconfini@gmail.com">aps.senzaconfini@gmail.com</a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
-                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100 team-card">
                         <div class="bg-label-warning border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
                           <img src="../assets/linkedin/Costantino_Landi-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
@@ -320,20 +676,25 @@
 
                   <div class="row mb-4">
                     <div class="col-md-9">
-                      <!-- EU Project Manager -->
-                      <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
-                      <p>
-                        <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
-                        <span data-i18n="Marco Maricchiolo Description">
-                          is an EU Project Manager with a strong passion for the development and management of EU-funded projects. With a strong background in international cooperation, he has acquired skills in activity planning, performance monitoring, and risk management. Marco holds a Master's degree in Europlanning, which gave him an in-depth understanding of European project management. Currently, he works for Senza Confini APS, where he is involved in the management and implementation of EU-funded projects, such as Erasmus+ and other European programs. He is motivated to contribute to the success of innovative projects that have a positive impact on European communities, working with multidisciplinary teams to develop initiatives that promote education, solidarity and innovation.
-                        </span>
-                      </p>
-                      <div class="email-banner mb-3">
-                        <strong>Email:</strong> <a href="mailto:marco.senzaconfiniprojects@gmail.com">marco.senzaconfiniprojects@gmail.com</a>
+                      <div class="team-description">
+                        <!-- EU Project Manager -->
+                        <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
+                        <p>
+                          <strong data-i18n="Marco Maricchiolo">Marco Maricchiolo</strong>
+                          <span data-i18n="Marco Maricchiolo Description">
+                            is an EU Project Manager with a strong passion for the development and management of EU-funded projects. With a strong background in international cooperation, he has acquired skills in activity planning, performance monitoring, and risk management. Marco holds a Master's degree in Europlanning, which gave him an in-depth understanding of European project management. Currently, he works for Senza Confini APS, where he is involved in the management and implementation of EU-funded projects, such as Erasmus+ and other European programs. He is motivated to contribute to the success of innovative projects that have a positive impact on European communities, working with multidisciplinary teams to develop initiatives that promote education, solidarity and innovation.
+                          </span>
+                        </p>
+                      </div>
+                      <div class="email-banner">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                          <strong>Email:</strong> <a href="mailto:marco.senzaconfiniprojects@gmail.com">marco.senzaconfiniprojects@gmail.com</a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
-                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100 team-card">
                         <div class="bg-label-success border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
                           <img src="../assets/linkedin/Marco_Maricchiolo-removebg-preview.png" class="card-img-bottom" style="max-height: 210px; width: auto; position: static;" alt="human image" />
                         </div>
@@ -350,20 +711,25 @@
 
                   <div class="row mb-4">
                     <div class="col-md-9">
-                      <!-- EU Project Manager -->
-                      <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
-                      <p>
-                        <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
-                        <span data-i18n="Maria Michela Giallaurito Description">
-                          is a professional with solid experience in international affairs and project management. She has worked as an EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives. Michela also served as Faculty Advisor during UN conferences in New York, guiding young delegates in diplomatic simulations. Her experience also includes a specialization in leadership, with a Master's degree in Leadership for International Relations.
-                        </span>
-                      </p>
-                      <div class="email-banner mb-3">
-                        <strong>Email:</strong> <a href="mailto:michela.senzaconfiniprojects@gmail.com">michela.senzaconfiniprojects@gmail.com</a>
+                      <div class="team-description">
+                        <!-- EU Project Manager -->
+                        <h3 data-i18n="EU Project Manager">EU Project Manager</h3>
+                        <p>
+                          <strong data-i18n="Maria Michela Giallaurito">Maria Michela Giallaurito</strong>
+                          <span data-i18n="Maria Michela Giallaurito Description">
+                            is a professional with solid experience in international affairs and project management. She has worked as an EU Project Manager in Bucharest, managing key European projects such as Erasmus+, CERV and AMIF, coordinating activities with international partners and ensuring the achievement of project objectives. Michela also served as Faculty Advisor during UN conferences in New York, guiding young delegates in diplomatic simulations. Her experience also includes a specialization in leadership, with a Master's degree in Leadership for International Relations.
+                          </span>
+                        </p>
+                      </div>
+                      <div class="email-banner">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                          <strong>Email:</strong> <a href="mailto:michela.senzaconfiniprojects@gmail.com">michela.senzaconfiniprojects@gmail.com</a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-stretch">
-                      <div class="card mt-3 mt-lg-0 shadow-none w-100">
+                      <div class="card mt-3 mt-lg-0 shadow-none w-100 team-card">
                         <div class="bg-label-danger border border-bottom-0 border-label-info position-relative team-image-box d-flex justify-content-center align-items-end" style="height: 220px;">
                           <img src="../assets/linkedin/Michela_Giallaurito-removebg-preview.png" class="card-img-bottom" style="max-height: 260px; width: auto; position: static;" alt="human image" />
                         </div>
