@@ -79,106 +79,8 @@
 
   <script src="../assets/js/config.js"></script>
 
-  <style>
-    /* === our-projects page scoped enhancements === */
-    /* Hero */
-    #landingHero {
-      position: relative;
-      background:
-        radial-gradient(1100px 520px at 85% -10%, rgba(var(--bs-primary-rgb), 0.12), transparent 60%),
-        linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.06), rgba(var(--bs-info-rgb), 0.05));
-    }
-    .hero-title {
-      background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      letter-spacing: .5px;
-    }
-    .hero-text-box p {
-      font-size: 1.1rem;
-      opacity: .9;
-    }
-
-    /* Section card feel */
-    #our-portfolio .our-portfolio-card {
-      background: var(--bs-body-bg);
-      border-radius: 1rem;
-      border: 1px solid var(--bs-border-color);
-      box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-    }
-
-    /* Project timeline list */
-    .project-timeline {
-      position: relative;
-      margin-top: .75rem;
-      padding-left: 1.5rem;
-      border-left: 2px dashed var(--bs-border-color);
-    }
-    .project-timeline li {
-      position: relative;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    .project-timeline li::before {
-      content: "";
-      position: absolute;
-      left: -1.1rem;
-      top: .45rem;
-      width: .65rem;
-      height: .65rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
-      box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), .15);
-    }
-
-    /* Services list with custom checks */
-    .check-list {
-      list-style: none;
-      padding-left: 0;
-      margin-top: .5rem;
-    }
-    .check-list li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: .5rem;
-    }
-    .check-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 1rem;
-      height: 1rem;
-      line-height: 1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--bs-success);
-      font-weight: 700;
-    }
-
-    /* Style the "See the project" link as pill button without touching its text/i18n */
-    a[data-i18n="see_project_link"] {
-      display: inline-block;
-      margin-top: .5rem;
-      padding: .35rem .75rem;
-      border-radius: 50rem;
-      border: 1px solid var(--bs-primary);
-      color: var(--bs-primary);
-      text-decoration: none;
-      transition: all .2s ease;
-    }
-    a[data-i18n="see_project_link"]:hover {
-      background-color: var(--bs-primary);
-      color: #fff;
-      transform: translateY(-1px);
-    }
-
-    /* Reveal on scroll */
-    .reveal-on-scroll { opacity: 0; transform: translateY(12px); transition: all .5s ease; }
-    .reveal-on-scroll.in-view { opacity: 1; transform: none; }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css" />
 </head>
 
 <body>
@@ -193,7 +95,7 @@
               <a href="../index" class="app-brand-link">
                 <span class="app-brand-logo demo">
                   <span class="text-primary">
-                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
+                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon">
                   </span>
                 </span>
                 <span class="app-brand-text demo menu-text fw-bold text-heading">APS SenzaConfini</span>

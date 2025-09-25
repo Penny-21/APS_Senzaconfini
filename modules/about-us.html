@@ -63,34 +63,9 @@
   <link rel="stylesheet" href="../assets/vendor/libs/swiper/swiper.css">
   <link rel="stylesheet" href="../assets/vendor/css/pages/front-page-landing.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    .btn-gradient-primary {
-      background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
-      color: #fff;
-      border: none;
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
-    .btn-gradient-primary:hover, .btn-gradient-primary:focus {
-      box-shadow: 0 4px 24px 0 rgba(99,102,241,0.18);
-      color: #fff;
-      transform: translateY(-2px) scale(1.03);
-    }
-    .text-gradient-primary {
-      background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    @media (max-width: 991px) {
-      #hero-animation .hero-title { font-size: 2.2rem !important; }
-      #about-us-info .card { margin-bottom: 2rem; }
-    }
-    @media (max-width: 767px) {
-      #hero-animation { min-height: 220px; }
-      #about-us-info .row { flex-direction: column; }
-      #about-us-info .card { margin-bottom: 1.5rem; }
-    }
-  </style>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css" />
 
   <!-- Vendors CSS -->
 
@@ -121,7 +96,7 @@
               <a href="../index" class="app-brand-link">
                 <span class="app-brand-logo demo">
                   <span class="text-primary">
-                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
+                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon">
                   </span>
                 </span>
                 <span class="app-brand-text demo menu-text fw-bold text-heading">APS SenzaConfini</span>
@@ -245,15 +220,15 @@
           <!-- Content -->
           <div data-bs-spy="scroll" class="scrollspy-example">
             <!-- Hero: Start -->
-            <section id="hero-animation" style="background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%); min-height: 350px; display: flex; align-items: center; position: relative; overflow: hidden;">
+            <section id="hero-animation" class="hero-animation-section">
               <!-- Decorative images removed as requested -->
-              <div class="container position-relative" style="z-index:2;">
+              <div class="container position-relative hero-animation-container">
                 <div class="hero-text-box text-center position-relative py-5">
                   <h1 class="text-primary hero-title display-3 fw-bolder mb-3 animate__animated animate__fadeInDown">
                     APS Senza Confini
                   </h1>
                   <div class="landing-hero-btn d-inline-block position-relative animate__animated animate__fadeInUp animate__delay-1s">
-                    <a href="our-projects" class="btn btn-gradient-primary btn-lg shadow-lg px-5 py-3 rounded-pill" data-i18n="Discover Our Projects" style="font-size:1.3rem;">Discover Our Projects</a>
+                    <a href="our-projects" class="btn btn-gradient-primary btn-lg shadow-lg px-5 py-3 rounded-pill discover-btn-large" data-i18n="Discover Our Projects">Discover Our Projects</a>
                   </div>
                 </div>
               </div>
@@ -261,15 +236,15 @@
             <!-- Hero: End -->
 
             <!-- Sezione About Us & Aims -->
-            <section id="about-us-info" class="section-py" style="background: linear-gradient(120deg, #f8fafc 0%, #e0eafc 100%);">
+            <section id="about-us-info" class="section-py about-us-info-section">
               <div class="container">
                 <div class="row g-5 align-items-stretch">
                   <!-- Card: About Us -->
                   <div class="col-md-6 d-flex">
-                    <div class="card h-100 shadow-lg border-0 w-100 animate__animated animate__fadeInLeft" style="background:rgba(255,255,255,0.97);">
+                    <div class="card h-100 shadow-lg border-0 w-100 animate__animated animate__fadeInLeft about-card-main">
                       <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
-                          <span style="width:56px; height:56px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; box-shadow:0 2px 8px #b6c6e6; margin-right: 1rem; background: #fff;">
+                          <span class="about-icon-span">
                             <!-- Icona About Us: utenti -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                           </span>
@@ -288,16 +263,16 @@
                   </div>
                   <!-- Card: Our Aims & Closing Message -->
                   <div class="col-md-6 d-flex">
-                    <div class="card h-100 shadow-lg border-0 w-100 animate__animated animate__fadeInRight" style="background:rgba(255,255,255,0.97);">
+                    <div class="card h-100 shadow-lg border-0 w-100 animate__animated animate__fadeInRight about-card-main">
                       <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
-                          <span style="width:48px; height:48px; display:inline-flex; align-items:center; justify-content:center; margin-right: 1rem; background: #f3f4f6; border-radius:50%;">
+                          <span class="about-icon-span-small">
                             <!-- Icona Our Aims: target/obiettivo -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                           </span>
                           <h2 class="card-title mb-0 text-gradient-primary" data-i18n="Our Aims">Our Aims</h2>
                         </div>
-                        <ol class="card-text ps-3" style="font-size:1.08rem;">
+                        <ol class="card-text ps-3 about-text-large">
                           <li class="mb-3" data-i18n="Promote Active Citizenship"><strong>Promote Active Citizenship</strong><br>We encourage young people to engage in social, cultural, and political life, fostering a sense of responsibility and participation in democratic processes.</li>
                           <li class="mb-3" data-i18n="Champion Social Inclusion"><strong>Champion Social Inclusion</strong><br>Breaking down barriers of exclusion, we create opportunities for marginalized youth and promote a society where diversity is celebrated, and every individual feels valued.</li>
                           <li class="mb-3" data-i18n="Support Youth Initiatives"><strong>Support Youth Initiatives</strong><br>Our goal is to provide the tools and resources young people need to bring their ideas to life and lead initiatives addressing pressing issues such as climate action and gender equality.</li>
@@ -307,7 +282,7 @@
                         </ol>
                         <hr class="my-4">
                         <div class="d-flex align-items-center mb-2">
-                          <span style="width:38px; height:38px; display:inline-flex; align-items:center; justify-content:center; margin-right: 1rem; background: #f3f4f6; border-radius:50%;">
+                          <span class="about-icon-span-tiny">
                             <!-- Icona Closing Message: cuore/valori -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                           </span>
