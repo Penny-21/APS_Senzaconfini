@@ -272,6 +272,57 @@
               </div>
 
             </section>
+
+            <!-- New Animated Banner Section -->
+            <section id="illustrated-banner" class="position-relative py-5 my-5">
+              <div class="container-fluid px-0">
+                <div class="banner-container position-relative overflow-hidden">
+                  <!-- Background Elements -->
+                  <div class="banner-bg-elements">
+                    <div class="floating-element element-1"></div>
+                    <div class="floating-element element-2"></div>
+                    <div class="floating-element element-3"></div>
+                  </div>
+                  
+                  <!-- Main Banner Content -->
+                  <div class="row align-items-center min-vh-50">
+                    <div class="col-12">
+                      <div class="banner-image-wrapper text-center position-relative">
+                        <img 
+                          src="assets/img/custom-img/Banner-illustrato-aps-3.png" 
+                          alt="APS Senza Confini Illustrated Banner" 
+                          class="banner-main-image img-fluid animate-on-scroll"
+                          loading="lazy"
+                        />
+                        
+                        <!-- Overlay Content -->
+                        <div class="banner-overlay-content position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                          <div class="text-center text-white banner-text-content animate-on-scroll-delay">
+                            <h2 class="banner-title display-4 fw-bold mb-3" data-i18n="banner_title">
+                              Together Beyond Borders
+                            </h2>
+                            <p class="banner-subtitle fs-5 mb-4 opacity-90" data-i18n="banner_subtitle">
+                              We build bridges, not walls. Uniting young people across Europe.
+                            </p>
+                            <div class="banner-cta-buttons">
+                              <a href="modules/about-us" class="btn btn-light btn-lg me-3 banner-btn-primary">
+                                <i class="ti tabler-info-circle me-2"></i>
+                                <span data-i18n="discover_more">Discover More</span>
+                              </a>
+                              <a href="modules/our-projects" class="btn btn-outline-light btn-lg banner-btn-secondary">
+                                <i class="ti tabler-rocket me-2"></i>
+                                <span data-i18n="our_projects">Our Projects</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <br>
             <!-- Large Card -->
             <div class="card mt-5 mx-auto" style="max-width: 640px; border-radius: 15px; overflow: hidden;">
@@ -518,6 +569,60 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ui-carousel.js"></script>
     <script>
+      // Banner Animation Script
+      document.addEventListener("DOMContentLoaded", function() {
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+            }
+          });
+        }, observerOptions);
+
+        // Observe all elements with animation classes
+        document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-delay').forEach(el => {
+          observer.observe(el);
+        });
+
+        // Enhanced banner interactions
+        const bannerImage = document.querySelector('.banner-main-image');
+        const bannerContainer = document.querySelector('.banner-image-wrapper');
+        
+        if (bannerImage && bannerContainer) {
+          // Parallax effect on mouse move
+          bannerContainer.addEventListener('mousemove', function(e) {
+            const rect = bannerContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const deltaX = (x - centerX) / centerX;
+            const deltaY = (y - centerY) / centerY;
+            
+            bannerImage.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg) scale(1.02)`;
+          });
+
+          bannerContainer.addEventListener('mouseleave', function() {
+            bannerImage.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)';
+          });
+        }
+
+        // Dynamic floating elements animation
+        const floatingElements = document.querySelectorAll('.floating-element');
+        floatingElements.forEach((element, index) => {
+          const randomDelay = Math.random() * 2;
+          const randomDuration = 4 + Math.random() * 4;
+          element.style.animationDelay = `${randomDelay}s`;
+          element.style.animationDuration = `${randomDuration}s`;
+        });
+      });
+
       const LANG_STORAGE_KEY = "currentLang";
       const DEFAULT_LANG = "en";
       const LANG_PATH = "assets/json/locales/";
