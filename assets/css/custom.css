@@ -1288,7 +1288,7 @@ a[data-i18n="see_project_link"]:hover {
 }
 
 .team-image-static-tall {
-  max-height: 260px; 
+  max-height: 220px; 
   width: auto; 
   position: static;
 }
