@@ -81,6 +81,83 @@
     <!-- Page CSS -->
     <link rel="stylesheet" href="assets/css/custom.css" />
 
+    <!-- Custom Navigation Section Styles -->
+    <style>
+      .navigation-card {
+        transition: all 0.3s ease;
+        border-radius: 15px !important;
+        overflow: hidden;
+      }
+      
+      .navigation-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+      }
+      
+      .nav-icon-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .nav-icon-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        background: currentColor;
+        opacity: 0.1;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+      }
+      
+      .navigation-card:hover .nav-icon-wrapper::before {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.15;
+      }
+      
+      .navigation-card .btn {
+        border-radius: 25px;
+        padding: 8px 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+      }
+      
+      .navigation-card:hover .btn {
+        transform: scale(1.05);
+      }
+      
+      #navigation-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      #navigation-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+          radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, rgba(220, 53, 69, 0.1) 0%, transparent 50%);
+        pointer-events: none;
+      }
+      
+      .navigation-card .card-body {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+
     <!-- Helpers -->
     <script src="assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -468,6 +545,105 @@
               </div>
             </div>
             <!--/ Content -->
+
+            <!-- Navigation Section -->
+            <section id="navigation-section" class="py-5 bg-light">
+              <div class="container">
+                <div class="text-center mb-5">
+                  <h2 class="display-5 fw-bold text-primary mb-3" data-i18n="explore_sections">Explore Our Sections</h2>
+                  <p class="lead text-muted" data-i18n="discover_more_about">Discover more about our organization and initiatives</p>
+                </div>
+                
+                <div class="row g-4">
+                  <!-- About Us Card -->
+                  <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 navigation-card">
+                      <div class="card-body text-center p-4">
+                        <div class="nav-icon-wrapper mb-3">
+                          <i class="ti tabler-info-octagon text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3" data-i18n="About Us">About Us</h5>
+                        <p class="card-text text-muted mb-4" data-i18n="learn_about_mission">Learn about our mission and values</p>
+                        <a href="modules/about-us" class="btn btn-outline-primary btn-sm stretched-link">
+                          <span data-i18n="discover">Discover</span>
+                          <i class="ti tabler-arrow-right ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Our Team Card -->
+                  <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 navigation-card">
+                      <div class="card-body text-center p-4">
+                        <div class="nav-icon-wrapper mb-3">
+                          <i class="ti tabler-users-group text-success" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3" data-i18n="Our Team">Our Team</h5>
+                        <p class="card-text text-muted mb-4" data-i18n="meet_team_members">Meet our dedicated team members</p>
+                        <a href="modules/our-team" class="btn btn-outline-success btn-sm stretched-link">
+                          <span data-i18n="meet_us">Meet Us</span>
+                          <i class="ti tabler-arrow-right ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Our Projects Card -->
+                  <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 navigation-card">
+                      <div class="card-body text-center p-4">
+                        <div class="nav-icon-wrapper mb-3">
+                          <i class="ti tabler-briefcase text-warning" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3" data-i18n="Our Projects">Our Projects</h5>
+                        <p class="card-text text-muted mb-4" data-i18n="explore_erasmus_projects">Explore our Erasmus+ projects</p>
+                        <a href="modules/our-projects" class="btn btn-outline-warning btn-sm stretched-link">
+                          <span data-i18n="view_projects">View Projects</span>
+                          <i class="ti tabler-arrow-right ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Our Social Card -->
+                  <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 navigation-card">
+                      <div class="card-body text-center p-4">
+                        <div class="nav-icon-wrapper mb-3">
+                          <i class="ti tabler-brand-instagram text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3" data-i18n="Our Social">Our Social</h5>
+                        <p class="card-text text-muted mb-4" data-i18n="follow_social_media">Follow our social media activities</p>
+                        <a href="modules/our-social" class="btn btn-outline-danger btn-sm stretched-link">
+                          <span data-i18n="follow_us">Follow Us</span>
+                          <i class="ti tabler-arrow-right ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-5">
+                  <div class="d-inline-block">
+                    <h4 class="mb-3" data-i18n="ready_to_join">Ready to Join Our Community?</h4>
+                    <p class="text-muted mb-4" data-i18n="get_involved_description">Get involved in our Erasmus+ programs and make a difference</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                      <a href="modules/our-projects" class="btn btn-primary btn-lg">
+                        <i class="ti tabler-rocket me-2"></i>
+                        <span data-i18n="join_project">Join a Project</span>
+                      </a>
+                      <a href="mailto:aps.senzaconfini@gmail.com" class="btn btn-outline-primary btn-lg">
+                        <i class="ti tabler-mail me-2"></i>
+                        <span data-i18n="contact_us">Contact Us</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/ Navigation Section -->
 
             <!-- Footer -->
 
