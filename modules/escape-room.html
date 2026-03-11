@@ -1,0 +1,526 @@
+<!doctype html>
+<html
+  lang="it"
+  class="layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-skin="default"
+  data-assets-path="../assets/"
+  data-template="horizontal-menu-template-no-customizer-starter"
+  data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />   
+    <title>Escape Room - APS Senza Confini</title>
+    <meta name="description" content="Gioca al nostro Escape Room su integrazione e diversità culturale!" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/pages/front-page-landing.css" />
+    
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/sweetalert2/sweetalert2.css" />
+
+    <!-- Custom CSS for Escape Room -->
+    <link rel="stylesheet" href="../assets/css/escape-room.css" />
+
+    <!-- Animate.css for beautiful animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- SortableJS for drag and drop -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+      <div class="layout-container">
+        <!-- Navbar -->
+        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
+          <div class="container-xxl">
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
+              <a href="../index" class="app-brand-link">
+                <span class="app-brand-logo demo">
+                  <span class="text-primary">
+                    <img src="../favicon-32x32.png" alt="aps senza confini" class="logo-icon" style="width: 40px; height: 40px;">
+                  </span>
+                </span>
+                <span class="app-brand-text demo menu-text fw-bold text-heading">APS Senza Confini</span>
+              </a>
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center"></i>
+              </a>
+            </div>
+
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                <i class="icon-base ti tabler-menu-2 icon-md"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+              <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary btn-sm" href="../index">
+                    <i class="ti tabler-home me-1"></i>
+                    <span>Torna alla Home</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Layout page -->
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Menu -->
+            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu flex-grow-0">
+              <div class="container-xxl d-flex h-100">
+                <ul class="menu-inner py-1">
+                  <li class="menu-item">
+                    <a href="../index" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                      <div>Home</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="about-us" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-info-octagon"></i>
+                      <div>About Us</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="our-team" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-users-group"></i>
+                      <div>Our Team</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="our-projects" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-briefcase"></i>
+                      <div>Our Projects</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="our-social" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-brand-instagram"></i>
+                      <div>Our Social</div>
+                    </a>
+                  </li>
+                  <li class="menu-item active">
+                    <a href="escape-room" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-puzzle"></i>
+                      <div>Escape Room</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Game Container -->
+              <div class="escape-room-container">
+                <!-- Game Header -->
+                <div class="row justify-content-center mb-4">
+                  <div class="col-12 col-lg-10 text-center">
+                    <div class="game-header">
+                      <h1 class="game-title">
+                        <i class="ti tabler-puzzle text-primary"></i>
+                        <span>Escape Room Integrazione</span>
+                      </h1>
+                      <p class="game-subtitle">
+                        Scopri i segreti dell'integrazione e della diversità culturale!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Game Stats -->
+                <div class="row justify-content-center mb-4">
+                  <div class="col-12 col-lg-10">
+                    <div class="card game-stats">
+                      <div class="card-body">
+                        <div class="row text-center">
+                          <div class="col-3">
+                            <div class="stat-item">
+                              <h3 class="stat-number" id="currentLevel">1</h3>
+                              <p class="stat-label">Livello</p>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="stat-item">
+                              <h3 class="stat-number" id="score">0</h3>
+                              <p class="stat-label">Punteggio</p>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="stat-item">
+                              <h3 class="stat-number" id="totalQuestions">10</h3>
+                              <p class="stat-label">Totale</p>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="stat-item">
+                              <h3 class="stat-number" id="timeLeft">--</h3>
+                              <p class="stat-label">Tempo</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Game Area -->
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                    
+                    <!-- Welcome Screen -->
+                    <div class="game-screen" id="welcomeScreen">
+                      <div class="card welcome-card">
+                        <div class="card-body text-center">
+                          <div class="welcome-icon mb-4">
+                            <i class="ti tabler-rocket text-primary" style="font-size: 4rem;"></i>
+                          </div>
+                          <h2 class="mb-3">Benvenuto nell'Escape Room Integrazione!</h2>
+                          <p class="text-muted mb-4">
+                            Sei pronto per un'avventura nel mondo dell'integrazione? Rispondi a 10 domande su diversità culturale e integrazione, 
+                            completando un mini-gioco dopo ogni risposta per guadagnare punti bonus!
+                          </p>
+                          <div class="game-flow-info mb-4">
+                            <div class="row text-center">
+                              <div class="col-6">
+                                <div class="flow-step">
+                                  <i class="ti tabler-device-gamepad-2 text-primary" style="font-size: 2rem;"></i>
+                                  <h5 class="mt-2 mb-1">Domande</h5>
+                                  <p class="text-muted small mb-0">10 domande sull'integrazione</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="flow-step">
+                                  <i class="ti tabler-help text-success" style="font-size: 2rem;"></i>
+                                  <h5 class="mt-2 mb-1">Mini-Giochi</h5>
+                                  <p class="text-muted small mb-0">10 giochi divertenti</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary btn-lg" id="startGameBtn" onclick="startGame()">
+                            <i class="ti tabler-play me-2"></i>
+                            <span>Inizia il Gioco</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Mini Game Screen -->
+                    <div class="game-screen d-none" id="miniGameScreen">
+                      <div class="card mini-game-card">
+                        <div class="card-header text-center">
+                          <h4 class="mb-0">🎮 Mini Gioco</h4>
+                          <p class="mb-0 text-muted">Completa il mini-gioco per guadagnare punti bonus!</p>
+                        </div>
+                        <div class="card-body text-center">
+                          
+                          <!-- Enhanced Memory Game -->
+                          <div class="mini-game" id="memoryGame" style="display: none;">
+                            <h5 class="mb-3">🧠 Memory Culturale</h5>
+                            <p class="text-muted mb-3">Abbina i simboli delle culture europee!</p>
+                            <div class="memory-enhanced-grid" id="memoryEnhancedGrid"></div>
+                            <div class="mt-3">
+                              <span class="badge bg-primary">Coppie: <span id="memoryScore">0/4</span></span>
+                              <span class="badge bg-info ms-2">Mosse: <span id="memoryMoves">0</span></span>
+                            </div>
+                          </div>
+
+                          <!-- Quick Quiz Game -->
+                          <div class="mini-game" id="quickQuizGame" style="display: none;">
+                            <h5 class="mb-3">⚡ Quiz Lampo</h5>
+                            <p class="text-muted mb-3">Rispondi velocemente a 3 domande!</p>
+                            <div class="quick-quiz-container" id="quickQuizContainer">
+                              <div class="quiz-progress-bar">
+                                <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                              </div>
+                              <div class="quiz-question" id="quizQuestion">Caricamento...</div>
+                              <div class="quiz-options" id="quizOptions"></div>
+                            </div>
+                            <div class="mt-3">
+                              <span class="badge bg-success">Corrette: <span id="quizCorrect">0/3</span></span>
+                              <span class="badge bg-warning ms-2">Tempo: <span id="quizTimer">5</span>s</span>
+                            </div>
+                          </div>
+
+                          <!-- Find the Odd One Game -->
+                          <div class="mini-game" id="findOddGame" style="display: none;">
+                            <h5 class="mb-3">🔍 Trova l'Intruso</h5>
+                            <p class="text-muted mb-3">Trova l'elemento che non appartiene al gruppo!</p>
+                            <div class="find-odd-container" id="findOddContainer">
+                              <div class="odd-items" id="oddItems"></div>
+                            </div>
+                            <div class="mt-3">
+                              <span class="badge bg-info">Round: <span id="oddRound">1/3</span></span>
+                              <span class="badge bg-success ms-2">Trovati: <span id="oddFound">0</span></span>
+                            </div>
+                          </div>
+
+                          <!-- Mini Game Complete Message -->
+                          <div class="mini-game-complete d-none" id="miniGameComplete">
+                            <div class="mb-4">
+                              <div class="text-success" style="font-size: 4rem;">✅</div>
+                            </div>
+                            <h4 class="text-success mb-3">🎉 Mini Gioco Completato!</h4>
+                            <p class="text-muted mb-4">Hai guadagnato +50 punti bonus!</p>
+                            <button class="btn btn-primary btn-lg" onclick="proceedToQuestion()">
+                              <i class="ti tabler-arrow-right me-2"></i>
+                              <span id="continueButtonText">Continua alla Prossima Domanda</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Question Screen -->
+                    <div class="game-screen d-none" id="questionScreen">
+                      <div class="card question-card">
+                        <div class="card-header">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0">
+                              <span>Domanda</span> 
+                              <span id="questionNumber">1</span>/<span id="totalQuestionsDisplay">10</span>
+                            </h4>
+                            <div class="timer-display">
+                              <i class="ti tabler-clock text-warning"></i>
+                              <span id="questionTimer">30</span>s
+                            </div>
+                          </div>
+                          <!-- Progress Bar -->
+                          <div class="progress mt-3" style="height: 8px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                 role="progressbar" id="gameProgress" 
+                                 style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <!-- Question Content -->
+                          <div class="question-content">
+                            <div class="question-image mb-3" id="questionImage" style="display: none;">
+                              <img src="" alt="Question Image" class="img-fluid rounded">
+                            </div>
+                            <h3 class="question-text mb-4" id="questionText">
+                              Loading question...
+                            </h3>
+                          </div>
+                          
+                          <!-- Answer Options -->
+                          <div class="answer-options" id="answerOptions">
+                            <!-- Options will be dynamically generated -->
+                          </div>
+                          
+                          <!-- Hint Section -->
+                          <div class="hint-section mt-4" id="hintSection" style="display: none;">
+                            <div class="alert alert-info">
+                              <i class="ti tabler-bulb me-2"></i>
+                              <strong>Suggerimento:</strong>
+                              <span id="hintText"></span>
+                            </div>
+                          </div>
+                          
+                          <!-- Action Buttons -->
+                          <div class="question-actions mt-4">
+                            <button class="btn btn-outline-info me-2" onclick="showHint()" id="hintBtn">
+                              <i class="ti tabler-bulb me-1"></i>
+                              <span>Mostra Suggerimento</span>
+                            </button>
+                            <button class="btn btn-outline-warning" onclick="skipQuestion()" id="skipBtn">
+                              <i class="ti tabler-player-skip-forward me-1"></i>
+                              <span>Salta</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Game Complete Screen -->
+                    <div class="game-screen d-none" id="gameCompleteScreen">
+                      <div class="card complete-card">
+                        <div class="card-body text-center">
+                          <div class="complete-icon mb-4" id="completeIcon">
+                            <!-- Icon will be set dynamically -->
+                          </div>
+                          <h2 class="mb-3" id="completeTitle">
+                            <!-- Title will be set dynamically -->
+                          </h2>
+                          <p class="text-muted mb-4" id="completeMessage">
+                            <!-- Message will be set dynamically -->
+                          </p>
+                          
+                          <!-- Final Stats -->
+                          <div class="final-stats row mb-4">
+                            <div class="col-4">
+                              <div class="stat-item">
+                                <h3 class="stat-number text-primary" id="finalScore">0</h3>
+                                <p class="stat-label">Punteggio Finale</p>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="stat-item">
+                                <h3 class="stat-number text-success" id="correctAnswers">0</h3>
+                                <p class="stat-label">Corrette</p>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="stat-item">
+                                <h3 class="stat-number text-warning" id="totalTime">0</h3>
+                                <p class="stat-label">Tempo Totale</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Action Buttons -->
+                          <div class="complete-actions">
+                            <button class="btn btn-primary btn-lg me-3" onclick="backToHome()">
+                              <i class="ti tabler-home me-2"></i>
+                              <span>Torna all'Inizio</span>
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="shareScore()">
+                              <i class="ti tabler-share me-2"></i>
+                              <span>Condividi</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Partners Section -->
+            <section class="partners-section bg-white py-5">
+              <div class="container-xxl">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                    <div class="text-center mb-4">
+                      <h3 class="text-primary mb-2">I Nostri Partner</h3>
+                      <p class="text-muted">In collaborazione con</p>
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-6 col-md-4 text-center mb-3">
+                        <div class="partner-logo">
+                          <img src="../assets/img/Logos-escape-room/Logo-partner-project-aps-1-removebg-preview.png" 
+                               alt="Partner APS 1" 
+                               class="img-fluid partner-img"
+                               style="max-height: 80px; width: auto;">
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 text-center mb-3">
+                        <div class="partner-logo">
+                          <img src="../assets/img/Logos-escape-room/Logo-partner-project-aps-2_ponte-removebg-preview.png" 
+                               alt="Partner Ponte" 
+                               class="img-fluid partner-img"
+                               style="max-height: 80px; width: auto;">
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 text-center mb-3">
+                        <div class="partner-logo">
+                          <img src="../assets/img/Logos-escape-room/Logo-partner-project-aps-2_sparks-removebg-preview.png" 
+                               alt="Partner Sparks" 
+                               class="img-fluid partner-img"
+                               style="max-height: 80px; width: auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- / Partners Section -->
+
+            <!-- Footer -->
+            <footer class="footer bg-light mt-5">
+              <div class="container-fluid container-p-x pt-12 pb-6">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <p class="text-muted">
+                      <script>document.write(new Date().getFullYear());</script> 
+                      © APS Senza Confini - Escape Room Integrazione
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- / Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <div class="drag-target"></div>
+
+    <!-- Audio Elements -->
+    <audio id="correctSound" preload="auto">
+      <source src="../assets/audio/correct.mp3" type="audio/mpeg">
+      <source src="../assets/audio/correct.wav" type="audio/wav">
+    </audio>
+    <audio id="wrongSound" preload="auto">
+      <source src="../assets/audio/wrong.mp3" type="audio/mpeg">
+      <source src="../assets/audio/wrong.wav" type="audio/wav">
+    </audio>
+    <audio id="backgroundMusic" preload="auto" loop>
+      <source src="../assets/audio/game-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Core JS -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    
+    <!-- Escape Room Game JS -->
+    <script src="../assets/js/escape-room-game.js"></script>
+
+    <!-- Page JS -->
+  </body>
+</html>

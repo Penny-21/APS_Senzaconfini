@@ -156,6 +156,40 @@
         position: relative;
         z-index: 1;
       }
+      
+      /* Special Escape Room Card Styles */
+      .card-decoration::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .card-decoration::after {
+        content: '';
+        position: absolute;
+        bottom: -30%;
+        left: -10%;
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        animation: float 8s ease-in-out infinite reverse;
+      }
+      
+      @keyframes float {
+        0%, 100% { 
+          transform: translateY(0px) rotate(0deg); 
+        }
+        50% { 
+          transform: translateY(-20px) rotate(180deg); 
+        }
+      }
     </style>
 
     <!-- Helpers -->
@@ -317,6 +351,12 @@
                     <a href="modules/our-social" class="menu-link">
                       <i class="menu-icon icon-base ti tabler-brand-instagram"></i>
                       <div data-i18n="Our Social">Our Social</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="modules/escape-room" class="menu-link">
+                      <i class="menu-icon icon-base ti tabler-puzzle"></i>
+                      <div data-i18n="Escape Room">Escape Room</div>
                     </a>
                   </li>
                 </ul>
@@ -620,6 +660,27 @@
                           <i class="ti tabler-arrow-right ms-1"></i>
                         </a>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second Row for Escape Room -->
+                <div class="row g-4 mt-2 justify-content-center">
+                  <!-- Escape Room Card -->
+                  <div class="col-lg-6 col-md-8">
+                    <div class="card h-100 shadow-lg border-0 navigation-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                      <div class="card-body text-center p-5">
+                        <div class="nav-icon-wrapper mb-4">
+                          <i class="ti tabler-puzzle text-white" style="font-size: 4rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"></i>
+                        </div>
+                        <h4 class="card-title fw-bold mb-3 text-white" data-i18n="Escape Room">Escape Room Erasmus+</h4>
+                        <p class="card-text mb-4 opacity-90" data-i18n="play_escape_room">Metti alla prova le tue conoscenze sui progetti europei con il nostro gioco escape room interattivo!</p>
+                        <a href="modules/escape-room" class="btn btn-light btn-lg stretched-link shadow-sm">
+                          <i class="ti tabler-play me-2"></i>
+                          <span data-i18n="play_now">Gioca Ora</span>
+                        </a>
+                      </div>
+                      <div class="card-decoration"></div>
                     </div>
                   </div>
                 </div>
