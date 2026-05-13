@@ -196,11 +196,11 @@
             <!-- Content -->
             <div data-bs-spy="scroll" class="scrollspy-example">
               <!-- Hero Section -->
-              <section id="hero-animation">
+              <section id="hero-animation" class="social-page-hero">
                 <div id="landingHero" class="section-py landing-hero position-relative">
                   <div class="container">
                     <div class="hero-text-box text-center position-relative">
-                      <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Social">Our Social</h1>
+                      <h1 class="hero-title display-6 fw-extrabold" data-i18n="Our Social">Our Social</h1>
                     </div>
                   </div>
                 </div>
@@ -214,6 +214,19 @@
                     <div class="text-center mb-5">
                       <h2 class="display-5 fw-bold text-primary" data-i18n="social_feed">Social Feed</h2>
                       <p class="lead" data-i18n="follow_erasmus_activities">Follow our Erasmus+ projects and association activities</p>
+                    </div>
+
+                    <!-- Platform quick-links -->
+                    <div class="social-platforms-row">
+                      <a href="https://www.facebook.com/senzaconfiniAPS" target="_blank" class="platform-pill platform-pill-fb">
+                        <i class="ti tabler-brand-facebook"></i> Facebook
+                      </a>
+                      <a href="https://www.instagram.com/senzaconfiniaps" target="_blank" class="platform-pill platform-pill-ig">
+                        <i class="ti tabler-brand-instagram"></i> Instagram
+                      </a>
+                      <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="platform-pill platform-pill-li">
+                        <i class="ti tabler-brand-linkedin"></i> LinkedIn
+                      </a>
                     </div>
 
                     <div class="feed-grid">
@@ -459,6 +472,40 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
+
+    <!-- Language loading -->
+    <script>
+      const LANG_STORAGE_KEY = "currentLang";
+      const DEFAULT_LANG = "en";
+      const LANG_PATH = "../assets/json/locales/";
+
+      function applyTranslations(translations) {
+        window.__i18n = translations;
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[key]) el.innerText = translations[key];
+        });
+      }
+
+      function loadLanguage(lang) {
+        fetch(`${LANG_PATH}${lang}.json`)
+          .then(res => res.json())
+          .then(translations => {
+            applyTranslations(translations);
+            localStorage.setItem(LANG_STORAGE_KEY, lang);
+          })
+          .catch(err => console.error("Language load error:", err));
+      }
+
+      document.querySelectorAll("[data-language]").forEach(btn => {
+        btn.addEventListener("click", () => loadLanguage(btn.getAttribute("data-language")));
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem(LANG_STORAGE_KEY) || DEFAULT_LANG;
+        loadLanguage(savedLang);
+      });
+    </script>
 
     <!-- Simple Video JavaScript -->
     <script>

@@ -378,23 +378,49 @@
                     <h1 class="text-primary hero-title display-6 fw-extrabold">
                       APS Senza Confini
                     </h1>
-
-                    <!-- Nuova Card con Immagine -->
-                    <div class="card mx-auto my-4" style="max-width: 300px;">
-                      <img src="assets/img/custom-img/post-4.jpg" class="card-img-top" alt="APS Senza Confini" loading="lazy" decoding="async" style="width: 100%; max-width: 300px; margin: 0 auto;">
-                      <!-- Se vuoi anche un testo sotto l’immagine:
-                      <div class="card-body">
-                        <p class="card-text">Testo descrittivo opzionale.</p>
-                      </div>
-                      -->
-                    </div>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
+                      Connecting young people across Europe through Erasmus+ projects, social inclusion and intercultural dialogue.
+                    </p>
                     <div class="landing-hero-btn d-inline-block position-relative">
-                      <a href="modules/our-projects" class="btn btn-primary btn-lg" data-i18n="Discover Our Projects">Discover Our Projects</a>
+                      <a href="modules/our-projects" class="btn btn-primary btn-lg rounded-pill px-4" data-i18n="Discover Our Projects">Discover Our Projects</a>
                     </div>
                   </div>
                 </div>
               </div>
 
+            </section>
+
+            <!-- Stats Counter Section -->
+            <section id="stats-section" class="stats-section">
+              <div class="container">
+                <h3 class="stats-section-title" data-i18n="our_impact">Our Impact in Numbers</h3>
+                <div class="stats-grid">
+                  <div class="stat-item" data-target="20">
+                    <div class="stat-number-row">
+                      <span class="stat-number">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label" data-i18n="stat_projects_label">Projects</span>
+                  </div>
+                  <div class="stat-item" data-target="15">
+                    <div class="stat-number-row">
+                      <span class="stat-number">0</span>
+                    </div>
+                    <span class="stat-label" data-i18n="stat_countries_label">Countries</span>
+                  </div>
+                  <div class="stat-item" data-target="200">
+                    <div class="stat-number-row">
+                      <span class="stat-number">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label" data-i18n="stat_participants_label">Participants</span>
+                  </div>
+                  <div class="stat-item" data-target="5">
+                    <div class="stat-number-row">
+                      <span class="stat-number">0</span>
+                    </div>
+                    <span class="stat-label" data-i18n="stat_years_label">Years Active</span>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <!-- New Animated Banner Section -->
@@ -419,9 +445,9 @@
                           loading="lazy"
                         />
                         
-                        <!-- Overlay Content -->
+                        <!-- Overlay Content — always visible -->
                         <div class="banner-overlay-content position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                          <div class="text-center text-white banner-text-content animate-on-scroll-delay">
+                          <div class="text-center text-white banner-text-content animate-on-scroll-delay in-view">
                             <h2 class="banner-title display-4 fw-bold mb-3" data-i18n="banner_title">
                               Together Beyond Borders
                             </h2>
@@ -608,12 +634,13 @@
                   <div class="col-lg-3 col-md-6">
                     <div class="card h-100 shadow-sm border-0 navigation-card">
                       <div class="card-body text-center p-4">
+                        <div class="nav-card-accent nav-card-accent-primary"></div>
                         <div class="nav-icon-wrapper mb-3">
                           <i class="ti tabler-info-octagon text-primary" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="card-title fw-bold mb-3" data-i18n="About Us">About Us</h5>
                         <p class="card-text text-muted mb-4" data-i18n="learn_about_mission">Learn about our mission and values</p>
-                        <a href="modules/about-us" class="btn btn-outline-primary btn-sm stretched-link">
+                        <a href="modules/about-us" class="btn btn-outline-primary btn-sm stretched-link rounded-pill">
                           <span data-i18n="discover">Discover</span>
                           <i class="ti tabler-arrow-right ms-1"></i>
                         </a>
@@ -625,12 +652,13 @@
                   <div class="col-lg-3 col-md-6">
                     <div class="card h-100 shadow-sm border-0 navigation-card">
                       <div class="card-body text-center p-4">
+                        <div class="nav-card-accent nav-card-accent-success"></div>
                         <div class="nav-icon-wrapper mb-3">
                           <i class="ti tabler-users-group text-success" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="card-title fw-bold mb-3" data-i18n="Our Team">Our Team</h5>
                         <p class="card-text text-muted mb-4" data-i18n="meet_team_members">Meet our dedicated team members</p>
-                        <a href="modules/our-team" class="btn btn-outline-success btn-sm stretched-link">
+                        <a href="modules/our-team" class="btn btn-outline-success btn-sm stretched-link rounded-pill">
                           <span data-i18n="meet_us">Meet Us</span>
                           <i class="ti tabler-arrow-right ms-1"></i>
                         </a>
@@ -642,12 +670,13 @@
                   <div class="col-lg-3 col-md-6">
                     <div class="card h-100 shadow-sm border-0 navigation-card">
                       <div class="card-body text-center p-4">
+                        <div class="nav-card-accent nav-card-accent-warning"></div>
                         <div class="nav-icon-wrapper mb-3">
                           <i class="ti tabler-briefcase text-warning" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="card-title fw-bold mb-3" data-i18n="Our Projects">Our Projects</h5>
                         <p class="card-text text-muted mb-4" data-i18n="explore_erasmus_projects">Explore our Erasmus+ projects</p>
-                        <a href="modules/our-projects" class="btn btn-outline-warning btn-sm stretched-link">
+                        <a href="modules/our-projects" class="btn btn-outline-warning btn-sm stretched-link rounded-pill">
                           <span data-i18n="view_projects">View Projects</span>
                           <i class="ti tabler-arrow-right ms-1"></i>
                         </a>
@@ -659,12 +688,13 @@
                   <div class="col-lg-3 col-md-6">
                     <div class="card h-100 shadow-sm border-0 navigation-card">
                       <div class="card-body text-center p-4">
+                        <div class="nav-card-accent nav-card-accent-danger"></div>
                         <div class="nav-icon-wrapper mb-3">
                           <i class="ti tabler-brand-instagram text-danger" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="card-title fw-bold mb-3" data-i18n="Our Social">Our Social</h5>
                         <p class="card-text text-muted mb-4" data-i18n="follow_social_media">Follow our social media activities</p>
-                        <a href="modules/our-social" class="btn btn-outline-danger btn-sm stretched-link">
+                        <a href="modules/our-social" class="btn btn-outline-danger btn-sm stretched-link rounded-pill">
                           <span data-i18n="follow_us">Follow Us</span>
                           <i class="ti tabler-arrow-right ms-1"></i>
                         </a>
@@ -679,6 +709,7 @@
                   <div class="col-lg-6 col-md-8">
                     <div class="card h-100 shadow-lg border-0 navigation-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
                       <div class="card-body text-center p-5">
+                        <div class="nav-card-accent nav-card-accent-purple" style="background: rgba(255,255,255,0.3); margin-top:-2rem;"></div>
                         <div class="nav-icon-wrapper mb-4">
                           <i class="ti tabler-puzzle text-white" style="font-size: 4rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));"></i>
                         </div>
@@ -884,6 +915,7 @@
       }
 
       function applyTranslations(translations) {
+        window.__i18n = translations;
         // Per il testo (innerText)
         document.querySelectorAll("[data-i18n]").forEach(el => {
           const key = el.getAttribute("data-i18n");
@@ -916,7 +948,42 @@
       });
     </script>
     <script src="assets/js/front-page-landing.js"></script>
+    <script>
+      // Count-up animation for stats section
+      (function() {
+        function animateCountUp(numEl) {
+          var item = numEl.closest('.stat-item');
+          var target = parseInt(item.getAttribute('data-target'), 10);
+          if (!target) return;
+          var duration = 1600;
+          var start = null;
+          function step(ts) {
+            if (!start) start = ts;
+            var progress = Math.min((ts - start) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            numEl.textContent = Math.floor(eased * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else numEl.textContent = target;
+          }
+          requestAnimationFrame(step);
+        }
 
+        var fired = false;
+        var statsSection = document.getElementById('stats-section');
+        if (statsSection && 'IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+              if (e.isIntersecting && !fired) {
+                fired = true;
+                statsSection.querySelectorAll('.stat-number').forEach(animateCountUp);
+                io.unobserve(statsSection);
+              }
+            });
+          }, { threshold: 0.3 });
+          io.observe(statsSection);
+        }
+      })();
+    </script>
 
     <!-- Modal -->
     <div class="modal fade" id="slideModal" tabindex="-1" aria-labelledby="slideModalLabel" aria-hidden="true">

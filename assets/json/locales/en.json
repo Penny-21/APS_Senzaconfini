@@ -282,5 +282,16 @@
   "follow_social_channels": "Follow us on our social channels!",
   "facebook": "Facebook",
   "instagram": "Instagram",
-  "linkedin": "LinkedIn"
+  "linkedin": "LinkedIn",
+  "read_more": "Read more",
+  "read_less": "Show less",
+  "our_impact": "Our Impact in Numbers",
+  "stat_projects_label": "Projects",
+  "stat_countries_label": "Countries",
+  "stat_participants_label": "Participants",
+  "stat_years_label": "Years Active",
+  "team_card_tagline": "Meet the passionate people behind APS Senza Confini",
+  "hero_subtitle": "Connecting young people across Europe through Erasmus+ projects, social inclusion and intercultural dialogue.",
+  "founded": "Founded",
+  "contact_member": "Contact"
 }

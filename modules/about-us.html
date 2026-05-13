@@ -237,6 +237,30 @@
             </section>
             <!-- Hero Section End -->
 
+            <!-- Mini-Stats Strip -->
+            <section class="mini-stats-section py-4 border-bottom">
+              <div class="container">
+                <div class="mini-stats-row">
+                  <div class="mini-stat">
+                    <span class="mini-stat-num">2020</span>
+                    <span class="mini-stat-lbl" data-i18n="founded">Founded</span>
+                  </div>
+                  <div class="mini-stat">
+                    <span class="mini-stat-num">20+</span>
+                    <span class="mini-stat-lbl" data-i18n="stat_projects_label">Projects</span>
+                  </div>
+                  <div class="mini-stat">
+                    <span class="mini-stat-num">15</span>
+                    <span class="mini-stat-lbl" data-i18n="stat_countries_label">Countries</span>
+                  </div>
+                  <div class="mini-stat">
+                    <span class="mini-stat-num">200+</span>
+                    <span class="mini-stat-lbl" data-i18n="stat_participants_label">Participants</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <!-- Sezione About Us & Aims -->
             <section id="about-us-info" class="section-py about-us-info-section">
               <div class="container">
@@ -383,6 +407,38 @@
   <script src="../assets/js/front-page-landing.js"></script>
 
   <!-- Page JS -->
+  <script>
+    const LANG_STORAGE_KEY = "currentLang";
+    const DEFAULT_LANG = "en";
+    const LANG_PATH = "../assets/json/locales/";
+
+    function applyTranslations(translations) {
+      window.__i18n = translations;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[key]) el.innerText = translations[key];
+      });
+    }
+
+    function loadLanguage(lang) {
+      fetch(`${LANG_PATH}${lang}.json`)
+        .then(res => res.json())
+        .then(translations => {
+          applyTranslations(translations);
+          localStorage.setItem(LANG_STORAGE_KEY, lang);
+        })
+        .catch(err => console.error("Language load error:", err));
+    }
+
+    document.querySelectorAll("[data-language]").forEach(btn => {
+      btn.addEventListener("click", () => loadLanguage(btn.getAttribute("data-language")));
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem(LANG_STORAGE_KEY) || DEFAULT_LANG;
+      loadLanguage(savedLang);
+    });
+  </script>
 </body>
 
 </html>
