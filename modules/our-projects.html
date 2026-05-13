@@ -259,7 +259,7 @@
 
                 <h4 class=”mt-4 reveal-on-scroll” data-i18n=”project_examples_title”>📌 Here are some examples of projects we’ve carried out:</h4>
                 <ul class=”project-timeline reveal-on-scroll” style=”list-style:none; padding-left:0; border-left:none;”>
-                  <li class=”project-item-card” data-i18n=”project_0”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-social”>Con i Bambini</span>
                       <span class=”text-muted small”>2020</span>
@@ -268,7 +268,7 @@
                       <strong>2020-EDU-02341 With the Children _ Educating Communities:</strong> Project “UMBERTIAMO: EDUCATIONAL COMMUNITY UMBERTO I” — social inclusion, active citizenship, community cooperation, creation of an educational community in the Umbertino district of La Spezia
                     </div>
                   </li>
-                  <li class=”project-item-card” data-i18n=”project_1”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-ka2”>Erasmus+ KA2</span>
                       <span class=”text-muted small”>2025</span>
@@ -277,7 +277,7 @@
                       <strong>KA210-YOU “Tech QUEENS - AI”:</strong> Young people from Italy and Luxembourg engaged in an AI literacy training journey through local environmental education activities and an international youth policy conference.
                     </div>
                   </li>
-                  <li class=”project-item-card” data-i18n=”project_2”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-erasmus”>Erasmus+ Youth Exchange</span>
                       <span class=”text-muted small”>2023–2024</span>
@@ -286,7 +286,7 @@
                       <strong>KA152-YOU-BA820889 &amp; KA152-YOU-219A1096:</strong> Youth exchanges in La Spezia and across Europe to promote active citizenship, intercultural dialogue, and sustainability, involving 60+ young participants in creative, sporting, and participatory activities.
                     </div>
                   </li>
-                  <li class=”project-item-card” data-i18n=”project_3”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-social”>Social Enterprise</span>
                       <span class=”text-muted small”>€1.3M</span>
@@ -297,7 +297,7 @@
                       <a href=”#” data-i18n=”see_project_link”>👉 See the project</a>
                     </div>
                   </li>
-                  <li class=”project-item-card” data-i18n=”project_4”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-erasmus”>Erasmus+ KA1</span>
                       <span class=”text-muted small”>2024–2025</span>
@@ -306,7 +306,7 @@
                       <strong>KA1 Mobility Projects (2024–2025):</strong> We take part in international training projects for youth workers, promoting non-formal education on mental well-being, inclusion, and digital skills.
                     </div>
                   </li>
-                  <li class=”project-item-card” data-i18n=”project_5”>
+                  <li class=”project-item-card”>
                     <div class=”project-item-header”>
                       <span class=”project-badge badge badge-ka2”>Erasmus+ KA2</span>
                       <span class=”text-muted small”>2025</span>
@@ -429,6 +429,43 @@
   <script src="../assets/js/front-page-landing.js"></script>
 
   <!-- Page JS -->
+  <script>
+    const LANG_STORAGE_KEY = "currentLang";
+    const DEFAULT_LANG = "en";
+    const LANG_PATH = "../assets/json/locales/";
+
+    function applyTranslations(translations) {
+      window.__i18n = translations;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[key]) el.innerText = translations[key];
+      });
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (translations[key]) el.setAttribute("placeholder", translations[key]);
+      });
+    }
+
+    function loadLanguage(lang) {
+      fetch(`${LANG_PATH}${lang}.json`)
+        .then(res => res.json())
+        .then(translations => {
+          applyTranslations(translations);
+          localStorage.setItem(LANG_STORAGE_KEY, lang);
+        })
+        .catch(err => console.error("Language load error:", err));
+    }
+
+    document.querySelectorAll("[data-language]").forEach(btn => {
+      btn.addEventListener("click", () => loadLanguage(btn.getAttribute("data-language")));
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem(LANG_STORAGE_KEY) || DEFAULT_LANG;
+      loadLanguage(savedLang);
+    });
+  </script>
+
   <script>
     (function() {
       var elements = Array.prototype.slice.call(document.querySelectorAll('.reveal-on-scroll'));
