@@ -448,7 +448,7 @@ class EscapeRoomGame {
       text: question.explanation,
       icon: icon,
       confirmButtonText: 'Continua',
-      confirmButtonColor: '#667eea',
+      confirmButtonColor: '#6366f1',
       timer: 4000,
       timerProgressBar: true,
       allowOutsideClick: false,
@@ -525,7 +525,7 @@ class EscapeRoomGame {
       confirmButtonText: 'Sì, salta',
       cancelButtonText: 'No, continua',
       confirmButtonColor: '#ffc107',
-      cancelButtonColor: '#667eea',
+      cancelButtonColor: '#6366f1',
       customClass: {
         popup: 'game-modal',
         confirmButton: 'btn btn-warning',

@@ -4,7 +4,7 @@
 .escape-room-container {
   min-height: 100vh;
   padding: 2rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   position: relative;
   overflow: hidden;
 }
@@ -83,13 +83,13 @@
 }
 
 .stat-item:hover {
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #667eea;
+  color: #6366f1;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -133,7 +133,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #6366f1);
   background-size: 200% 100%;
   animation: gradientShift 3s ease infinite;
 }
@@ -181,7 +181,7 @@
 }
 
 .question-card .card-header {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
   padding: 1.5rem;
@@ -213,7 +213,7 @@
 .partners-section {
   position: relative;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-top: 1px solid rgba(102, 126, 234, 0.1);
+  border-top: 1px solid rgba(99, 102, 241, 0.1);
   margin-top: 2rem;
 }
 
@@ -224,7 +224,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #667eea, transparent);
+  background: linear-gradient(90deg, transparent, #6366f1, transparent);
 }
 
 .partner-logo {
@@ -323,10 +323,10 @@
 }
 
 .answer-option:hover {
-  background: rgba(102, 126, 234, 0.1);
-  border-color: #667eea;
+  background: rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.2);
 }
 
 .answer-option:hover::before {
@@ -373,7 +373,7 @@
 }
 
 .answer-letter {
-  background: #667eea;
+  background: #6366f1;
   color: white;
   width: 40px;
   height: 40px;
@@ -490,7 +490,7 @@
 }
 
 .final-stats {
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(99, 102, 241, 0.05);
   border-radius: 15px;
   padding: 2rem;
   margin: 2rem 0;
@@ -609,9 +609,9 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 3px solid rgba(102, 126, 234, 0.3);
+  border: 3px solid rgba(99, 102, 241, 0.3);
   border-radius: 50%;
-  border-top-color: #667eea;
+  border-top-color: #6366f1;
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -677,7 +677,7 @@
 }
 
 .mini-game-card .card-header {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
   padding: 1.5rem;
@@ -697,7 +697,7 @@
 .memory-enhanced-card {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -712,12 +712,12 @@
 
 .memory-enhanced-card:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.3);
 }
 
 .memory-enhanced-card.flipped {
   background: white;
-  border-color: #667eea;
+  border-color: #6366f1;
   transform: rotateY(180deg);
 }
 
@@ -819,7 +819,7 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #6366f1;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   animation: questionSlide 0.5s ease;
 }
@@ -866,10 +866,10 @@
 }
 
 .quiz-option:hover {
-  background: rgba(102, 126, 234, 0.1);
-  border-color: #667eea;
+  background: rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
 }
 
 .quiz-option:hover::before {
@@ -931,15 +931,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
   transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
 
 .odd-item:hover {
   transform: translateY(-5px) scale(1.02);
-  border-color: #667eea;
-  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+  border-color: #6366f1;
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
 }
 
 .odd-item:hover::before {
@@ -1088,7 +1088,7 @@
 
 /* Fix SweetAlert2 buttons */
 .swal2-popup .swal2-actions button {
-  background: #667eea !important;
+  background: #6366f1 !important;
   color: white !important;
   border: none !important;
   border-radius: 25px !important;
@@ -1097,7 +1097,7 @@
   font-size: 16px !important;
   margin: 0 8px !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3) !important;
   text-transform: none !important;
   min-width: 120px !important;
 }
@@ -1105,17 +1105,17 @@
 .swal2-popup .swal2-actions button:hover {
   background: #5a67d8 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4) !important;
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4) !important;
 }
 
 .swal2-popup .swal2-actions button:active {
   transform: translateY(0) !important;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3) !important;
 }
 
 /* Different button types for SweetAlert2 */
 .swal2-popup .swal2-confirm {
-  background: #667eea !important;
+  background: #6366f1 !important;
 }
 
 .swal2-popup .swal2-cancel {
@@ -1178,7 +1178,7 @@
 
 /* Fix for any unstyled buttons in the game */
 .escape-room-container button:not([class*="swal2"]) {
-  background: #667eea;
+  background: #6366f1;
   color: white;
   border: none;
   border-radius: 25px;
@@ -1187,18 +1187,18 @@
   font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .escape-room-container button:not([class*="swal2"]):hover {
   background: #5a67d8;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
 }
 
 /* Ensure mini-game complete button has proper styling */
 #miniGameComplete .btn {
-  background: #667eea !important;
+  background: #6366f1 !important;
   color: white !important;
   border: none !important;
   border-radius: 25px !important;
@@ -1206,7 +1206,7 @@
   font-weight: 600 !important;
   font-size: 1.1rem !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3) !important;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3) !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -1215,7 +1215,7 @@
 #miniGameComplete .btn:hover {
   background: #5a67d8 !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4) !important;
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4) !important;
 }
 
 #miniGameComplete .btn:active {
