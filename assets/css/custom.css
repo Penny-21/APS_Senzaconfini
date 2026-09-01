@@ -2465,6 +2465,156 @@ html {
 }
 
 /* ============================================ */
+/* HOMEPAGE CONTENT SECTIONS                    */
+/* (Who We Are / What We Do / Get Involved)     */
+/* ============================================ */
+.home-lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--bs-body-color);
+  margin-bottom: 1rem;
+}
+
+#what-we-do {
+  background: rgba(var(--brand-indigo-rgb), 0.035);
+}
+
+.wwd-card {
+  height: 100%;
+  background: var(--bs-paper-bg, var(--bs-body-bg));
+  border: 1px solid var(--bs-border-color);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-base) var(--ease-smooth),
+              box-shadow var(--t-base) var(--ease-smooth),
+              border-color var(--t-base) var(--ease-smooth);
+  will-change: transform;
+}
+
+.wwd-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-hover);
+}
+
+.wwd-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(var(--brand-blue-rgb), 0.12) 0%, rgba(var(--brand-indigo-rgb), 0.12) 100%);
+  color: var(--bs-primary);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.wwd-card h5 {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.wwd-card p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--bs-secondary-color, #64748b);
+  margin-bottom: 0;
+}
+
+/* Get Involved — two-audience cards */
+.involve-card {
+  height: 100%;
+  background: var(--bs-paper-bg, var(--bs-body-bg));
+  border: 1px solid var(--bs-border-color);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-base) var(--ease-smooth),
+              box-shadow var(--t-base) var(--ease-smooth),
+              border-color var(--t-base) var(--ease-smooth);
+}
+
+.involve-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-hover);
+}
+
+.involve-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gradient-brand);
+}
+
+.involve-card.involve-card-alt::before {
+  background: var(--gradient-brand-soft);
+}
+
+.involve-card h4 {
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.involve-card p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--bs-secondary-color, #64748b);
+}
+
+.involve-steps {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+  counter-reset: involve-step;
+}
+
+.involve-steps li {
+  position: relative;
+  padding-left: 2.6rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--bs-body-color);
+  counter-increment: involve-step;
+}
+
+.involve-steps li::before {
+  content: counter(involve-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-brand);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.booking-hint {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--bs-secondary-color, #94a3b8);
+  margin-top: 0.75rem;
+}
+
+[data-bs-theme="dark"] #what-we-do {
+  background: rgba(var(--brand-indigo-rgb), 0.06);
+}
+
+/* ============================================ */
 /* DARK THEME — remaining gaps                  */
 /* ============================================ */
 
