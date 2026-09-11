@@ -4,7 +4,7 @@
 .escape-room-container {
   min-height: 100vh;
   padding: 2rem 0;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #8F6A2C 0%, #B8873A 100%);
   position: relative;
   overflow: hidden;
 }
@@ -17,9 +17,9 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(220, 53, 69, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(143, 106, 44, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(184, 135, 58, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(156, 59, 46, 0.2) 0%, transparent 50%);
   pointer-events: none;
   animation: backgroundFloat 20s ease-in-out infinite;
 }
@@ -34,18 +34,18 @@
 .game-header {
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.9);
+  background: #F6F4EE;
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
 }
 
 .game-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #2c3e50;
+  color: #1B2340;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
 
 .game-subtitle {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: #4A5170;
   margin: 0;
 }
 
@@ -63,11 +63,11 @@
 .game-stats {
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
   backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   transition: all 0.3s ease;
 }
 
@@ -83,20 +83,20 @@
 }
 
 .stat-item:hover {
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(143, 106, 44, 0.1);
 }
 
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #6366f1;
+  color: #8F6A2C;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-label {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: #4A5170;
   margin: 0;
   font-weight: 500;
   text-transform: uppercase;
@@ -117,11 +117,11 @@
 
 /* Welcome Card */
 .welcome-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
   backdrop-filter: blur(15px);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   overflow: hidden;
   position: relative;
 }
@@ -133,7 +133,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6, #6366f1);
+  background: linear-gradient(90deg, #8F6A2C, #B8873A, #8F6A2C);
   background-size: 200% 100%;
   animation: gradientShift 3s ease infinite;
 }
@@ -158,7 +158,7 @@
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   transition: all 0.3s ease;
   margin: 0 0.5rem;
 }
@@ -171,17 +171,17 @@
 
 /* Question Card */
 .question-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
   backdrop-filter: blur(15px);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   overflow: hidden;
   min-height: 500px;
 }
 
 .question-card .card-header {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #8F6A2C, #B8873A);
   color: white;
   border: none;
   padding: 1.5rem;
@@ -205,15 +205,15 @@
 }
 
 .progress-bar {
-  background: linear-gradient(90deg, #28a745, #20c997);
+  background: linear-gradient(90deg, #2F6B4F, #3E8C6A);
   transition: width 0.3s ease;
 }
 
 /* Partners Section */
 .partners-section {
   position: relative;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-top: 1px solid rgba(99, 102, 241, 0.1);
+  background: linear-gradient(135deg, #F6F4EE 0%, #DDD8CA 100%);
+  border-top: 1px solid rgba(143, 106, 44, 0.1);
   margin-top: 2rem;
 }
 
@@ -224,15 +224,15 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #6366f1, transparent);
+  background: linear-gradient(90deg, transparent, #8F6A2C, transparent);
 }
 
 .partner-logo {
   padding: 1rem;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.8);
+  background: #F6F4EE;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   height: 120px;
@@ -244,7 +244,7 @@
 .partner-logo:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
 }
 
 .partner-img {
@@ -270,7 +270,7 @@
 
 
 .progress-bar {
-  background: linear-gradient(90deg, #28a745, #20c997);
+  background: linear-gradient(90deg, #2F6B4F, #3E8C6A);
   transition: width 0.3s ease;
 }
 
@@ -282,7 +282,7 @@
 .question-text {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #1B2340;
   line-height: 1.6;
 }
 
@@ -301,8 +301,8 @@
 }
 
 .answer-option {
-  background: rgba(255, 255, 255, 0.8);
-  border: 2px solid #e9ecef;
+  background: #F6F4EE;
+  border: 2px solid #DDD8CA;
   border-radius: 15px;
   padding: 1.5rem;
   cursor: pointer;
@@ -323,10 +323,10 @@
 }
 
 .answer-option:hover {
-  background: rgba(99, 102, 241, 0.1);
-  border-color: #6366f1;
+  background: rgba(143, 106, 44, 0.1);
+  border-color: #8F6A2C;
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 15px 30px rgba(143, 106, 44, 0.2);
 }
 
 .answer-option:hover::before {
@@ -334,14 +334,14 @@
 }
 
 .answer-option.correct {
-  background: rgba(40, 167, 69, 0.1);
-  border-color: #28a745;
+  background: rgba(47, 107, 79, 0.1);
+  border-color: #2F6B4F;
   animation: correctPulse 0.6s ease;
 }
 
 .answer-option.wrong {
-  background: rgba(220, 53, 69, 0.1);
-  border-color: #dc3545;
+  background: rgba(156, 59, 46, 0.1);
+  border-color: #9C3B2E;
   animation: wrongShake 0.6s ease;
 }
 
@@ -365,7 +365,7 @@
 .answer-text {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #495057;
+  color: #4A5170;
   margin: 0;
   display: flex;
   align-items: center;
@@ -373,7 +373,7 @@
 }
 
 .answer-letter {
-  background: #6366f1;
+  background: #8F6A2C;
   color: white;
   width: 40px;
   height: 40px;
@@ -387,11 +387,11 @@
 }
 
 .answer-option.correct .answer-letter {
-  background: #28a745;
+  background: #2F6B4F;
 }
 
 .answer-option.wrong .answer-letter {
-  background: #dc3545;
+  background: #9C3B2E;
 }
 
 /* Hint Section */
@@ -424,53 +424,53 @@
   padding: 0.75rem 1.5rem;
   transition: all 0.3s ease;
   border: 2px solid;
-  background: white;
+  background: #F6F4EE;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .question-actions .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background: white;
+  background: #F6F4EE;
 }
 
 /* Suggerimento Button - Ciano/Azzurro */
 .question-actions .btn-outline-info {
-  border-color: #20c997 !important;
-  color: #20c997 !important;
-  background: white !important;
+  border-color: #3E8C6A !important;
+  color: #3E8C6A !important;
+  background: #F6F4EE !important;
 }
 
 .question-actions .btn-outline-info:hover {
-  background: #20c997 !important;
-  border-color: #20c997 !important;
+  background: #3E8C6A !important;
+  border-color: #3E8C6A !important;
   color: white !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 20px rgba(32, 201, 151, 0.4) !important;
+  box-shadow: 0 8px 20px rgba(62, 140, 106, 0.4) !important;
 }
 
 /* Salta Button - Giallo/Arancione */ 
 .question-actions .btn-outline-warning {
-  border-color: #ffc107 !important;
-  color: #ffc107 !important;
-  background: white !important;
+  border-color: #B8873A !important;
+  color: #B8873A !important;
+  background: #F6F4EE !important;
 }
 
 .question-actions .btn-outline-warning:hover {
-  background: #ffc107 !important;
-  border-color: #ffc107 !important;
-  color: #212529 !important;
+  background: #B8873A !important;
+  border-color: #B8873A !important;
+  color: #1B2340 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4) !important;
+  box-shadow: 0 8px 20px rgba(184, 135, 58, 0.4) !important;
 }
 
 /* Complete Card */
 .complete-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
   backdrop-filter: blur(15px);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   overflow: hidden;
 }
 
@@ -490,7 +490,7 @@
 }
 
 .final-stats {
-  background: rgba(99, 102, 241, 0.05);
+  background: rgba(143, 106, 44, 0.05);
   border-radius: 15px;
   padding: 2rem;
   margin: 2rem 0;
@@ -595,11 +595,11 @@
 
 @keyframes timerPulse {
   0%, 100% { 
-    background: rgba(220, 53, 69, 0.2); 
-    color: #dc3545; 
+    background: rgba(156, 59, 46, 0.2); 
+    color: #9C3B2E; 
   }
   50% { 
-    background: rgba(220, 53, 69, 0.4); 
+    background: rgba(156, 59, 46, 0.4); 
     color: #ffffff; 
   }
 }
@@ -609,9 +609,9 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 3px solid rgba(99, 102, 241, 0.3);
+  border: 3px solid rgba(143, 106, 44, 0.3);
   border-radius: 50%;
-  border-top-color: #6366f1;
+  border-top-color: #8F6A2C;
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -626,7 +626,7 @@
 
 @keyframes scoreUp {
   0% { transform: scale(1); }
-  50% { transform: scale(1.2); color: #28a745; }
+  50% { transform: scale(1.2); color: #2F6B4F; }
   100% { transform: scale(1); }
 }
 
@@ -655,11 +655,11 @@
 
 /* Mini Game Card */
 .mini-game-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: #F6F4EE;
   backdrop-filter: blur(15px);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 35, 64, 0.16);
   overflow: hidden;
   min-height: 500px;
   animation: slideInUp 0.6s ease;
@@ -677,7 +677,7 @@
 }
 
 .mini-game-card .card-header {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #8F6A2C, #B8873A);
   color: white;
   border: none;
   padding: 1.5rem;
@@ -697,7 +697,7 @@
 .memory-enhanced-card {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #8F6A2C, #B8873A);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -712,18 +712,18 @@
 
 .memory-enhanced-card:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 35px rgba(143, 106, 44, 0.3);
 }
 
 .memory-enhanced-card.flipped {
-  background: white;
-  border-color: #6366f1;
+  background: #F6F4EE;
+  border-color: #8F6A2C;
   transform: rotateY(180deg);
 }
 
 .memory-enhanced-card.matched {
-  background: linear-gradient(135deg, #28a745, #20c997);
-  border-color: #28a745;
+  background: linear-gradient(135deg, #2F6B4F, #3E8C6A);
+  border-color: #2F6B4F;
   animation: matchSuccess 0.8s ease;
   cursor: default;
 }
@@ -780,7 +780,7 @@
 .quiz-progress-bar {
   width: 100%;
   height: 8px;
-  background: #e9ecef;
+  background: #DDD8CA;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -789,7 +789,7 @@
 
 .quiz-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #28a745, #20c997);
+  background: linear-gradient(90deg, #2F6B4F, #3E8C6A);
   border-radius: 4px;
   transition: width 0.3s ease;
   position: relative;
@@ -814,12 +814,12 @@
 .quiz-question {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #1B2340;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: #F6F4EE;
   border-radius: 15px;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #6366f1;
+  border-left: 4px solid #8F6A2C;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   animation: questionSlide 0.5s ease;
 }
@@ -841,15 +841,15 @@
 }
 
 .quiz-option {
-  background: white;
-  border: 2px solid #e9ecef;
+  background: #F6F4EE;
+  border: 2px solid #DDD8CA;
   border-radius: 12px;
   padding: 1rem 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
   font-weight: 500;
-  color: #495057;
+  color: #4A5170;
   position: relative;
   overflow: hidden;
 }
@@ -866,10 +866,10 @@
 }
 
 .quiz-option:hover {
-  background: rgba(99, 102, 241, 0.1);
-  border-color: #6366f1;
+  background: rgba(143, 106, 44, 0.1);
+  border-color: #8F6A2C;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 8px 25px rgba(143, 106, 44, 0.2);
 }
 
 .quiz-option:hover::before {
@@ -877,14 +877,14 @@
 }
 
 .quiz-option.correct {
-  background: rgba(40, 167, 69, 0.1);
-  border-color: #28a745;
+  background: rgba(47, 107, 79, 0.1);
+  border-color: #2F6B4F;
   animation: correctPulse 0.6s ease;
 }
 
 .quiz-option.wrong {
-  background: rgba(220, 53, 69, 0.1);
-  border-color: #dc3545;
+  background: rgba(156, 59, 46, 0.1);
+  border-color: #9C3B2E;
   animation: wrongShake 0.5s ease;
 }
 
@@ -910,8 +910,8 @@
 .odd-item {
   width: 120px;
   height: 120px;
-  background: white;
-  border: 3px solid #e9ecef;
+  background: #F6F4EE;
+  border: 3px solid #DDD8CA;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -931,15 +931,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(143, 106, 44, 0.1), transparent);
   transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
 
 .odd-item:hover {
   transform: translateY(-5px) scale(1.02);
-  border-color: #6366f1;
-  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+  border-color: #8F6A2C;
+  box-shadow: 0 15px 35px rgba(143, 106, 44, 0.2);
 }
 
 .odd-item:hover::before {
@@ -947,8 +947,8 @@
 }
 
 .odd-item.correct {
-  border-color: #28a745;
-  background: rgba(40, 167, 69, 0.05);
+  border-color: #2F6B4F;
+  background: rgba(47, 107, 79, 0.05);
   animation: oddSuccess 0.8s ease;
   pointer-events: none;
 }
@@ -960,8 +960,8 @@
 }
 
 .odd-item.wrong {
-  border-color: #dc3545;
-  background: rgba(220, 53, 69, 0.05);
+  border-color: #9C3B2E;
+  background: rgba(156, 59, 46, 0.05);
   animation: wrongPulse 0.5s ease;
 }
 
@@ -979,7 +979,7 @@
 .odd-item-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #6c757d;
+  color: #4A5170;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -989,11 +989,11 @@
 }
 
 .odd-item.correct .odd-item-icon {
-  color: #28a745;
+  color: #2F6B4F;
 }
 
 .odd-item.wrong .odd-item-icon {
-  color: #dc3545;
+  color: #9C3B2E;
 }
 
 /* General Mini Game Animations */
@@ -1088,7 +1088,7 @@
 
 /* Fix SweetAlert2 buttons */
 .swal2-popup .swal2-actions button {
-  background: #6366f1 !important;
+  background: #8F6A2C !important;
   color: white !important;
   border: none !important;
   border-radius: 25px !important;
@@ -1097,65 +1097,65 @@
   font-size: 16px !important;
   margin: 0 8px !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(143, 106, 44, 0.3) !important;
   text-transform: none !important;
   min-width: 120px !important;
 }
 
 .swal2-popup .swal2-actions button:hover {
-  background: #5a67d8 !important;
+  background: #7A5A24 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 6px 16px rgba(143, 106, 44, 0.4) !important;
 }
 
 .swal2-popup .swal2-actions button:active {
   transform: translateY(0) !important;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3) !important;
+  box-shadow: 0 2px 8px rgba(143, 106, 44, 0.3) !important;
 }
 
 /* Different button types for SweetAlert2 */
 .swal2-popup .swal2-confirm {
-  background: #6366f1 !important;
+  background: #8F6A2C !important;
 }
 
 .swal2-popup .swal2-cancel {
-  background: #6c757d !important;
+  background: #4A5170 !important;
 }
 
 .swal2-popup .swal2-cancel:hover {
-  background: #545b62 !important;
-  box-shadow: 0 6px 16px rgba(108, 117, 125, 0.4) !important;
+  background: #3A4160 !important;
+  box-shadow: 0 6px 16px rgba(74, 81, 112, 0.4) !important;
 }
 
 /* Success button variant */
 .swal2-popup.swal2-success .swal2-confirm {
-  background: #28a745 !important;
+  background: #2F6B4F !important;
 }
 
 .swal2-popup.swal2-success .swal2-confirm:hover {
-  background: #218838 !important;
-  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.4) !important;
+  background: #255740 !important;
+  box-shadow: 0 6px 16px rgba(47, 107, 79, 0.4) !important;
 }
 
 /* Error button variant */
 .swal2-popup.swal2-error .swal2-confirm {
-  background: #dc3545 !important;
+  background: #9C3B2E !important;
 }
 
 .swal2-popup.swal2-error .swal2-confirm:hover {
-  background: #c82333 !important;
-  box-shadow: 0 6px 16px rgba(220, 53, 69, 0.4) !important;
+  background: #7F2F25 !important;
+  box-shadow: 0 6px 16px rgba(156, 59, 46, 0.4) !important;
 }
 
 /* Warning button variant */
 .swal2-popup.swal2-warning .swal2-confirm {
-  background: #ffc107 !important;
-  color: #212529 !important;
+  background: #B8873A !important;
+  color: #1B2340 !important;
 }
 
 .swal2-popup.swal2-warning .swal2-confirm:hover {
-  background: #e0a800 !important;
-  box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4) !important;
+  background: #9A7130 !important;
+  box-shadow: 0 6px 16px rgba(184, 135, 58, 0.4) !important;
 }
 
 /* Custom game modal class */
@@ -1165,20 +1165,20 @@
 }
 
 .game-modal .swal2-title {
-  color: #2c3e50 !important;
+  color: #1B2340 !important;
   font-weight: 700 !important;
   margin-bottom: 1rem !important;
 }
 
 .game-modal .swal2-content {
-  color: #6c757d !important;
+  color: #4A5170 !important;
   font-size: 1.1rem !important;
   line-height: 1.6 !important;
 }
 
 /* Fix for any unstyled buttons in the game */
 .escape-room-container button:not([class*="swal2"]) {
-  background: #6366f1;
+  background: #8F6A2C;
   color: white;
   border: none;
   border-radius: 25px;
@@ -1187,18 +1187,18 @@
   font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 12px rgba(143, 106, 44, 0.3);
 }
 
 .escape-room-container button:not([class*="swal2"]):hover {
-  background: #5a67d8;
+  background: #7A5A24;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 6px 16px rgba(143, 106, 44, 0.4);
 }
 
 /* Ensure mini-game complete button has proper styling */
 #miniGameComplete .btn {
-  background: #6366f1 !important;
+  background: #8F6A2C !important;
   color: white !important;
   border: none !important;
   border-radius: 25px !important;
@@ -1206,19 +1206,111 @@
   font-weight: 600 !important;
   font-size: 1.1rem !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3) !important;
+  box-shadow: 0 8px 20px rgba(143, 106, 44, 0.3) !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
 }
 
 #miniGameComplete .btn:hover {
-  background: #5a67d8 !important;
+  background: #7A5A24 !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 12px 25px rgba(143, 106, 44, 0.4) !important;
 }
 
 #miniGameComplete .btn:active {
   transform: translateY(-1px) !important;
 }
 
+
+
+/* ============================================================ */
+/* EDITORIAL RESKIN OVERRIDES                                    */
+/* Aligns the game with the site-wide paper / navy / gold system */
+/* ============================================================ */
+
+/* Navy plate instead of the purple gradient + animated blobs */
+.escape-room-container {
+  background: #1B2340;
+}
+
+.escape-room-container::before {
+  content: none;
+}
+
+/* Panels are opaque paper — no frosted glass */
+.game-header,
+.game-stats,
+.welcome-card,
+.question-card,
+.complete-card {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 4px;
+  border: 1px solid rgba(27, 35, 64, 0.16);
+  box-shadow: 0 6px 20px rgba(16, 21, 42, 0.35);
+}
+
+.game-title,
+.game-stats .stat-number,
+.complete-card h2,
+.welcome-card h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+}
+
+.game-title {
+  font-weight: 500;
+}
+
+.game-stats .stat-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .game-stats .stat-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Game buttons: squared off, matching the site */
+.escape-room-container .btn,
+.escape-room-container button:not([class*="swal2"]),
+.swal2-popup .swal2-actions button {
+  border-radius: 4px !important;
+}
+
+/* Progress bar in gold */
+.progress-bar {
+  background: #B8873A !important;
+}
+
+/* The game panels stay cream in BOTH themes, so re-pin the ink tokens
+   inside them. Utilities like .text-muted resolve through these vars, so
+   dark mode can't put cream text on a cream card. */
+.escape-room-container .game-header,
+.escape-room-container .game-stats,
+.escape-room-container .welcome-card,
+.escape-room-container .question-card,
+.escape-room-container .complete-card,
+.escape-room-container .mini-game {
+  --ink: #1B2340;
+  --ink-soft: #4A5170;
+  --bs-body-color: #1B2340;
+  --bs-heading-color: #1B2340;
+  --bs-secondary-color: #4A5170;
+  color: #1B2340;
+}
+
+.escape-room-container .game-header :is(h1, h2, h3, h4, h5, h6),
+.escape-room-container .game-stats :is(h1, h2, h3, h4, h5, h6),
+.escape-room-container .welcome-card :is(h1, h2, h3, h4, h5, h6),
+.escape-room-container .question-card :is(h1, h2, h3, h4, h5, h6),
+.escape-room-container .complete-card :is(h1, h2, h3, h4, h5, h6),
+.escape-room-container .mini-game :is(h1, h2, h3, h4, h5, h6) {
+  color: #1B2340;
+}
